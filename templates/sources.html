@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Official Sources — Venezuela Earthquake Response{% endblock %}
+{% block content %}
+
+<h1>Official Sources</h1>
+<p>Every data point, statistic, and claim on this site traces back to one of the sources below. We privilege primary sources — satellite agencies, UN clusters, government seismological offices — over media reporting. Last verified {{ last_updated_formatted }}.</p>
+
+<div class="card" style="border-left: 4px solid var(--blue);">
+  <strong>How we use these sources.</strong>
+  Numbers on this site (deaths, missing, aftershocks, building collapses) come from the <em>Situation Reports</em>, <em>UN OCHA</em>, <em>USGS</em>, and <em>Miyamoto International</em> entries below. Satellite imagery and damage maps come from <em>Copernicus</em>, <em>Vantor</em>, and <em>Microsoft AI4G</em>. Missing persons data comes from independent trackers and the <em>Desaparecidos Terremoto Venezuela</em> database.
+</div>
+
+{% set ns = namespace(last_type = '') %}
+{% for resource in resources %}
+  {% if resource.type != ns.last_type %}
+    {% if ns.last_type != '' %}</div>{% endif %}
+    <h2 style="margin-top: 2rem; text-transform: capitalize;">{{ resource.type.replace('_', ' ') }} Sources</h2>
+    <div class="grid">
+    {% set ns.last_type = resource.type %}
+  {% endif %}
+  <div class="card">
+    <h3><a href="{{ resource.url }}" target="_blank" rel="noopener">{{ resource.name }}</a></h3>
+    <p>{{ resource.description }}</p>
+    <div class="source-meta">
+      <span class="badge badge-{{ resource.type }}">{{ resource.type.replace('_', ' ') }}</span>
+      <a href="{{ resource.url }}" target="_blank" rel="noopener" class="source-link">{{ resource.url[:80] }}{% if resource.url|length > 80 %}...{% endif %}</a>
+    </div>
+  </div>
+{% endfor %}
+{% if resources %}</div>{% endif %}
+
+<div class="card" style="border-left: 4px solid var(--orange); margin-top: 2rem;">
+  <strong>Missing a source?</strong>
+  If you know of an official source not listed here — especially Venezuelan government, civil protection, or local university publications — please <a href="contributing.html">contribute it</a>. We particularly need Spanish-language primary sources from Venezuelan institutions.
+</div>
+
+{% endblock %}
