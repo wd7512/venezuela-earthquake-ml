@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Build the Venezuela Earthquake ML Response static site.
+"""Build the Venezuela Earthquake Response static site.
 
-Reads data.json, generates 4 matplotlib charts, renders 6 Jinja2 templates,
+Reads data.json, generates 4 matplotlib charts, renders 7 Jinja2 templates,
 and outputs everything to dist/.
 """
 
@@ -176,7 +176,7 @@ def chart_ml_gaps_summary(data, output_path):
 
     bars = ax.barh(labels, values, color=colors, edgecolor="none", height=0.6)
     ax.set_xlabel("Count", color="#8b8fa3", fontsize=11)
-    ax.set_title("ML Gaps by Type and Severity", color="#e1e4ed", fontsize=14, fontweight="bold", pad=15)
+    ax.set_title("Response Gaps by Type and Severity", color="#e1e4ed", fontsize=14, fontweight="bold", pad=15)
 
     ax.tick_params(colors="#8b8fa3", labelsize=9)
     ax.spines["top"].set_visible(False)
@@ -209,9 +209,14 @@ def build_site():
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))
     pages = ["index", "intel", "handbook", "contributing", "gaps", "zone_la_guaira", "zone_caracas"]
 
+    # Format timestamp for humans
+    last_dt = datetime.fromisoformat(data["last_updated"].replace("Z", "+00:00"))
+    last_updated_formatted = last_dt.strftime("%d %B %Y, %I:%M %p Caracas time (UTC−4)")
+
     template_vars = {
         "page": "",
         "last_updated": data["last_updated"],
+        "last_updated_formatted": last_updated_formatted,
         "staleness_hours": staleness_hours,
         "stats": data["stats"],
         "zones": data["zones"],

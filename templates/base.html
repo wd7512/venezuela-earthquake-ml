@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% block title %}Venezuela Earthquake ML Response{% endblock %}</title>
+<title>{% block title %}Venezuela Earthquake Response{% endblock %}</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -109,6 +109,9 @@
   }
   .stat-card .value { font-size: 1.8rem; font-weight: 700; }
   .stat-card .label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem; }
+  .stat-card { transition: border-color 0.15s, background 0.15s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+  .stat-card:hover { border-color: var(--blue); background: var(--surface2); }
+  .stat-card .source { font-size: 0.65rem; color: var(--blue); margin-top: 0.35rem; text-transform: none; letter-spacing: 0; }
   .stat-card.danger .value { color: var(--accent); }
   .stat-card.warning .value { color: var(--orange); }
   .stat-card.ok .value { color: var(--green); }
@@ -144,6 +147,7 @@
   .badge-open { background: rgba(231, 76, 60, 0.2); color: #e74c3c; }
   .badge-in_progress { background: rgba(241, 196, 15, 0.2); color: #f1c40f; }
   .badge-filled { background: rgba(39, 174, 96, 0.2); color: #27ae60; }
+  .badge-help { background: rgba(52, 152, 219, 0.2); color: #3498db; }
   .chart-container {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -200,7 +204,7 @@
 <body>
 <nav>
   <div class="brand">
-    <h1>Venezuela Earthquake ML</h1>
+    <h1>Venezuela Earthquake</h1>
     <div class="sub">Information Hub</div>
   </div>
   <a href="index.html" class="{% if page == 'index' %}active{% endif %}">Overview</a>
@@ -214,11 +218,11 @@
 <main>
   {% block content %}{% endblock %}
   <div class="footer">
-    <p>Data compiled from UN OCHA, Miyamoto International, HOT-OSM, Copernicus EMS, Microsoft AI4G, ReliefWeb, and open-source intelligence. Last updated: {{ last_updated }}.</p>
+    <p>Data compiled from UN OCHA, Miyamoto International, HOT-OSM, Copernicus EMS, ReliefWeb, and open-source intelligence. Updated: {{ last_updated_formatted }}.</p>
     <p style="margin-top: 0.5rem;">
       <a href="handbook.html">Full Handbook</a> ·
       <a href="intel.html">Live Intel</a> ·
-      <a href="contributing.html">Contributing (ML)</a>
+      <a href="contributing.html">Contributing</a>
     </p>
   </div>
 </main>

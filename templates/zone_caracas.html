@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Caracas — Venezuela Earthquake ML Response{% endblock %}
+{% block title %}Caracas — Venezuela Earthquake Response{% endblock %}
 {% block content %}
 
 <h1>Zone: Caracas</h1>
@@ -8,27 +8,41 @@
 {% if zone %}
 
 <div class="stat-grid">
-  <div class="stat-card warning">
+  <a href="https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/" class="stat-card warning">
     <div class="value">{{ zone.damage_level }}</div>
     <div class="label">Damage Level</div>
-  </div>
-  <div class="stat-card danger">
+    <div class="source">↗ Miyamoto Assessment</div>
+  </a>
+  <a href="https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/" class="stat-card danger">
     <div class="value">{{ zone.building_collapses }}</div>
     <div class="label">Building Collapses</div>
-  </div>
-  <div class="stat-card info">
-    <div class="value">{{ zone.population }}</div>
+    <div class="source">↗ Miyamoto Assessment</div>
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Caracas" class="stat-card info">
+    <div class="value">{{ "{:,}".format(zone.population|int) }}</div>
     <div class="label">Population</div>
-  </div>
-  <div class="stat-card warning">
+    <div class="source">↗ Wikipedia</div>
+  </a>
+  <a href="https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/" class="stat-card warning">
     <div class="value">{{ zone.damage_score }}/100</div>
     <div class="label">Damage Score</div>
-  </div>
+    <div class="source" style="font-size:0.65rem;color:var(--text-muted);margin-top:0.15rem;text-transform:none;letter-spacing:0;">(0=none, 100=total destruction) · ↗ Miyamoto</div>
+  </a>
 </div>
 
 <div class="card">
   <h3>Description</h3>
   <p>{{ zone.description }}</p>
+</div>
+
+<div class="card">
+  <h3>Affected Districts</h3>
+  <ul style="list-style: disc; padding-left: 1.25rem;">
+    <li><strong>Los Palos Grandes</strong> — Severe damage; high-rise collapses reported</li>
+    <li><strong>Catia</strong> — Heavy damage in southeastern sectors</li>
+    <li><strong>Estadio Universitario area</strong> — Stadium damage during baseball game</li>
+  </ul>
+  <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">If your district is not listed, damage may be less severe. Check local contacts for confirmation.</p>
 </div>
 
 <div class="card">
@@ -82,13 +96,33 @@
       <td><span class="badge badge-{{ gap.gap_type }}">{{ gap.gap_type.replace('_', ' ') }}</span></td>
       <td><span class="badge badge-{{ gap.severity }}">{{ gap.severity }}</span></td>
       <td>{{ gap.description }}</td>
-      <td><span class="badge badge-{{ gap.status }}">{{ gap.status.replace('_', ' ') }}</span></td>
+      <td>
+        {% if gap.gap_type == 'logistics' %}
+        <span class="badge badge-help"><a href="https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882" style="color:inherit;">Help map this zone →</a></span>
+        {% else %}
+        <span class="badge badge-{{ gap.status }}">{{ gap.status.replace('_', ' ') }}</span>
+        {% endif %}
+      </td>
     </tr>
     {% endfor %}
   </table>
   {% else %}
   <p>No open gaps identified for this zone.</p>
   {% endif %}
+</div>
+
+<div class="card" style="border-color: var(--blue); background: rgba(52, 152, 219, 0.08);">
+  <h3>What to Do Next</h3>
+  <ul style="list-style: disc; padding-left: 1.25rem; margin-bottom: 0.75rem;">
+    <li><strong>Check on neighbours</strong> — especially elderly and children</li>
+    <li><strong>Avoid damaged buildings</strong> and hillside areas (landslide risk)</li>
+    <li><strong>Use text messages</strong> instead of calls to reduce network congestion</li>
+    <li><strong>Charge devices now</strong> — widespread power outages reported</li>
+    <li><strong>Drink bottled or boiled water</strong> until supply is confirmed safe</li>
+  </ul>
+  <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Emergency:</strong> 911 (Venezuela)</p>
+  <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Missing persons:</strong> Search <a href="https://google.org/personfinder">Google Person Finder</a> or contact your local Red Cross chapter</p>
+  <p style="font-size: 0.85rem;"><strong>Help map this zone:</strong> <a href="https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882">Contribute to OSM</a> — no login required</p>
 </div>
 
 {% else %}
