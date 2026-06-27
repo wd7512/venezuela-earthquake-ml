@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+{% block title %}Handbook — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>Humanitarian Response Handbook</h1>
+<p>Structured approach to monitoring earthquake impacts in Venezuela. For volunteers, researchers, journalists, humanitarian responders, and OSINT practitioners. Emphasizes verification, safety, and authoritative sources.</p>
+
+<div class="alert alert-warning">
+  <strong>Safety first:</strong> Never enter visibly damaged structures without official clearance. Cross-check every important claim. Respect privacy and dignity.
+</div>
+
+<h2 id="situation-awareness">1. Situation Awareness</h2>
+<p>Monitor information in layers. Never rely on a single source.</p>
+<ol style="color: var(--text-muted); font-size: 0.85rem; padding-left: 1.25rem;">
+  <li>Earthquake detection</li>
+  <li>Aftershock evolution</li>
+  <li>Damage assessment</li>
+  <li>Humanitarian impact</li>
+  <li>Infrastructure status</li>
+  <li>Logistics</li>
+  <li>Official response</li>
+  <li>Recovery</li>
+</ol>
+
+<h2 id="seismic">2. Seismic Monitoring</h2>
+<h3>Official Sources</h3>
+<ul class="resource-list">
+  <li><span class="res-type">National</span> <a href="https://www.funvisis.gob.ve">FUNVISIS</a> — Primary Venezuelan seismic authority</li>
+  <li><span class="res-type">Global</span> <a href="https://earthquake.usgs.gov">USGS</a> — Real-time feeds, ShakeMap, PAGER estimates</li>
+  <li><span class="res-type">Europe</span> <a href="https://www.emsc-csem.org">EMSC</a> — Rapid notifications, crowd-sourced felt reports</li>
+  <li><span class="res-type">Science</span> <a href="https://geofon.gfz.de">GEOFON</a> — Scientific catalogues, waveforms</li>
+  <li><span class="res-type">Caribbean</span> <a href="https://uwiseismic.com">UWI Seismic Research Centre</a> — Regional monitoring</li>
+  <li><span class="res-type">Research</span> <a href="https://ds.iris.edu">IRIS</a> — Historical analysis, earthquake browser</li>
+</ul>
+
+<h3>Track</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Magnitude · Depth · Epicentre · Moment tensor</li>
+  <li>ShakeMap · PAGER estimates · Aftershock sequences</li>
+</ul>
+
+<h2 id="humanitarian">3. Humanitarian Information</h2>
+<h3>Daily Sources</h3>
+<ul class="resource-list">
+  <li><a href="https://reliefweb.int">ReliefWeb</a> · <a href="https://www.unocha.org">OCHA</a> · <a href="https://www.ifrc.org">IFRC</a></li>
+  <li><a href="https://familylinks.icrc.org">ICRC</a> · <a href="https://www.who.int">WHO</a> · <a href="https://www.unicef.org">UNICEF</a></li>
+  <li><a href="https://www.wfp.org">WFP</a> · <a href="https://www.iom.int">IOM</a></li>
+</ul>
+
+<h3>Monitor</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Fatalities · Injuries · Displaced persons · Shelter occupancy</li>
+  <li>Food security · Potable water · Sanitation · Electricity · Communications</li>
+</ul>
+
+<h2 id="missing">4. Missing Persons</h2>
+<ul class="resource-list">
+  <li><span class="res-type">Red Cross</span> <a href="https://familylinks.icrc.org">ICRC Restoring Family Links</a> — Family reunification</li>
+  <li><span class="res-type">Local</span> Venezuelan Red Cross · Hospitals · Municipal emergency centres</li>
+</ul>
+
+<div class="card">
+  <h3>Recommended Workflow</h3>
+  <ol style="color: var(--text-muted); font-size: 0.85rem; padding-left: 1.25rem;">
+    <li>Record full name</li>
+    <li>Record last known location and time</li>
+    <li>Record reporting contact</li>
+    <li><strong>Verify before publishing</strong></li>
+    <li>Respect privacy — never publish personal phone numbers or sensitive medical information</li>
+  </ol>
+</div>
+
+<h2 id="hazards">5. Hazard Mapping</h2>
+<ul class="resource-list">
+  <li><a href="https://earthquake.usgs.gov">USGS ShakeMap</a> · <a href="https://emergency.copernicus.eu">Copernicus EMS</a> · <a href="https://unosat.org">UNOSAT</a></li>
+  <li><a href="https://worldview.earthdata.nasa.gov">NASA Worldview</a> · <a href="https://firms.modaps.eosdis.nasa.gov">NASA FIRMS</a> · <a href="https://www.hotosm.org">HOT-OSM</a></li>
+</ul>
+<p style="color: var(--text-muted); font-size: 0.85rem;">Monitor: Landslides · Liquefaction · Fires · Flooding · Dam failures · Road closures · Bridge failures</p>
+
+<h2 id="infrastructure">6. Infrastructure Monitoring</h2>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Airports · Ports · Highways · Fuel</li>
+  <li>Hospitals · Schools · Cell towers · Internet outages</li>
+  <li>Power grid · Water treatment</li>
+</ul>
+
+<h2 id="weather">7. Weather & Secondary Hazards</h2>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Heavy rainfall · Landslides · River flooding</li>
+  <li>Heat stress · Disease outbreaks</li>
+</ul>
+<p style="color: var(--text-muted); font-size: 0.85rem;">Monitor local forecasts continuously.</p>
+
+<h2 id="health">8. Health Resources</h2>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Hospital capacity · Trauma centres · Blood shortages</li>
+  <li>Disease surveillance · Water quality · Mental health services</li>
+</ul>
+
+<h2 id="osint">9. OSINT Verification</h2>
+<div class="card">
+  <h3>Verification Checklist</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Reverse image search</li>
+    <li>Confirm upload date</li>
+    <li>Confirm location using landmarks</li>
+    <li>Compare with satellite imagery</li>
+    <li>Compare shadows and weather</li>
+    <li>Check multiple eyewitnesses</li>
+    <li>Confirm with official agencies</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Confidence Labels</h3>
+  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+    <span class="badge badge-active">Confirmed</span>
+    <span class="badge badge-planned">Likely</span>
+    <span class="badge badge-research">Unconfirmed</span>
+    <span class="badge badge-high">False</span>
+  </div>
+  <p style="margin-top: 0.5rem; font-size: 0.8rem;">Maintain an audit trail for each assessment.</p>
+</div>
+
+<h2 id="data">10. Data Collection</h2>
+<table>
+  <tr><th>Field</th><th>Example</th></tr>
+  <tr><td>Timestamp</td><td>ISO 8601</td></tr>
+  <tr><td>Source</td><td>USGS</td></tr>
+  <tr><td>Location</td><td>City</td></tr>
+  <tr><td>Coordinates</td><td>Lat/Lon</td></tr>
+  <tr><td>Event Type</td><td>Aftershock</td></tr>
+  <tr><td>Confidence</td><td>High</td></tr>
+  <tr><td>Notes</td><td>Free text</td></tr>
+</table>
+<p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">Archive original reports.</p>
+
+<h2 id="apis">11. APIs & Automation</h2>
+<ul class="resource-list">
+  <li><a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USGS GeoJSON Feed</a> · <a href="https://www.emsc-csem.org/service/">EMSC feeds</a> · <a href="https://www.gdacs.org/">GDACS</a></li>
+  <li><a href="https://api.reliefweb.int/v1/reports">ReliefWeb API</a> · <a href="https://earthdata.nasa.gov">NASA Earthdata</a> · <a href="https://wiki.openstreetmap.org/wiki/Overpass_API">OSM Overpass API</a></li>
+</ul>
+<p style="color: var(--text-muted); font-size: 0.85rem;">Possible automations: Discord alerts · Slack alerts · Email summaries · Daily GIS snapshots · Aftershock dashboards</p>
+
+<h2 id="workflow">12. Daily Monitoring Workflow</h2>
+<div class="card">
+  <h3>Morning</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Review overnight earthquakes</li>
+    <li>Read humanitarian reports</li>
+    <li>Review satellite updates</li>
+  </ul>
+</div>
+<div class="card">
+  <h3>Afternoon</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Verify reports</li>
+    <li>Update statistics</li>
+    <li>Review infrastructure</li>
+  </ul>
+</div>
+<div class="card">
+  <h3>Evening</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Publish summary</li>
+    <li>Archive sources</li>
+    <li>Prepare watch list</li>
+  </ul>
+</div>
+
+<h2 id="template">13. Situation Report Template</h2>
+<pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; color: var(--text-muted); overflow-x: auto;">## Executive Summary
+
+## Earthquake Activity
+
+## Humanitarian Situation
+
+## Infrastructure
+
+## Health
+
+## Logistics
+
+## Forecast
+
+## Information Gaps
+
+## Sources Consulted</pre>
+
+<h2 id="directory">14. Resource Directory</h2>
+
+<h3>Seismology</h3>
+<ul class="resource-list">
+  <li><a href="https://www.funvisis.gob.ve">FUNVISIS</a> · <a href="https://earthquake.usgs.gov">USGS</a> · <a href="https://www.emsc-csem.org">EMSC</a></li>
+  <li><a href="https://geofon.gfz.de">GEOFON</a> · <a href="https://uwiseismic.com">UWI</a> · <a href="https://ds.iris.edu">IRIS</a></li>
+</ul>
+
+<h3>Humanitarian</h3>
+<ul class="resource-list">
+  <li><a href="https://reliefweb.int">ReliefWeb</a> · <a href="https://www.unocha.org">OCHA</a> · <a href="https://www.ifrc.org">IFRC</a></li>
+  <li><a href="https://familylinks.icrc.org">ICRC</a> · <a href="https://www.iom.int">IOM</a> · <a href="https://www.wfp.org">WFP</a></li>
+  <li><a href="https://www.unicef.org">UNICEF</a> · <a href="https://www.who.int">WHO</a></li>
+</ul>
+
+<h3>Mapping</h3>
+<ul class="resource-list">
+  <li><a href="https://emergency.copernicus.eu">Copernicus EMS</a> · <a href="https://unosat.org">UNOSAT</a></li>
+  <li><a href="https://worldview.earthdata.nasa.gov">NASA Worldview</a> · <a href="https://firms.modaps.eosdis.nasa.gov">NASA FIRMS</a></li>
+  <li><a href="https://www.hotosm.org">HOT-OSM</a></li>
+</ul>
+
+<h3>Logistics</h3>
+<ul class="resource-list">
+  <li><a href="https://www.flightradar24.com">FlightRadar24</a> · <a href="https://www.marinetraffic.com">MarineTraffic</a> · <a href="https://logcluster.org">Logistics Cluster</a></li>
+</ul>
+
+<h3>Best Practices</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li>Cross-check every important claim</li>
+  <li>Time-stamp all observations</li>
+  <li>Distinguish observation from inference</li>
+  <li>Cite authoritative sources</li>
+  <li>Respect privacy and dignity</li>
+  <li>Never interfere with emergency responders</li>
+</ul>
+
+{% endblock %}

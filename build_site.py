@@ -207,7 +207,7 @@ def build_site():
     chart_ml_gaps_summary(data, os.path.join(IMAGES_DIR, "ml_gaps_summary.png"))
 
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))
-    pages = ["index", "intel", "contributing", "gaps", "zone_la_guaira", "zone_caracas"]
+    pages = ["index", "intel", "handbook", "contributing", "gaps", "zone_la_guaira", "zone_caracas"]
 
     template_vars = {
         "page": "",
