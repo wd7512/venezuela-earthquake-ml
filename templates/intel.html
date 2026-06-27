@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% block title %}Intel — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>Intel</h1>
+<p>Compiled intelligence from scouting operations. Damage hotspots, key organisations, satellite imagery sources, and social media OSINT accounts. Data sourced from <code>INTEL_SCOUTING.md</code> and live scouting.</p>
+
+<h2>Damage Hotspots</h2>
+<table>
+  <tr><th>Zone</th><th>Damage Level</th><th>Notes</th></tr>
+  {% for zone in zones %}
+  <tr>
+    <td><a href="zone_{{ zone.slug }}.html">{{ zone.name }}</a></td>
+    <td><span class="badge badge-{{ zone.damage_level }}">{{ zone.damage_level }}</span></td>
+    <td>{{ zone.notes }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>Key Organisations</h2>
+<table>
+  <tr><th>Organisation</th><th>Role</th><th>Link</th></tr>
+  <tr>
+    <td>Miyamoto International</td>
+    <td>Rapid structural assessments on the ground; damage classifications map directly to ML classes</td>
+    <td><a href="https://miyamotointernational.com/venezuelas-strongest-earthquake-in-125-years-what-happened-on-june-24-2026/">Assessment</a> · <a href="https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/">Exposure</a></td>
+  </tr>
+  <tr>
+    <td>UN OCHA / ReliefWeb</td>
+    <td>Official UN coordination; situation reports, needs assessments, cluster updates</td>
+    <td><a href="https://reliefweb.int/disaster/eq-2026-000093-ven">Event Page</a></td>
+  </tr>
+  <tr>
+    <td>PAHO/WHO</td>
+    <td>Health facility functionality assessments, medical supply requirements</td>
+    <td><a href="https://www.paho.org/en/venezuela-earthquake-response">Response Page</a></td>
+  </tr>
+  <tr>
+    <td>HOT-OSM</td>
+    <td>Formally activated with fAIr AI-assisted mapping; building density maps for Caracas & La Guaira</td>
+    <td><a href="https://www.hotosm.org/en/projects/2026-venezuela-earthquake-response/">Activation</a> · <a href="https://tasks.hotosm.org/">Tasking Manager</a></td>
+  </tr>
+  <tr>
+    <td>ICRC</td>
+    <td>Restoring Family Links network; missing persons coordination</td>
+    <td><a href="https://familylinks.icrc.org/">Family Links</a></td>
+  </tr>
+  <tr>
+    <td>Copernicus EMS</td>
+    <td>Rapid Mapping activation EMSR884 — 13 sectors for damage grading maps</td>
+    <td><a href="https://mapping.emergency.copernicus.eu/activations/EMSR884/">Activation Page</a></td>
+  </tr>
+</table>
+
+<h2>Satellite Imagery Sources</h2>
+<table>
+  <tr><th>Source</th><th>Coverage</th><th>Access</th><th>ML Relevance</th></tr>
+  <tr>
+    <td>Vantor Open Data</td>
+    <td>La Guaira, Catia La Mar, Maiquetia — before/after pairs</td>
+    <td>Free</td>
+    <td>⭐⭐⭐⭐⭐ — primary training data source</td>
+  </tr>
+  <tr>
+    <td>Microsoft AI4G</td>
+    <td>Catia La Mar — building damage predictions</td>
+    <td>Free (HDX)</td>
+    <td>⭐⭐⭐⭐⭐ — ready-made labeled dataset</td>
+  </tr>
+  <tr>
+    <td>Copernicus EMS (EMSR884)</td>
+    <td>13 sectors including Caracas, Petare, Maracay</td>
+    <td>Free</td>
+    <td>⭐⭐⭐⭐⭐ — ground-truth grading maps</td>
+  </tr>
+  <tr>
+    <td>Sentinel-2 (ESA)</td>
+    <td>All affected areas (10m resolution)</td>
+    <td>Free</td>
+    <td>⭐⭐⭐ — baseline imagery, limited resolution</td>
+  </tr>
+  <tr>
+    <td>InSAR (Sentinel-1)</td>
+    <td>Ground displacement data</td>
+    <td>Free</td>
+    <td>⭐⭐⭐ — secondary ML product (change detection)</td>
+  </tr>
+</table>
+
+<h2>Social Media OSINT Accounts</h2>
+<table>
+  <tr><th>Account</th><th>Platform</th><th>Type</th><th>Notes</th></tr>
+  <tr>
+    <td>@sentdefender (OSINTdefender)</td>
+    <td>X/Twitter</td>
+    <td>OSINT</td>
+    <td>Immediate damage reports, satellite imagery references</td>
+  </tr>
+  <tr>
+    <td>@amilcarrock</td>
+    <td>X/Twitter</td>
+    <td>Ground-level</td>
+    <td>Ground-level videos (cracked staircases, evacuations)</td>
+  </tr>
+  <tr>
+    <td>@TheGlobeNewt</td>
+    <td>X/Twitter</td>
+    <td>Media</td>
+    <td>Compiled stadium earthquake video</td>
+  </tr>
+  <tr>
+    <td>r/AskLatinAmerica</td>
+    <td>Reddit</td>
+    <td>Community</td>
+    <td>Megathread with updates and local information</td>
+  </tr>
+  <tr>
+    <td>r/news</td>
+    <td>Reddit</td>
+    <td>News</td>
+    <td>Thousands feared dead — discussion thread</td>
+  </tr>
+  <tr>
+    <td>r/Damnthatsinteresting</td>
+    <td>Reddit</td>
+    <td>Media</td>
+    <td>La Guaira devastation video</td>
+  </tr>
+</table>
+
+<h2>All Resources</h2>
+<table>
+  <tr><th>Name</th><th>Type</th><th>Link</th><th>Description</th></tr>
+  {% for res in resources %}
+  <tr>
+    <td>{{ res.name }}</td>
+    <td><span class="badge badge-{{ res.type }}">{{ res.type.replace('_', ' ') }}</span></td>
+    <td><a href="{{ res.url }}">View</a></td>
+    <td>{{ res.description }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<h2>Monitoring Resources</h2>
+<p>Comprehensive reference for real-time earthquake monitoring, missing persons, damage mapping, and humanitarian tracking.</p>
+
+<h3>Official Seismic Monitoring</h3>
+<ul class="resource-list">
+  <li><span class="res-type">National</span> <a href="https://www.funvisis.gob.ve">FUNVISIS</a> — Primary national authority: bulletins, epicentres, magnitude/depth, public advisories</li>
+  <li><span class="res-type">Global</span> <a href="https://earthquake.usgs.gov">USGS Earthquake Hazards</a> — Real-time feeds, ShakeMap, PAGER impact estimates, aftershock sequences</li>
+  <li><span class="res-type">Europe</span> <a href="https://www.emsc-csem.org">EMSC</a> — Rapid notifications, crowd-sourced felt reports</li>
+  <li><span class="res-type">Science</span> <a href="https://geofon.gfz.de">GEOFON</a> — Scientific catalogues, seismic waveforms, regional monitoring</li>
+  <li><span class="res-type">Caribbean</span> <a href="https://uwiseismic.com">UWI Seismic Research Centre</a> — Regional Caribbean monitoring</li>
+</ul>
+
+<h3>Emergency & Missing Persons</h3>
+<ul class="resource-list">
+  <li><span class="res-type">Red Cross</span> <a href="https://familylinks.icrc.org">ICRC Family Links</a> — Family reunification and missing persons tracing</li>
+  <li><span class="res-type">UN</span> <a href="https://www.ifrc.org">IFRC</a> — Situation reports and humanitarian coordination</li>
+  <li><span class="res-type">Government</span> Protección Civil Venezuela — State emergency agencies, municipal governments</li>
+  <li><span class="res-type">Health</span> Ministry of Health announcements, local hospitals, emergency operations centres</li>
+</ul>
+
+<h3>Damage Mapping & Satellite</h3>
+<ul class="resource-list">
+  <li><span class="res-type">Satellite</span> <a href="https://emergency.copernicus.eu">Copernicus EMS</a> — Building damage, road accessibility, flood/landslide mapping</li>
+  <li><span class="res-type">Satellite</span> <a href="https://unosat.org">UNOSAT</a> — Satellite-derived damage assessments</li>
+  <li><span class="res-type">Imagery</span> <a href="https://worldview.earthdata.nasa.gov">NASA Worldview</a> — Near real-time satellite imagery</li>
+  <li><span class="res-type">Imagery</span> <a href="https://firms.modaps.eosdis.nasa.gov">NASA FIRMS</a> — Fire tracking post-earthquake</li>
+  <li><span class="res-type">Mapping</span> <a href="https://www.hotosm.org">HOT-OSM</a> — Community-updated infrastructure maps</li>
+</ul>
+
+<h3>Humanitarian Reports</h3>
+<ul class="resource-list">
+  <li><a href="https://reliefweb.int">ReliefWeb</a> · <a href="https://www.unocha.org">OCHA</a> · <a href="https://www.who.int">WHO</a></li>
+  <li><a href="https://www.unicef.org">UNICEF</a> · <a href="https://www.wfp.org">WFP</a> · <a href="https://www.iom.int">IOM</a></li>
+  <li>Typical info: deaths, injuries, missing, displaced, shelter, medical capacity, infrastructure damage</li>
+</ul>
+
+<h3>Dangerous Areas to Monitor</h3>
+<ul class="resource-list">
+  <li>ShakeMap intensity zones · Landslide risk · Liquefaction zones</li>
+  <li>Bridge failures · Damaged hospitals · Gas leaks · Building collapse zones</li>
+  <li>Aftershock forecasts — monitor for several weeks after main event</li>
+  <li><strong>Never enter visibly damaged structures without official clearance</strong></li>
+</ul>
+
+<h3>Logistics</h3>
+<ul class="resource-list">
+  <li><a href="https://www.flightradar24.com">FlightRadar24</a> · <a href="https://www.marinetraffic.com">MarineTraffic</a> · Logistics Cluster</li>
+</ul>
+
+<h3>News Sources</h3>
+<ul class="resource-list">
+  <li>Reuters · Associated Press · BBC · Local Venezuelan media</li>
+  <li>Avoid relying solely on social media — verify with at least two independent sources</li>
+</ul>
+
+<h3>Monitoring Workflow</h3>
+<ol style="color: var(--text-muted); font-size: 0.85rem; padding-left: 1.25rem;">
+  <li>Monitor FUNVISIS and USGS continuously</li>
+  <li>Review aftershock forecasts</li>
+  <li>Examine ShakeMap and damage products</li>
+  <li>Check Copernicus and UNOSAT imagery</li>
+  <li>Read ReliefWeb and OCHA daily reports</li>
+  <li>Use Red Cross family-link services for missing persons</li>
+  <li>Verify breaking news with multiple trusted sources</li>
+  <li>Cross-check social media against official information</li>
+</ol>
+
+{% endblock %}

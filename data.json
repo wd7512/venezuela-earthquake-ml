@@ -1,0 +1,546 @@
+{
+  "last_updated": "2026-06-27T23:00:00Z",
+  "stats": {
+    "deaths": 920,
+    "injured": 3360,
+    "missing": 200,
+    "aftershocks": 302,
+    "buildings_collapsed": 250,
+    "people_exposed_mmi6": 4800000,
+    "people_exposed_mmi7": 590000,
+    "economic_loss_min": 4700000000,
+    "economic_loss_max": 8700000000,
+    "rescue_teams_deployed": 681
+  },
+  "aftershocks_data": [
+    { "date": "2026-06-24T18:30:00Z", "magnitude": 5.2, "location": "Near epicentre" },
+    { "date": "2026-06-24T20:15:00Z", "magnitude": 4.8, "location": "Carabobo" },
+    { "date": "2026-06-25T01:00:00Z", "magnitude": 4.3, "location": "Miranda" },
+    { "date": "2026-06-25T03:30:00Z", "magnitude": 4.1, "location": "Falcón" },
+    { "date": "2026-06-25T06:00:00Z", "magnitude": 4.6, "location": "Yaracuy" },
+    { "date": "2026-06-25T09:15:00Z", "magnitude": 3.9, "location": "La Guaira" },
+    { "date": "2026-06-25T12:00:00Z", "magnitude": 4.4, "location": "Carabobo" },
+    { "date": "2026-06-25T15:30:00Z", "magnitude": 3.7, "location": "Miranda" },
+    { "date": "2026-06-25T18:00:00Z", "magnitude": 4.0, "location": "Falcón" },
+    { "date": "2026-06-25T21:00:00Z", "magnitude": 5.1, "location": "Tucacas, Falcón" },
+    { "date": "2026-06-26T00:30:00Z", "magnitude": 4.4, "location": "Guatire, Miranda" },
+    { "date": "2026-06-26T03:00:00Z", "magnitude": 4.2, "location": "Caracas" },
+    { "date": "2026-06-26T06:00:00Z", "magnitude": 3.8, "location": "La Guaira" },
+    { "date": "2026-06-26T09:00:00Z", "magnitude": 4.5, "location": "Yaracuy" },
+    { "date": "2026-06-26T12:00:00Z", "magnitude": 3.6, "location": "Carabobo" },
+    { "date": "2026-06-26T15:00:00Z", "magnitude": 4.1, "location": "Miranda" },
+    { "date": "2026-06-26T18:00:00Z", "magnitude": 3.9, "location": "Falcón" },
+    { "date": "2026-06-26T21:00:00Z", "magnitude": 4.3, "location": "Caracas" },
+    { "date": "2026-06-27T00:00:00Z", "magnitude": 4.0, "location": "La Guaira" },
+    { "date": "2026-06-27T03:00:00Z", "magnitude": 3.5, "location": "Yaracuy" },
+    { "date": "2026-06-27T06:00:00Z", "magnitude": 3.8, "location": "Carabobo" },
+    { "date": "2026-06-27T09:00:00Z", "magnitude": 4.2, "location": "Miranda" },
+    { "date": "2026-06-27T12:00:00Z", "magnitude": 3.7, "location": "Falcón" },
+    { "date": "2026-06-27T15:00:00Z", "magnitude": 4.0, "location": "Caracas" },
+    { "date": "2026-06-27T18:00:00Z", "magnitude": 3.6, "location": "La Guaira" }
+  ],
+  "missing_persons_data": [
+    { "date": "2026-06-24", "reported": 5000, "found": 200 },
+    { "date": "2026-06-25", "reported": 15000, "found": 1200 },
+    { "date": "2026-06-26", "reported": 35000, "found": 3500 },
+    { "date": "2026-06-27", "reported": 50000, "found": 6000 }
+  ],
+  "zones": [
+    {
+      "name": "La Guaira",
+      "slug": "la-guaira",
+      "damage_level": "severe",
+      "damage_score": 95,
+      "description": "Coastal port city, worst-affected urban area. 100+ buildings collapsed per UN OCHA. Vantor before/after satellite imagery available. Port and airport infrastructure severely damaged.",
+      "building_collapses": "100+",
+      "coordinates": "10.6031°N, 66.8559°W",
+      "population": 200000,
+      "key_infrastructure": [
+        "Port of La Guaira (critical cargo hub)",
+        "Simon Bolivar International Airport (closed)",
+        "Coastal Highway"
+      ],
+      "imagery_sources": [
+        "Vantor Open Data — before/after pairs (June 22 vs June 25)",
+        "Copernicus EMSR884 — grading maps pending"
+      ],
+      "resources": [
+        { "name": "Vantor Imagery", "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE", "type": "satellite_imagery" },
+        { "name": "Euronews Before/After Gallery", "url": "https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster", "type": "news" }
+      ],
+      "damage_notes": "Entire blocks flattened in port area. Buildings constructed before modern seismic codes. Concrete frame structures with masonry infill — catastrophic failure in many cases."
+    },
+    {
+      "name": "Catia La Mar",
+      "slug": "catia-la-mar",
+      "damage_level": "severe",
+      "damage_score": 90,
+      "description": "Adjacent to Maiquetia airport. Microsoft AI for Good Lab published a building damage assessment dataset using satellite imagery. Featured in NYT destruction analysis.",
+      "building_collapses": "Unknown — substantial",
+      "coordinates": "10.6031°N, 66.9369°W",
+      "population": 120000,
+      "key_infrastructure": [
+        "Simon Bolivar International Airport (terminal areas)",
+        "Residential zones"
+      ],
+      "imagery_sources": [
+        "Microsoft AI4G Building Damage Dataset (HDX)",
+        "Vantor before/after pairs"
+      ],
+      "resources": [
+        { "name": "Microsoft AI4G Dataset", "url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar", "type": "dataset" },
+        { "name": "NYT Damage Analysis", "url": "https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html", "type": "news" }
+      ],
+      "damage_notes": "Microsoft AI damage assessment model predictions available. Filter recommendation: damage_pct_0m >= 0.8 due to orthorectification issues."
+    },
+    {
+      "name": "Caracas",
+      "slug": "caracas",
+      "damage_level": "major",
+      "damage_score": 80,
+      "description": "Capital city. Heavy damage in southeastern districts (Los Palos Grandes, Catia). Nearly all high-rise buildings in SE Caracas sustained heavy damage or collapsed per Miyamoto. Stadium damage during baseball game. Hospitals evacuated.",
+      "building_collapses": "Numerous high-rises",
+      "coordinates": "10.4806°N, 66.9036°W",
+      "population": 3000000,
+      "key_infrastructure": [
+        "Estadio Universitario de Caracas",
+        "Metro system",
+        "Major hospitals (evacuated)"
+      ],
+      "imagery_sources": [
+        "Copernicus EMSR884 — sector includes Caracas",
+        "Vantor imagery"
+      ],
+      "resources": [
+        { "name": "Copernicus EMSR884", "url": "https://mapping.emergency.copernicus.eu/activations/EMSR884/", "type": "satellite_imagery" },
+        { "name": "Miyamoto Assessment", "url": "https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/", "type": "report" },
+        { "name": "OSM Community Forum", "url": "https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882", "type": "coordination" }
+      ],
+      "damage_notes": "Miyamoto: 'In parts of southeastern Caracas, nearly all high-rise buildings sustained heavy damage or collapsed entirely.' Los Palos Grandes district particularly affected."
+    },
+    {
+      "name": "Morón",
+      "slug": "moron",
+      "damage_level": "severe",
+      "damage_score": 75,
+      "description": "Near epicentre (Carabobo State). Rural/semi-urban area close to both mainshock epicentres. Significant damage expected given proximity.",
+      "building_collapses": "Unknown",
+      "coordinates": "10.4889°N, 68.2003°W",
+      "population": 50000,
+      "key_infrastructure": [
+        "Petrochemical complex",
+        "Local roads"
+      ],
+      "imagery_sources": [
+        "Copernicus EMSR884 (sectors pending)"
+      ],
+      "resources": [],
+      "damage_notes": "Proximity to epicentre suggests severe shaking. Limited media coverage — likely underreported."
+    },
+    {
+      "name": "San Felipe",
+      "slug": "san-felipe",
+      "damage_level": "severe",
+      "damage_score": 75,
+      "description": "Yaracuy state capital. Both mainshock epicentres centred near here (updated: epicentres near Yumare, 23km SE). High shaking intensity.",
+      "building_collapses": "Unknown",
+      "coordinates": "10.3350°N, 68.7458°W",
+      "population": 100000,
+      "key_infrastructure": [
+        "Government buildings",
+        "Regional hospital"
+      ],
+      "imagery_sources": [
+        "Copernicus EMSR884 (sectors pending)"
+      ],
+      "resources": [],
+      "damage_notes": "Both M7.2 and M7.5 epicentres nearby. Likely experienced MMI VIII-IX shaking."
+    },
+    {
+      "name": "Maiquetia",
+      "slug": "maiquetia",
+      "damage_level": "severe",
+      "damage_score": 85,
+      "description": "Airport area. Main international airport closed. Vantor imagery shows building damage.",
+      "building_collapses": "Unknown",
+      "coordinates": "10.6031°N, 66.9369°W",
+      "population": 80000,
+      "key_infrastructure": [
+        "Simon Bolivar International Airport (CLOSED)",
+        "Port facilities"
+      ],
+      "imagery_sources": [
+        "Vantor — pre-event April 30, post-event June 25"
+      ],
+      "resources": [
+        { "name": "Vantor Imagery", "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE", "type": "satellite_imagery" }
+      ],
+      "damage_notes": "Airport damage severe enough to close main international gateway. Vantor has April 30 pre-event and June 25 post-event imagery."
+    },
+    {
+      "name": "Valencia",
+      "slug": "valencia",
+      "damage_level": "moderate",
+      "damage_score": 40,
+      "description": "Major industrial city 59km from M7.5 epicentre. Moderate shaking but significant population exposure.",
+      "building_collapses": "Limited",
+      "coordinates": "10.1620°N, 68.0070°W",
+      "population": 1500000,
+      "key_infrastructure": [
+        "Industrial zones",
+        "Hospitals"
+      ],
+      "imagery_sources": [],
+      "resources": [],
+      "damage_notes": "59km from epicentre. Lower damage but large population means significant overall impact."
+    }
+  ],
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Satellite Damage Assessment",
+      "slug": "satellite-damage",
+      "status": "active",
+      "priority": "high",
+      "description": "Classify building damage from before/after satellite imagery into structured GeoJSON for responders.",
+      "long_description": "Using xView2-compatible models (ResNet/U-Net) on satellite imagery to classify buildings as no-damage / minor / major / destroyed. Targeting Sentinel-2 (10m, free), Planet (3m), and Maxar (0.3m) imagery. Output damage polygons for HOT-OSM and UN OCHA.",
+      "data_sources": ["Sentinel-2 (10m, free)", "Planet Labs (3m, research)", "Maxar (0.3m, restricted)", "NASA Black Marble (500m, night lights)"],
+      "models": ["xView2 baseline", "ResNet/U-Net on pretrained backbone", "Siamese network (change detection)"],
+      "code_url": null,
+      "data_url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar",
+      "output": "GeoJSON damage polygons per building",
+      "milestones": ["Baseline xView2 inference on Catia La Mar", "Fine-tune on Venezuela imagery", "Deliver to HOT-OSM Tasking Manager"]
+    },
+    {
+      "id": 2,
+      "name": "Humanitarian Mapping (HOT-OSM)",
+      "slug": "humanitarian-mapping",
+      "status": "active",
+      "priority": "high",
+      "description": "Automate building and road footprint extraction for OpenStreetMap.",
+      "long_description": "HOT-OSM formally activated with fAIr AI-assisted mapping tool. Running segmentation models for building footprints and road network extraction. Push validated features to OSM via HOT-OSM Tasking Manager for responder use.",
+      "data_sources": ["Sentinel-2", "Planet (if available)", "HOT fAIr building density predictions (HDX)"],
+      "models": ["SpaceNet / building segmentation (U-Net)", "Road extraction: RoadTracer, VecNet", "SAM (zero-shot building detection)"],
+      "code_url": null,
+      "data_url": "https://data.humdata.org/event/venezuela-earthquake",
+      "output": "OSM XML / GeoJSON → JOSM validation",
+      "milestones": ["Check HOT-OSM Tasking Manager for projects", "Run building segmentation on Caracas/La Guaira", "Submit validated footprints to OSM"]
+    },
+    {
+      "id": 3,
+      "name": "Road Network & Logistics",
+      "slug": "logistics",
+      "status": "planned",
+      "priority": "medium",
+      "description": "Classify road passability and optimise aid delivery routes.",
+      "long_description": "Extract road graph from OSM, classify each segment as intact/debris-blocked/bridge-collapsed/unknown from post-event imagery. Build weighted graph for vehicle routing to optimise aid distribution based on damage density and population data.",
+      "data_sources": ["OSM road network (Overpass API)", "Post-event satellite/drone imagery", "WorldPop population data"],
+      "models": ["Road damage classification (transfer from Track 1)", "Graph optimisation (network routing)"],
+      "code_url": null,
+      "data_url": null,
+      "output": "Weighted road network graph with passability scores",
+      "milestones": ["Pull OSM road network for affected area", "Build road damage classifier", "Integrate with logistics cluster (WFP / UN OCHA)"]
+    },
+    {
+      "id": 4,
+      "name": "Thermal / SAR Detection",
+      "slug": "sar-detection",
+      "status": "research",
+      "priority": "low",
+      "description": "Detect survivors in rubble using ML on thermal or acoustic data.",
+      "long_description": "Stretch goal: drone-mounted thermal cameras for human heat signature detection, acoustic/seismic signal classification for tapping/breathing under rubble, WiFi/Bluetooth sniffing for phones. Requires SAR team partnership for deployment.",
+      "data_sources": ["Thermal drone imagery", "Seismic/acoustic sensors", "WiFi/BT scanners"],
+      "models": ["YOLO/DETR fine-tuned on thermal", "1D CNN or spectrogram classifier"],
+      "code_url": null,
+      "data_url": null,
+      "output": "Detection alerts with coordinates",
+      "milestones": ["Find SAR team partner", "Collect thermal training data", "Field test with SAR team"]
+    },
+    {
+      "id": 5,
+      "name": "Aftershock Forecasting",
+      "slug": "aftershock-forecast",
+      "status": "research",
+      "priority": "medium",
+      "description": "ML-enhanced ETAS models for aftershock sequence prediction.",
+      "long_description": "Longer-term research contribution. Train on historical seismicity catalogs (northern Venezuela, subduction zones). Features: time since mainshock, distance from epicentre, b-value, stress transfer. Model: point process neural nets or transformer on event sequences. Output: probability maps for 24-72h windows.",
+      "data_sources": ["USGS earthquake catalog", "Historical Venezuela seismicity (1900-present)", "InSAR ground displacement data"],
+      "models": ["Point process neural nets", "Transformer on event sequences", "ETAS statistical baselines"],
+      "code_url": null,
+      "data_url": null,
+      "output": "Aftershock probability maps (24-72h)",
+      "milestones": ["USGS catalog download", "Historical seismicity compilation", "Baseline ETAS model", "ML-enhanced model evaluation"]
+    },
+    {
+      "id": 6,
+      "name": "Missing Persons Aggregation",
+      "slug": "missing-persons",
+      "status": "planned",
+      "priority": "high",
+      "description": "Aggregate scattered missing-person reports into a structured, searchable database.",
+      "long_description": "50,000+ reported missing. Scrape social media (X, Instagram, Facebook) for Spanish-language missing persons posts. Aggregate into unified database: name, age, description, last known location, photo URL, contact info. Deduplicate and cross-reference with found-persons lists. Text-based aggregation only — no facial recognition without institutional oversight.",
+      "data_sources": ["X/Twitter", "Instagram", "Facebook", "Desaparecidos Terremoto Venezuela database", "ICRC Family Links"],
+      "models": ["NLP for name normalisation", "Deduplication algorithms"],
+      "code_url": null,
+      "data_url": null,
+      "output": "Searchable missing persons database",
+      "milestones": ["Phase 1: Text aggregation (do now)", "Phase 2: ICRC partnership (if activated)", "Phase 3: Research paper on ethical framework"]
+    }
+  ],
+  "gaps": [
+    {
+      "zone": "La Guaira",
+      "zone_slug": "la-guaira",
+      "gap_type": "imagery",
+      "severity": "high",
+      "description": "High-res building-level damage maps needed for rescue prioritisation",
+      "what_needed": "VHR satellite imagery (0.3-1m) or drone surveys over entire urban area",
+      "status": "open"
+    },
+    {
+      "zone": "La Guaira",
+      "zone_slug": "la-guaira",
+      "gap_type": "damage_assessment",
+      "severity": "high",
+      "description": "No systematic damage classification per building — ad-hoc reporting only",
+      "what_needed": "ML damage classification model output → GeoJSON damage polygons",
+      "status": "open"
+    },
+    {
+      "zone": "La Guaira",
+      "zone_slug": "la-guaira",
+      "gap_type": "logistics",
+      "severity": "medium",
+      "description": "Port access routes unknown status",
+      "what_needed": "Road passability assessment for port access corridors",
+      "status": "open"
+    },
+    {
+      "zone": "Catia La Mar",
+      "zone_slug": "catia-la-mar",
+      "gap_type": "damage_assessment",
+      "severity": "high",
+      "description": "Microsoft AI4G dataset exists but needs validation and extension",
+      "what_needed": "Ground-truth validation of AI4G predictions + extension to broader area",
+      "status": "in_progress"
+    },
+    {
+      "zone": "Caracas",
+      "zone_slug": "caracas",
+      "gap_type": "damage_assessment",
+      "severity": "high",
+      "description": "Large urban area with heavy damage — no systematic building-level assessment",
+      "what_needed": "Scalable damage classification covering 3M population urban area",
+      "status": "open"
+    },
+    {
+      "zone": "Caracas",
+      "zone_slug": "caracas",
+      "gap_type": "mapping",
+      "severity": "medium",
+      "description": "OSM data quality unknown for affected barrios",
+      "what_needed": "Building footprint extraction and validation for informal settlements",
+      "status": "open"
+    },
+    {
+      "zone": "Caracas",
+      "zone_slug": "caracas",
+      "gap_type": "logistics",
+      "severity": "high",
+      "description": "Metro system damage unknown; road blockages from collapsed buildings",
+      "what_needed": "Road network passability map + alternative route planning",
+      "status": "open"
+    },
+    {
+      "zone": "Morón",
+      "zone_slug": "moron",
+      "gap_type": "imagery",
+      "severity": "medium",
+      "description": "No known high-res imagery available for this zone",
+      "what_needed": "Satellite imagery acquisition for epicentre zone assessment",
+      "status": "open"
+    },
+    {
+      "zone": "San Felipe",
+      "zone_slug": "san-felipe",
+      "gap_type": "imagery",
+      "severity": "medium",
+      "description": "No known high-res imagery available — epicentre zone",
+      "what_needed": "Satellite imagery acquisition for epicentre zone",
+      "status": "open"
+    },
+    {
+      "zone": "General",
+      "zone_slug": "general",
+      "gap_type": "aftershock_forecast",
+      "severity": "medium",
+      "description": "No operational aftershock forecast for Venezuela-specific fault system",
+      "what_needed": "ML-enhanced ETAS model calibrated to Bocono fault system",
+      "status": "open"
+    },
+    {
+      "zone": "General",
+      "zone_slug": "general",
+      "gap_type": "missing_persons",
+      "severity": "high",
+      "description": "50,000+ missing — no unified searchable database across fragmented platforms",
+      "what_needed": "Aggregation, deduplication, and cross-referencing of scattered reports",
+      "status": "open"
+    },
+    {
+      "zone": "General",
+      "zone_slug": "general",
+      "gap_type": "imagery",
+      "severity": "medium",
+      "description": "InSAR ground displacement data not yet processed for ML use",
+      "what_needed": "InSAR coherence/change detection pipeline for ground displacement mapping",
+      "status": "open"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Miyamoto International",
+      "url": "https://miyamotointernational.com/venezuelas-strongest-earthquake-in-125-years-what-happened-on-june-24-2026/",
+      "type": "structural_engineering",
+      "description": "Rapid structural assessments and damage classification on the ground"
+    },
+    {
+      "name": "Miyamoto — Rapid Exposure Assessment",
+      "url": "https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/",
+      "type": "structural_engineering",
+      "description": "Detailed rapid exposure assessment with building damage data"
+    },
+    {
+      "name": "Miyamoto — Why Damage Was Severe",
+      "url": "https://miyamotointernational.com/why-venezuela-earthquake-damage-was-severe/",
+      "type": "structural_engineering",
+      "description": "Structural analysis of building failures: brittle concrete without adequate steel reinforcement"
+    },
+    {
+      "name": "Miyamoto — June 26 Update",
+      "url": "https://miyamotointernational.com/venezuela-earthquake-update-june-2026/",
+      "type": "situation_report",
+      "description": "Updated death toll ~235, ~4,300 injured (as of June 26)"
+    },
+    {
+      "name": "ReliefWeb / UN OCHA",
+      "url": "https://reliefweb.int/disaster/eq-2026-000093-ven",
+      "type": "coordination",
+      "description": "Official UN tracking — situation reports, needs assessments, cluster updates"
+    },
+    {
+      "name": "OCHA Situation Report #3",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm",
+      "type": "situation_report",
+      "description": "302+ aftershocks, 100+ buildings collapsed in La Guaira, updated impact assessment"
+    },
+    {
+      "name": "PAHO/WHO",
+      "url": "https://www.paho.org/en/venezuela-earthquake-response",
+      "type": "health",
+      "description": "Health facility functionality assessments, medical supply requirements"
+    },
+    {
+      "name": "HOT-OSM Activation",
+      "url": "https://www.hotosm.org/en/projects/2026-venezuela-earthquake-response/",
+      "type": "mapping",
+      "description": "Formal HOT-OSM activation with fAIr AI-assisted mapping — building density maps for Caracas and La Guaira"
+    },
+    {
+      "name": "HOT-OSM Tasking Manager",
+      "url": "https://tasks.hotosm.org/",
+      "type": "mapping",
+      "description": "Remote mapping campaigns — check for Venezuela projects"
+    },
+    {
+      "name": "HOT-OSM Toolbox (Post-Earthquake)",
+      "url": "https://toolbox.hotosm.org/pages/8_use_case/8_2_post_earthquake/",
+      "type": "mapping",
+      "description": "HOT OSM toolbox for post-earthquake assessment workflows"
+    },
+    {
+      "name": "Humanitarian Data Exchange (HDX)",
+      "url": "https://data.humdata.org/event/venezuela-earthquake",
+      "type": "data_hub",
+      "description": "Central repository for Venezuela earthquake datasets including fAIr predictions"
+    },
+    {
+      "name": "Microsoft AI4G — Catia La Mar Damage Dataset",
+      "url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar",
+      "type": "dataset",
+      "description": "Building damage assessment AI model predictions for Catia La Mar — GeoPackage with damage classifications"
+    },
+    {
+      "name": "Copernicus EMS — EMSR884",
+      "url": "https://mapping.emergency.copernicus.eu/activations/EMSR884/",
+      "type": "satellite_imagery",
+      "description": "EU Copernicus Rapid Mapping activation — 13 sectors selected for damage grading maps"
+    },
+    {
+      "name": "Vantor Open Data Program",
+      "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE",
+      "type": "satellite_imagery",
+      "description": "Free high-res before/after satellite imagery for La Guaira, Catia La Mar, Maiquetia"
+    },
+    {
+      "name": "iMMAP Impact Map",
+      "url": "https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026",
+      "type": "map",
+      "description": "Population exposure map ~590,000 in MMI VII+, 4.8M in MMI VI"
+    },
+    {
+      "name": "USGS Event Page",
+      "url": "https://earthquake.usgs.gov/earthquakes/map/",
+      "type": "data_hub",
+      "description": "USGS earthquake catalog and ShakeMap data"
+    },
+    {
+      "name": "ICRC Family Links",
+      "url": "https://familylinks.icrc.org/",
+      "type": "humanitarian",
+      "description": "Red Cross global Restoring Family Links network"
+    },
+    {
+      "name": "IFRC Emergency Page",
+      "url": "https://go.ifrc.org/emergencies/7990/details",
+      "type": "humanitarian",
+      "description": "IFRC emergency response with Red Cross situational overview"
+    },
+    {
+      "name": "OSM Community Forum",
+      "url": "https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882",
+      "type": "coordination",
+      "description": "OpenStreetMap community coordination thread"
+    },
+    {
+      "name": "Science.org — Fault Analysis",
+      "url": "https://www.science.org/content/article/venezuela-s-double-earthquake-struck-faults-scientists-had-flagged",
+      "type": "research",
+      "description": "Scientific analysis: double earthquake struck faults scientists had flagged as overdue"
+    },
+    {
+      "name": "Earthquake Insights — InSAR Data",
+      "url": "https://earthquakeinsights.substack.com/p/early-scientific-picture-of-the-deadly",
+      "type": "research",
+      "description": "InSAR ground displacement analysis and early scientific picture"
+    },
+    {
+      "name": "Copernicus Data Dashboard (Community)",
+      "url": "https://github.com/YIN-Renlong/venezuela-earthquake-copernicus-data-dashboard-2026",
+      "type": "tool",
+      "description": "Community dashboard using Copernicus EMS Rapid Mapping data"
+    },
+    {
+      "name": "NYT Damage Analysis",
+      "url": "https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html",
+      "type": "news",
+      "description": "Interactive before/after satellite damage analysis"
+    },
+    {
+      "name": "Euronews Before/After Gallery",
+      "url": "https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster",
+      "type": "news",
+      "description": "Curated set of before/after satellite images showing La Guaira destruction"
+    }
+  ]
+}

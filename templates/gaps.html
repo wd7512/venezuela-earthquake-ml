@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Gaps — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>Gaps</h1>
+<p>Identified gaps where ML can add value in the earthquake response. Sorted by severity and zone.</p>
+
+<div class="card">
+  <h3>ML Gaps Summary</h3>
+  <div class="chart-container">
+    <img src="images/ml_gaps_summary.png" alt="ML gaps summary chart" onerror="this.style.display='none'">
+  </div>
+</div>
+
+<h2>Gap Inventory</h2>
+<table>
+  <tr>
+    <th>Zone</th>
+    <th>Gap Type</th>
+    <th>Severity</th>
+    <th>Description</th>
+    <th>What's Needed</th>
+    <th>Status</th>
+  </tr>
+  {% for gap in gaps %}
+  <tr>
+    <td>{% if gap.zone_slug != 'general' %}<a href="zone_{{ gap.zone_slug }}.html">{{ gap.zone }}</a>{% else %}{{ gap.zone }}{% endif %}</td>
+    <td><span class="badge badge-{{ gap.gap_type }}">{{ gap.gap_type.replace('_', ' ') }}</span></td>
+    <td><span class="badge badge-{{ gap.severity }}">{{ gap.severity }}</span></td>
+    <td>{{ gap.description }}</td>
+    <td>{{ gap.what_needed }}</td>
+    <td><span class="badge badge-{{ gap.status }}">{{ gap.status.replace('_', ' ') }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

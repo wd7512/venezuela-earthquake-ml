@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}ML Tracks — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>ML Tracks</h1>
+<p>Six machine learning tracks covering damage assessment, mapping, logistics, detection, forecasting, and missing persons. Each track has a status (active / planned / research), data sources, models, and milestones.</p>
+
+{% for track in tracks %}
+<div class="card">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+    <h3 style="margin: 0;">Track {{ track.id }}: {{ track.name }}</h3>
+    <span class="badge badge-{{ track.status }}">{{ track.status }}</span>
+  </div>
+  <p>{{ track.long_description }}</p>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.75rem;">
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Data Sources</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for ds in track.data_sources %}
+        <li>{{ ds }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Models</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for m in track.models %}
+        <li>{{ m }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 0.75rem;">
+    <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Milestones</strong>
+    <ul style="margin-top: 0.25rem; list-style: none; padding-left: 0; font-size: 0.85rem;">
+      {% for m in track.milestones %}
+      <li style="padding: 0.2rem 0; color: var(--text-muted);">→ {{ m }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div style="margin-top: 0.75rem; font-size: 0.8rem;">
+    <strong>Output:</strong> {{ track.output }}
+    {% if track.data_url %}
+    · <strong>Data:</strong> <a href="{{ track.data_url }}">Available</a>
+    {% endif %}
+    {% if track.code_url %}
+    · <strong>Code:</strong> <a href="{{ track.code_url }}">Repository</a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

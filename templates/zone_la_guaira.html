@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}La Guaira — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>Zone: La Guaira</h1>
+
+{% set zone = zones|selectattr('slug', 'equalto', 'la-guaira')|first %}
+{% if zone %}
+
+<div class="stat-grid">
+  <div class="stat-card danger">
+    <div class="value">{{ zone.damage_level }}</div>
+    <div class="label">Damage Level</div>
+  </div>
+  <div class="stat-card danger">
+    <div class="value">{{ zone.building_collapses }}</div>
+    <div class="label">Building Collapses</div>
+  </div>
+  <div class="stat-card info">
+    <div class="value">{{ zone.population }}</div>
+    <div class="label">Population</div>
+  </div>
+  <div class="stat-card warning">
+    <div class="value">{{ zone.damage_score }}/100</div>
+    <div class="label">Damage Score</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Description</h3>
+  <p>{{ zone.description }}</p>
+</div>
+
+<div class="card">
+  <h3>Coordinates</h3>
+  <p>{{ zone.coordinates }}</p>
+</div>
+
+<div class="card">
+  <h3>Damage Notes</h3>
+  <p>{{ zone.damage_notes }}</p>
+</div>
+
+<div class="card">
+  <h3>Key Infrastructure</h3>
+  <ul style="list-style: disc; padding-left: 1.25rem;">
+    {% for item in zone.key_infrastructure %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Imagery Sources</h3>
+  <ul style="list-style: disc; padding-left: 1.25rem;">
+    {% for src in zone.imagery_sources %}
+    <li>{{ src }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Resources</h3>
+  <ul class="resource-list">
+    {% for res in zone.resources %}
+    <li>
+      <span class="res-type">{{ res.type.replace('_', ' ') }}</span>
+      <a href="{{ res.url }}">{{ res.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="card">
+  <h3>Open Gaps in This Zone</h3>
+  {% set zone_gaps = gaps|selectattr('zone_slug', 'equalto', 'la-guaira')|list %}
+  {% if zone_gaps %}
+  <table>
+    <tr><th>Gap Type</th><th>Severity</th><th>Description</th><th>Status</th></tr>
+    {% for gap in zone_gaps %}
+    <tr>
+      <td><span class="badge badge-{{ gap.gap_type }}">{{ gap.gap_type.replace('_', ' ') }}</span></td>
+      <td><span class="badge badge-{{ gap.severity }}">{{ gap.severity }}</span></td>
+      <td>{{ gap.description }}</td>
+      <td><span class="badge badge-{{ gap.status }}">{{ gap.status.replace('_', ' ') }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>No open gaps identified for this zone.</p>
+  {% endif %}
+</div>
+
+{% else %}
+<div class="alert alert-danger">Zone data not found for La Guaira.</div>
+{% endif %}
+
+{% endblock %}

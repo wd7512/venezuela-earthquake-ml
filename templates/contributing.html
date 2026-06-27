@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}Contributing — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+<h1>Contributing</h1>
+<p>This hub is a public resource. If you're a researcher, data scientist, or engineer who can help fill the gaps below, this page explains where to plug in.</p>
+
+<div class="alert alert-info">
+  <strong>Public-first:</strong> the pages visible in the main navigation (Overview, Intel, Gaps, Zones) are for responders and the public. This Contributing section is for people who want to contribute ML tooling.
+</div>
+
+<h2>How to Help</h2>
+<div class="card">
+  <h3>1. Pick a Gap</h3>
+  <p>Visit the <a href="gaps.html">Gaps</a> page for a prioritized list of where ML can add value. High-severity gaps are the most impactful starting points.</p>
+</div>
+<div class="card">
+  <h3>2. Claim or Open a Track</h3>
+  <p>Below are six ML tracks. Each has data sources, suggested models, and milestones. If you want to work on one, open an issue or submit a PR with your proposed approach.</p>
+</div>
+<div class="card">
+  <h3>3. Run the Build</h3>
+  <pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; margin-top: 0.5rem; overflow-x: auto;"><code>uv sync
+uv run python build_site.py
+# Output goes to dist/</code></pre>
+</div>
+
+<h2>ML Tracks</h2>
+<p>Six machine learning tracks covering damage assessment, mapping, logistics, detection, forecasting, and missing persons. Each track has a status (active / planned / research), data sources, models, and milestones.</p>
+
+{% for track in tracks %}
+<div class="card">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+    <h3 style="margin: 0;">Track {{ track.id }}: {{ track.name }}</h3>
+    <span class="badge badge-{{ track.status }}">{{ track.status }}</span>
+  </div>
+  <p>{{ track.long_description }}</p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.75rem;">
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Data Sources</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for ds in track.data_sources %}
+        <li>{{ ds }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Models</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for m in track.models %}
+        <li>{{ m }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 0.75rem;">
+    <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Milestones</strong>
+    <ul style="margin-top: 0.25rem; list-style: none; padding-left: 0; font-size: 0.85rem;">
+      {% for m in track.milestones %}
+      <li style="padding: 0.2rem 0; color: var(--text-muted);">→ {{ m }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div style="margin-top: 0.75rem; font-size: 0.8rem;">
+    <strong>Output:</strong> {{ track.output }}
+    {% if track.data_url %}
+    · <strong>Data:</strong> <a href="{{ track.data_url }}">Available</a>
+    {% endif %}
+    {% if track.code_url %}
+    · <strong>Code:</strong> <a href="{{ track.code_url }}">Repository</a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Data Pipeline</h2>
+<p>The site data lives in <code>data.json</code>. A cron job regenerates it periodically from <code>INTEL_SCOUTING.md</code> and live sources. To update manually:</p>
+<pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; overflow-x: auto;"><code>uv run python build_site.py    # regenerates charts + rebuilds all pages from data.json</code></pre>
+
+<h2>Repository</h2>
+<p><a href="https://github.com/william-dennis/venezuela-earthquake-ml">github.com/william-dennis/venezuela-earthquake-ml</a></p>
+
+{% endblock %}

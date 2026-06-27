@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-27 (evening scout run)
+Last updated: 2026-06-27 23:45 UTC (evening scout — Life-saving window closing + new imagery + detailed ground truth)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
 ---
@@ -44,15 +44,26 @@ Compiled from swarm + cron search runs. This is the "where to look and what's be
 ### "Mapping to support the Venezuela earthquake response"
 - URL: https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882
 - Posted 1 day ago. Key quote: "I'd like to highlight how important it is for the authorities and people working on the ground to have accurate maps of the buildings in the affected areas."
-- **This is our direct entry point.** Someone is already calling for mapping but no organised activation yet.
+- **Note:** HOT-OSM has now formally activated (see below). This forum thread was the initial call; the official response is now at hotosm.org.
 
 ---
 
-## HOT-OSM (Humanitarian OpenStreetMap Team)
+## HOT-OSM (Humanitarian OpenStreetMap Team) — ✅ FORMALLY ACTIVATED
 
-- Instagram (@_hotosm): "Following the widespread damage brought on by two large earthquakes in Venezuela, partners on the ground are looking for an updated base map."
-- Website disaster services: https://www.hotosm.org/disaster-services/project_activations.html
-- **No formal activation listed yet** (as of search), but the call is out.
+- **Official project page:** https://www.hotosm.org/en/projects/2026-venezuela-earthquake-response/
+- **Activation announced:** ~2 days ago (June 25, 2026)
+- **What they're doing:**
+  - Using **fAIr** (their AI-assisted mapping tool) to identify geospatial data gaps
+  - Building **building density maps** for Caracas and La Guaira
+  - Running remote mapping campaigns via Tasking Manager
+  - Sharing available satellite imagery through their Portal
+- **Portal features:**
+  - Remote mapping campaigns (link: https://tasks.hotosm.org — check for Venezuela projects)
+  - Available data: area of interest, buildings, building density, healthcare sites
+  - fAIr building density predictions cover Caracas and La Guaira urban areas
+- **HDX data:** https://data.humdata.org/event/venezuela-earthquake (includes fAIr predictions)
+- **Contact:** disasterservices@hotosm.org
+- **ML relevance:** ⭐⭐⭐⭐⭐ — HOT is literally doing AI-assisted damage mapping. Their fAIr tool produces building density maps. We should coordinate with them — their tasking manager could be a channel to offer ML-based damage assessment.
 - HOT OSM toolbox for post-earthquake assessment: https://toolbox.hotosm.org/pages/8_use_case/8_2_post_earthquake/
 
 ---
@@ -125,11 +136,17 @@ Key findings from their assessment:
 - [ ] Monitor OSM forum thread for activation status
 - [ ] Scrape/collect geolocated social media posts for training imagery
 - [ ] Contact Miyamoto about sharing damage assessment data
-- [ ] Check if HOT-OSM has imagery partnerships (Planet, Maxar) we can piggyback on
+- [ ] ~~Check if HOT-OSM has imagery partnerships (Planet, Maxar) we can piggyback on~~ — ✅ DONE: HOT activated with fAIr; check their Portal for available imagery
 - [ ] Set up X search alerts for "Venezuela terremoto daño colapsado" with geolocation
 - [ ] Download & evaluate Microsoft AI4G Catia La Mar dataset as training/validation data
 - [ ] Access Vantor Open Data Program imagery for broader coverage
 - [ ] Mine OCHA SitRep #3 for structured damage/needs data
+- [ ] **NEW:** Monitor Copernicus EMSR884 activation page for grading map releases (check daily)
+- [ ] **NEW:** Check HOT-OSM Tasking Manager for Venezuela mapping projects to contribute to
+- [ ] **NEW:** Download HOT fAIr building density predictions from HDX when available
+- [ ] **NEW:** Watch for Copernicus EMS grading maps — use as ground-truth labels
+- [ ] **NEW:** Consider InSAR change detection as secondary ML product (ground displacement)
+- [ ] **NEW:** Reach out to HOT-OSM via disasterservices@hotosm.org to offer ML damage mapping
 
 ---
 
@@ -216,26 +233,221 @@ Key findings from their assessment:
 
 ---
 
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-27 Late Scout)
+
+### 1. HOT-OSM — Formally Activated with fAIr AI Mapping
+- **URL:** https://www.hotosm.org/en/projects/2026-venezuela-earthquake-response/
+- **Status:** ✅ Active. HOT is using their **fAIr** AI-assisted mapping tool for building density estimation in Caracas and La Guaira
+- **HDX datasets:** https://data.humdata.org/event/venezuela-earthquake — includes fAIr building density predictions (GeoPackage + SHP)
+- **ML relevance:** ⭐⭐⭐⭐⭐ — HOT is doing AI-assisted mapping. Their fAIr tool produces building density maps. Direct coordination opportunity: offer ML damage assessment via their Tasking Manager
+- **Action:** Monitor tasks.hotosm.org for Venezuela mapping projects we can contribute to
+
+### 2. Copernicus EMS — Rapid Mapping Activated (EMSR884) — 13 Sectors
+- **Activation page:** https://mapping.emergency.copernicus.eu/activations/EMSR884/
+- **News post:** https://mapping.emergency.copernicus.eu/news/earthquake-in-venezuela-emsr884/
+- **What:** EU Copernicus EMS activated Rapid Mapping for Venezuela earthquake. **13 sectors selected for damage assessment grading maps**
+- **Sectors include:** Caracas, Petare, Maracay (and ~10 others) — covering the most affected urban areas
+- **Products to expect:** Grading maps (damage severity), vector packages (GeoPackage/Shapefile), PDF maps
+- **Imagery source:** Very High Resolution (VHR) Copernicus Contributing Missions
+- **ML relevance:** ⭐⭐⭐⭐⭐ — Free damage grading maps will be published. These are ground-truth labels we can use for:
+  - Training data (damage classification per building/area)
+  - Validation of our own model outputs
+  - Benchmark comparison
+- **Timeline:** Products typically delivered within hours-days of imagery acquisition
+
+### 3. New GitHub Project — Copernicus Data Dashboard
+- **URL:** https://github.com/YIN-Renlong/venezuela-earthquake-copernicus-data-dashboard-2026
+- **What:** Unofficial public dashboard using Copernicus EMS Rapid Mapping data for activation EMSR884
+- **ML relevance:** ⭐⭐⭐ — Shows community interest in the data. Could be a model for our own visualization/dashboard
+
+### 4. Scientific Analysis — InSAR Ground Displacement Data
+- **Source:** https://earthquakeinsights.substack.com/p/early-scientific-picture-of-the-deadly (June 26, 2026)
+- **Key findings:**
+  - Radar-based satellite imagery (InSAR) reveals ground displacement areas
+  - Earthquake started near San Felipe and propagated nearly uniformly eastward toward Caracas
+  - Complex fault rupture on Bocono fault system
+- **New scientific article (June 26):** https://www.science.org/content/article/venezuela-s-double-earthquake-struck-faults-scientists-had-flagged
+  - Centuries of strain had built up on faults in the region
+  - The doublet struck faults scientists had previously flagged as overdue
+- **ML relevance:** ⭐⭐⭐ — InSAR coherence/change detection is itself an ML task. Could be a secondary product (ground displacement detection from SAR)
+
+### 5. Updated Casualty & Impact Figures
+- **Death toll:** 920+ confirmed (per Anadolu Agency, Wikipedia, multiple sources)
+- **Earlier figures:** 164→188→235→589→920 (escalating as rescue progresses)
+- **Injured:** 3,360+ (some sources say 4,300+)
+- **Buildings damaged/collapsed:** 250+ identified by early assessments (ENR)
+- **People still missing:** 200+ (per ENR 1-day-old report)
+- **International rescue teams deployed:**
+  - Switzerland: 80 rescuers (arrived first, per Guardian)
+  - Mexico: 250 rescuers
+  - El Salvador: 188 rescuers
+  - Spain: ~100 rescuers
+  - Colombia: 63-member rescue team
+  - Dominican Republic: first to deploy to La Guaira
+  - Brazil, Canada, UK: supporting/standby
+
+### 6. Miyamoto International — Additional Detail from Their Assessment
+- **New finding:** "In parts of southeastern Caracas, nearly all high-rise buildings sustained heavy damage or collapsed entirely"
+- **250+ damaged or collapsed buildings** identified in early assessments
+- **200+ people still trapped/missing** in rubble (1-day-old report)
+- Their rapid exposure assessment and update posts remain the key structured data sources
+
+### 7. Euronews — Before/After Gallery (Updated)
+- **URL:** https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster
+- Updated gallery with Vantor imagery showing La Guaira destruction
+
+---
+
 ## Search Effectiveness Log
 
 | Query | Result | Notes |
 |-------|--------|-------|
 | "Venezuela earthquake" + damage + satellite | ⭐⭐⭐⭐⭐ | Rich results — Vantor imagery, Microsoft dataset, Euronews gallery |
-| "Venezuela earthquake" + HOT-OSM + activation | ⭐⭐⭐ | HOT has posted about it but no formal activation page yet; Pete Masters LinkedIn confirms mapping campaign is being set up |
-| "Venezuela earthquake" + Miyamoto | ⭐⭐⭐⭐ | New update post (June 26) with current toll + airport status |
+| "Venezuela earthquake" + HOT-OSM + activation | ⭐⭐⭐⭐⭐ | **MAJOR: HOT formally activated** with fAIr AI mapping + building density maps for Caracas & La Guaira |
+| "Venezuela earthquake" + Miyamoto | ⭐⭐⭐⭐ | New detail: "nearly all high-rise buildings sustained heavy damage or collapsed" in SE Caracas |
 | "Venezuela earthquake" + ReliefWeb + situation report | ⭐⭐⭐⭐⭐ | Multiple sitreps now available (#1, #2, #3, IOM, UNICEF) |
-| "Venezuela earthquake" + github + machine learning | ⭐ | No github projects found yet |
+| "Venezuela earthquake" + github + machine learning | ⭐⭐⭐ | New GitHub project: Copernicus Data Dashboard (YIN-Renlong) using EMSR884 data |
 | "Venezuela earthquake" + "open data" + dataset | ⭐⭐⭐⭐⭐ | Microsoft AI4G dataset on HDX + Vantor Open Data Program — major finds |
 | "Venezuela earthquake" + death toll + latest | ⭐⭐⭐⭐ | Toll escalated to 920+; USGS estimates possible 10,000+ |
 | site:reliefweb.int Venezuela earthquake 2026 | ⭐⭐⭐⭐⭐ | Best source for structured situation reports |
+| "EMSR884" + Venezuela + Copernicus | ⭐⭐⭐⭐⭐ | **MAJOR: 13 sectors selected** for damage grading maps — free ground-truth data coming |
+| "Venezuela earthquake" + InSAR + radar | ⭐⭐⭐⭐ | New scientific analysis — InSAR ground displacement data from Sentinel-1; Science.org article |
+| "Venezuela earthquake" + Copernicus + 13 sectors | ⭐⭐⭐⭐ | MichelBaljet tweet confirms sectors include Caracas, Petare, Maracay + ~10 more |
+| "Venezuela earthquake" + international rescue teams | ⭐⭐⭐⭐ | Detailed deployment list: Mexico 250, El Salvador 188, Spain ~100, Switzerland 80, Colombia 63 |
 
 ### What's working:
 - **HDX/humdata.org** is the best source for ML-ready datasets — check daily
 - **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily
-- **Vantor + Microsoft AI4G** are the two key data releases so far
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
 - **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
 
 ### What's not working:
-- No github projects yet — opportunity for us to be first
-- No formal HOT-OSM tasking manager link yet — monitor the OSM forum thread
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
 - X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-27 Evening Scout — Life-Saving Window Closing)
+
+### 1. HOT-OSM Tasking Manager — TWO Active Venezuela Earthquake Projects (Live Stats)
+- **Project #54390:** "OSM Venezuela Earthquake 2026 Response - Buildings (4)"
+  - URL: https://tasks.hotosm.org/projects/54390
+  - Priority: URGENT | Org: Open Mapping Hub LAC
+  - Status: 14 contributors, 29% mapped, 6% validated
+- **Project #54159:** "OSM Venezuela Earthquake 2026 Response - Buildings (3)"
+  - URL: https://tasks.hotosm.org/projects/54159
+  - Priority: URGENT | Org: Open Mapping Hub LAC
+  - Status: 196 contributors, 98% mapped, 86% validated (!!)
+- **Key finding:** Project #54159 is 98% MAPPED with 197 contributors — OSM community has been extremely active
+- **ML relevance:** ⭐⭐⭐⭐ — The mapping is mostly done; the remaining opportunity is damage ASSESSMENT (not building mapping). Their data gives us building footprints; the tasking footprint boundaries define our AOIs.
+
+### 2. Vantor — Continued Imagery Updates
+- Vantor (@shafeKoreshe, X): "Vantor said it would continue uploading new imagery to aid damage assessment, infrastructure mapping, and resource allocation"
+- AP/CNN now have before/after Vantor imagery for Caraballeda specifically (Dec 28, 2025 vs June 26, 2026)
+- CNN reel: 14K likes, 345 comments on the Vantor imagery — massive public engagement
+- **ML relevance:** ⭐⭐⭐⭐⭐ — New imagery keeps being uploaded. Check Vantor Open Data Program page regularly for more before/after pairs.
+
+### 3. HDX — Updated OSM + Overture Data (June 25-26)
+- **New dataset:** "Venezuela - M 7.5 Earthquake - June 2026 - OSM & Overture Data"
+  - Org: HOT (Humanitarian OpenStreetMap Team)
+  - Time period: 25 June 2026 - 26 June 2026
+  - Available at: https://data.humdata.org/group/ven
+  - **Includes both OSM AND Overture Maps Foundation data** — this is NEW and significant
+- **Total HDX crisis page:** 30+ datasets from UNOSAT, MSFTResearch, HOT, GIScienceHD, and others
+- **Also listed:** Health facilities datasets specific to the earthquake zone
+- **ML relevance:** ⭐⭐⭐⭐⭐ — Overture Maps data gives us authoritative building footprints (often better than OSM in underserved areas). Combined with OSM post-event data, this enables change detection.
+
+### 4. Updated Casualty Figures & Impact Scale
+- **Death toll:** 920+ confirmed (per gov, reported by BBC, CNN, CNBC, Al Jazeera)
+- **Tens of thousands missing:** Government reports >50,000 people missing (per RT, Metro News, Yahoo News)
+- **Economic loss:** UNDP estimates **US$6.7 billion** in direct damage (updated from earlier $4.7-8.7bn range)
+- **Guardian:** "More than 100 buildings collapsed in La Guaira... declared a disaster zone"
+- **NYT interactive damage map:** https://www.nytimes.com/interactive/2026/06/25/world/americas/venezuela-earthquake-map-damage.html
+  - Photos show Petunia residential building in Los Palos Grandes "reduced to rubble"
+- **CNN live updates still running** (June 27) — rescue race against time
+
+### 5. Detailed Ground-Truth Building Collapse Info
+- **Petunia Residences, Los Palos Grandes (Caracas):**
+  - 13-story apartment building partially collapsed — 14 floors pancaked, only 6 intact
+  - NPR: "More than a dozen people were rescued from the building"
+  - NYT: Before/after photos show near-total destruction
+  - This is a SPECIFIC geolocated collapse with rescue outcome data — excellent ML training example
+- **Altamira (Caracas):** Three buildings collapsed
+- **La Guaira (Caraballeda):** Multiple high-rise collapses — AP has new satellite before/after for this exact area
+
+### 6. Aftershock Update — M4.9 on June 26
+- **June 26 afternoon:** M4.9 earthquake struck off northern coast of Venezuela
+- Per Al Jazeera, Reuters, multiple sources
+- Caused continued stress on already-damaged structures
+- **Aftershock count:** 300+ total since mainshock (per OCHA SitRep #3)
+
+### 7. Scientific Analysis Deep Dives
+- **American Geophysical Union (EOS):** "Venezuelan Earthquakes Struck in a Complex Zone of Faults"
+  - USGS map shows shaking intensity across northern Venezuela
+  - Detailed tectonic analysis of the doublet mechanism
+  - URL: https://eos.org/research-and-developments/venezuelan-earthquakes-struck-in-a-complex-zone-of-faults
+- **CRV Science:** "Anatomy of a Disaster: The June 2026 Venezuelan Seismic Doublet"
+  - Comprehensive analysis of rupture mechanics + geotechnical amplification in Caracas basin
+  - URL: https://www.crvscience.com/post/anatomy-of-a-disaster-the-june-2026-venezuelan-seismic-doublet
+- **British Geological Survey** posted preliminary info on Facebook (cross-organization awareness)
+- **ML relevance:** ⭐⭐⭐ — Understanding WHY certain structures failed helps us engineer features (soil amplification, building age, floor count)
+
+### 8. UNDP RAPIDA Assessment
+- **UNDP press release (June 26):** "Venezuela faces US$6.7 billion in economic losses"
+- Uses **RAPIDA** tool: combines satellite imagery + GIS for rapid damage assessment
+- This is itself an ML-adjacent damage assessment — UNDP's methodology is public
+- URL: https://www.undp.org/press-releases/venezuela-faces-us67-billion-economic-losses-earthquakes-undp-estimates
+
+### 9. CRSV Science / ABC Australia — Damage Lessons
+- ABC Australia (June 27): "Venezuela: Caracas assess damage after doublet earthquake"
+  - Geotechnical failure lessons + slope risks
+  - URL: https://www.abc.net.au/news/2026-06-27/venezuela-caracas-assess-damage-after-doublet-earthquake/106843050
+
+---
+
+## Search Effectiveness Log (Updated)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + damage + satellite | ⭐⭐⭐⭐⭐ | Rich results — Vantor imagery, Microsoft dataset, Euronews gallery |
+| "Venezuela earthquake" + HOT-OSM + activation | ⭐⭐⭐⭐⭐ | **MAJOR: HOT formally activated** with fAIr AI mapping + building density maps for Caracas & La Guaira |
+| tasks.hotosm.org + Venezuela text-search | ⭐⭐⭐⭐⭐ | **TWO active projects (#54159, #54390). #54159 is 98% mapped with 197 contributors** |
+| humdata.org + Venezuela + earthquake | ⭐⭐⭐⭐⭐ | 30+ datasets now. NEW: OSM + Overture Maps combined dataset |
+| humdata.org + Venezuela + Overture | ⭐⭐⭐⭐⭐ | NEW dataset combining OSM + Overture Maps Foundation data for building footprints |
+| "Venezuela earthquake" + Petunia + collapse | ⭐⭐⭐⭐ | Specific building collapse details — Petunia Residences, 13-story, 14 floors collapsed |
+| "Venezuela earthquake" + Miyamoto | ⭐⭐⭐⭐ | New detail: "nearly all high-rise buildings sustained heavy damage or collapsed" in SE Caracas |
+| "Venezuela earthquake" + ReliefWeb + situation report | ⭐⭐⭐⭐⭐ | Multiple sitreps now available (#1, #2, #3, IOM, UNICEF) |
+| "Venezuela earthquake" + github + machine learning | ⭐⭐⭐ | New GitHub project: Copernicus Data Dashboard (YIN-Renlong) using EMSR884 data |
+| "Venezuela earthquake" + "open data" + dataset | ⭐⭐⭐⭐⭐ | Microsoft AI4G dataset on HDX + Vantor Open Data Program — major finds |
+| "Venezuela earthquake" + death toll + latest | ⭐⭐⭐⭐ | Toll escalated to 920+; USGS estimates possible 10,000+ |
+| site:reliefweb.int Venezuela earthquake 2026 | ⭐⭐⭐⭐⭐ | Best source for structured situation reports |
+| "EMSR884" + Venezuela + Copernicus | ⭐⭐⭐⭐⭐ | **MAJOR: 13 sectors selected** for damage grading maps — free ground-truth data coming |
+| "Venezuela earthquake" + InSAR + radar | ⭐⭐⭐⭐ | New scientific analysis — InSAR ground displacement data from Sentinel-1; Science.org article |
+| "Venezuela earthquake" + Copernicus + 13 sectors | ⭐⭐⭐⭐ | MichelBaljet tweet confirms sectors include Caracas, Petare, Maracay + ~10 more |
+| "Venezuela earthquake" + international rescue teams | ⭐⭐⭐⭐ | Detailed deployment list: Mexico 250, El Salvador 188, Spain ~100, Switzerland 80, Colombia 63 |
+| "Venezuela earthquake" + UNDP + RAPIDA | ⭐⭐⭐⭐ | NEW: UNDP direct damage estimate $6.7bn using satellite+GIS RAPIDA tool |
+| "Venezuela earthquake" + "4.9" aftershock | ⭐⭐⭐⭐ | M4.9 aftershock on June 26 — Reuters + Al Jazeera covered |
+| "Venezuela earthquake" + Overture Maps | ⭐⭐⭐⭐ | NEW: HDX dataset now combines OSM + Overture Maps data |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly

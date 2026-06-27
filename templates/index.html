@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Overview — Venezuela Earthquake ML Response{% endblock %}
+{% block content %}
+
+{% if staleness_hours > 48 %}
+<div class="alert alert-danger">
+  <strong>⚠ STALENESS WARNING:</strong> This data was last updated {{ staleness_hours }} hours ago ({{ last_updated }}). Intel may be outdated. Trigger a new scout run or check sources directly.
+</div>
+{% elif staleness_hours > 24 %}
+<div class="alert alert-warning">
+  <strong>Data last updated {{ staleness_hours }} hours ago.</strong> Consider running a fresh scout.
+</div>
+{% else %}
+<div class="alert alert-success">
+  Data current as of {{ last_updated }}. Scout is active.
+</div>
+{% endif %}
+
+<h1>Venezuela Earthquake ML Response</h1>
+<p><strong>Event:</strong> June 24, 2026 — Mw 7.2 + Mw 7.5 doublet, San Felipe / Yaracuy / Caribbean coast</p>
+<p>Machine learning tooling for damage assessment, humanitarian mapping, logistics, and search & rescue support. This hub compiles intelligence, tracks ML projects, and identifies gaps where ML can add value.</p>
+
+<h2>Key Statistics</h2>
+<div class="stat-grid">
+  <div class="stat-card danger">
+    <div class="value">{{ stats.deaths }}+</div>
+    <div class="label">Deaths</div>
+  </div>
+  <div class="stat-card warning">
+    <div class="value">{{ stats.injured }}+</div>
+    <div class="label">Injured</div>
+  </div>
+  <div class="stat-card danger">
+    <div class="value">{{ stats.missing }}+</div>
+    <div class="label">Missing</div>
+  </div>
+  <div class="stat-card warning">
+    <div class="value">{{ stats.aftershocks }}+</div>
+    <div class="label">Aftershocks</div>
+  </div>
+  <div class="stat-card danger">
+    <div class="value">{{ stats.buildings_collapsed }}+</div>
+    <div class="label">Buildings Collapsed</div>
+  </div>
+  <div class="stat-card info">
+    <div class="value">{{ stats.rescue_teams_deployed }}</div>
+    <div class="label">Rescuers Deployed</div>
+  </div>
+  <div class="stat-card ok">
+    <div class="value">{{ (stats.people_exposed_mmi6 / 1000000)|round(1) }}M</div>
+    <div class="label">Exposed MMI VI+</div>
+  </div>
+  <div class="stat-card warning">
+    <div class="value">${{ (stats.economic_loss_min / 1000000000)|round(1) }}B</div>
+    <div class="label">Economic Loss (est.)</div>
+  </div>
+</div>
+
+<div class="stat-grid" style="grid-template-columns: 1fr 1fr;">
+  <div class="card">
+    <h3>Damage Hotspot Map</h3>
+    <div class="chart-container">
+      <img src="images/damage_by_zone.png" alt="Damage by zone bar chart" onerror="this.style.display='none'">
+    </div>
+  </div>
+  <div class="card">
+    <h3>Missing Persons Trend</h3>
+    <div class="chart-container">
+      <img src="images/missing_persons_trend.png" alt="Missing persons reported vs found" onerror="this.style.display='none'">
+    </div>
+  </div>
+</div>
+
+<div class="stat-grid" style="grid-template-columns: 1fr 1fr;">
+  <div class="card">
+    <h3>Aftershock Timeline</h3>
+    <div class="chart-container">
+      <img src="images/aftershock_timeline.png" alt="Aftershock timeline" onerror="this.style.display='none'">
+    </div>
+  </div>
+  <div class="card">
+    <h3>ML Gaps Summary</h3>
+    <div class="chart-container">
+      <img src="images/ml_gaps_summary.png" alt="ML gaps by type and severity" onerror="this.style.display='none'">
+    </div>
+  </div>
+</div>
+
+<div class="stat-grid" style="margin-top: 1.5rem;">
+  <div class="card" style="grid-column: 1 / -1;">
+    <h3>Quick Links</h3>
+    <div class="stat-grid">
+      <a href="intel.html" class="stat-card info" style="text-decoration: none;">
+        <div class="value">{{ resources|length }}</div>
+        <div class="label">Intel Resources</div>
+      </a>
+      <a href="contributing.html" class="stat-card ok" style="text-decoration: none;">
+        <div class="value">{{ tracks|length }}</div>
+        <div class="label">Contributing Tracks</div>
+      </a>
+      <a href="gaps.html" class="stat-card warning" style="text-decoration: none;">
+        <div class="value">{{ gaps|length }}</div>
+        <div class="label">Open Gaps</div>
+      </a>
+      <a href="gaps.html" class="stat-card danger" style="text-decoration: none;">
+        <div class="value">{{ gaps|selectattr('severity', 'equalto', 'high')|list|length }}</div>
+        <div class="label">High-Severity Gaps</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<h2>Zones Overview</h2>
+<table>
+  <tr><th>Zone</th><th>Damage Level</th><th>Collapses</th><th>Population</th></tr>
+  {% for zone in zones %}
+  <tr>
+    <td><a href="zone_{{ zone.slug }}.html">{{ zone.name }}</a></td>
+    <td><span class="badge badge-{{ zone.damage_level }}">{{ zone.damage_level }}</span></td>
+    <td>{{ zone.building_collapses }}</td>
+    <td>{{ zone.population }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
