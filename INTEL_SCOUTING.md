@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-29 03:00 UTC (cron scout — AMCOPS/IMC ground reports, foreign national toll updated, China aid offer, Bancaribe collapse, IMC NPR interview, GitHub dashboard expanded)
+Last updated: 2026-06-29 14:00 UTC (cron scout — CNN live updates: 1,600 rescuers arrived, 1,400 buildings damaged, aftershocks slowing ops; AA M4.7 aftershock; Al Jazeera recovery phase shift; Surfer ocean footage)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1670,4 +1670,84 @@ Key findings from their assessment:
 ### What's not working (updated):
 - **Copernicus grading maps** — still not downloadable despite Caracas + Moron being "Completed" for 3+ days. UI lag or deliberate embargo.
 - **Full foreign casualty reconciliation** — figures vary wildly between sources (9 vs 28 Portuguese dead) — likely different toll snapshots
+- *(All previous "what's not working" entries still valid)*
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-29 14:00 UTC Scout — Day 5/6, Rescuer Surge, Recovery Phase, Ocean Footage)
+
+### 1. CNN Live Updates — Aftershocks Slowing Rescue, 1,600 Additional Rescuers Arrived
+- **URL:** https://www.cnn.com/2026/06/27/world/live-news/venezuela-earthquake-hnk
+- **Updated:** June 27, 2026, 10:34 AM EDT
+- **Headline:** "Aftershocks slowing Venezuela earthquake rescue efforts, aid coordinator says"
+- **Key new info:**
+  - **>1,600 additional rescuers arrived today** (June 27) from around the world
+  - Lack of heavy machinery + constant aftershocks complicating operations
+  - Hospitals struggling after decades of neglect + surge of trauma cases
+  - Some entire communities clearing debris on their own (frustrated by slow response)
+  - **10 more countries set to join rescue efforts** (per Delcy Rodríguez)
+  - SOUTHCOM: US personnel met Delcy Rodríguez; "stands with the people of Venezuela"
+- **ML relevance:** ⭐⭐ — Response scale indicates operational complexity for ground-truth data collection
+
+### 2. NYT Live (June 27) — Updated Building Damage Count
+- **URL:** https://www.nytimes.com/live/2026/06/27/world/venezuela-earthquake
+- **New figure:** "At least **1,400 buildings** were damaged" (per officials, June 27)
+- **Context:** Updated from the earlier "250+ damaged or collapsed" figure in Miyamoto's initial assessment — this is a 5.6x increase, indicating systematic assessment is revealing more damage
+- **ML relevance:** ⭐⭐⭐ — The jump from 250 to 1,400 damaged buildings means the damage landscape is significantly larger than initial reports suggested. Our model should scale to this order of magnitude.
+
+### 3. Anadolu Agency — M4.7 Aftershock + Official Toll Confirmation
+- **URL:** https://www.aa.com.tr/en/americas/venezuela-hit-with-47-magnitude-aftershock/3979455
+- **Published:** June 27, 2026
+- **Key info:**
+  - **M4.7 aftershock** hit Venezuela on June 27
+  - **Official toll confirmed by National Assembly President Jorge Rodriguez:** 920 dead, 3,360 injured
+- **ML relevance:** ⭐⭐ — Continued aftershocks mean ongoing structural risk; buildings flagged as "damaged but standing" may progress to collapse
+
+### 4. Al Jazeera Newsfeed — "Rescue Efforts Turn to Recovery"
+- **Source:** Al Jazeera Newsfeed (June 27, 12 hours ago)
+- **Key quote:** "Rescue workers in one Caracas neighbourhood say no help has arrived, two days after twin quakes tore through the city"
+- **Context:** The operation is shifting from rescue to recovery in some areas. Important timeline marker.
+- **ML relevance:** ⭐⭐⭐⭐ — As recovery phase begins, focus shifts from saving lives to damage assessment. **ML-based damage mapping becomes MORE valuable now**, not less. Post-event satellite imagery acquisition continues; we should be ready with a model.
+
+### 5. Surfer Magazine — Fishermen Ocean Footage of La Guaira Cliff Collapses
+- **URL:** https://www.surfer.com/news/venezuela-earthquake-ocean-footage-video
+- **Published:** June 27, 2026
+- **What:** Fishermen at sea captured video showing "dust, debris and collapsing cliffs engulfing Venezuela's La Guaira coastline"
+- **Context:** Coastal cliff failures not well-documented from land-based reporting
+- **ML relevance:** ⭐⭐ — Coastal geotechnical failures may be visible in satellite imagery; another damage modality to consider (cliff retreat, coastal erosion from seismic shaking)
+
+### 6. Mercopress — Confirms 920 Toll
+- **URL:** https://en.mercopress.com/2026/06/27/venezuelas-earthquake-toll-rises-to-at-least-920-dead-as-rescuers-race-against-time
+- **Published:** June 27, 2026 (6 hours ago per search snippet)
+- **Content:** Confirms 920 toll, rescue race against time
+- **ML relevance:** ⭐ — Media convergence on 920 figure stabilizes the casualty baseline
+
+### 7. Wikipedia Entry — Episcentres Updated
+- **URL:** https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes
+- **Updated snapshot:** Epicenters of both quakes in San Felipe, Yaracuy; strike-slip mechanism confirmed; 920+ killed, 4,500+ injured
+- **ML relevance:** ⭐ — Confirms rupture parameters useful for ShakeMap-based feature engineering
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-29 14:00)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| CNN live news Venezuela earthquake June 27 | ⭐⭐⭐⭐⭐ | **NEW: 1,600 rescuers arrived; 10 more countries joining; aftershocks slowing ops** |
+| Venezuela earthquake "1,400" buildings damaged | ⭐⭐⭐⭐ | **NEW: NYT says 1,400 buildings damaged (up from 250)** |
+| Venezuela earthquake "4.7" aftershock June 27 | ⭐⭐⭐⭐ | **NEW: AA reports M4.7 aftershock on June 27** |
+| Venezuela earthquake "rescue efforts turn to recovery" | ⭐⭐⭐⭐ | **NEW: Al Jazeera — some Caracas residents say no help arrived** |
+| Venezuela earthquake fishermen footage cliff collapse | ⭐⭐⭐ | **NEW: Surfer mag — ocean footage of La Guaira cliff collapses** |
+| Venezuela earthquake 920 confirmed Jorge Rodriguez | ⭐⭐⭐⭐ | **NEW: AA confirms 920/3,360 toll via National Assembly President** |
+
+### What's working (updated):
+- **CNN live updates** — now the best real-time source for operational status (rescue deployment numbers, aftershock impacts, government statements)
+- **Anadolu Agency** — reliable for official government confirmations (Jorge Rodriguez statements)
+- **Al Jazeera Newsfeed** — good for on-the-ground reality checks (communities saying no help arrived)
+- **Surfer Magazine** — unexpected source for coastal/ocean perspective footage
+- *(All previous "what's working" entries still valid)*
+
+### What's not working (updated):
+- **NYT paywall/DataDome** — blocking direct access to live blog; use search snippets instead
+- **Building damage count reconciliation** — jumped from 250 to 1,400; unclear if this is cumulative or includes minor damage
 - *(All previous "what's not working" entries still valid)*
