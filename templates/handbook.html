@@ -6,7 +6,7 @@
 <p>What to do during and after the earthquake. For residents, families, and volunteers.</p>
 
 <div class="alert alert-danger">
-  <strong>Aftershock risk: 43% chance of Mw 6+ within the next week.</strong> Do not enter damaged buildings. Stay away from slopes and weakened structures.
+  <strong>Aftershock risk: {{ stats.aftershock_prob_mw6.value }}% chance of Mw 6+ within the next week (<a href="{{ stats.aftershock_prob_mw6.source_url }}">{{ stats.aftershock_prob_mw6.source }}</a>).</strong> Do not enter damaged buildings. Stay away from slopes and weakened structures.
 </div>
 
 <h2 id="during">During an Aftershock</h2>
