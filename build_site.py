@@ -37,7 +37,7 @@ def build_site():
     staleness_hours = compute_staleness(data["last_updated"])
 
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))
-    pages = ["index", "intel", "handbook", "contributing", "gaps", "sources", "zone_la_guaira", "zone_caracas"]
+    pages = ["index", "intel", "handbook", "contributing", "gaps", "sources"]
 
     # Format timestamp for humans
     last_dt = datetime.fromisoformat(data["last_updated"].replace("Z", "+00:00"))
