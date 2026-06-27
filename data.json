@@ -13,37 +13,153 @@
     "rescue_teams_deployed": 681
   },
   "aftershocks_data": [
-    { "date": "2026-06-24T18:30:00Z", "magnitude": 5.2, "location": "Near epicentre" },
-    { "date": "2026-06-24T20:15:00Z", "magnitude": 4.8, "location": "Carabobo" },
-    { "date": "2026-06-25T01:00:00Z", "magnitude": 4.3, "location": "Miranda" },
-    { "date": "2026-06-25T03:30:00Z", "magnitude": 4.1, "location": "Falcón" },
-    { "date": "2026-06-25T06:00:00Z", "magnitude": 4.6, "location": "Yaracuy" },
-    { "date": "2026-06-25T09:15:00Z", "magnitude": 3.9, "location": "La Guaira" },
-    { "date": "2026-06-25T12:00:00Z", "magnitude": 4.4, "location": "Carabobo" },
-    { "date": "2026-06-25T15:30:00Z", "magnitude": 3.7, "location": "Miranda" },
-    { "date": "2026-06-25T18:00:00Z", "magnitude": 4.0, "location": "Falcón" },
-    { "date": "2026-06-25T21:00:00Z", "magnitude": 5.1, "location": "Tucacas, Falcón" },
-    { "date": "2026-06-26T00:30:00Z", "magnitude": 4.4, "location": "Guatire, Miranda" },
-    { "date": "2026-06-26T03:00:00Z", "magnitude": 4.2, "location": "Caracas" },
-    { "date": "2026-06-26T06:00:00Z", "magnitude": 3.8, "location": "La Guaira" },
-    { "date": "2026-06-26T09:00:00Z", "magnitude": 4.5, "location": "Yaracuy" },
-    { "date": "2026-06-26T12:00:00Z", "magnitude": 3.6, "location": "Carabobo" },
-    { "date": "2026-06-26T15:00:00Z", "magnitude": 4.1, "location": "Miranda" },
-    { "date": "2026-06-26T18:00:00Z", "magnitude": 3.9, "location": "Falcón" },
-    { "date": "2026-06-26T21:00:00Z", "magnitude": 4.3, "location": "Caracas" },
-    { "date": "2026-06-27T00:00:00Z", "magnitude": 4.0, "location": "La Guaira" },
-    { "date": "2026-06-27T03:00:00Z", "magnitude": 3.5, "location": "Yaracuy" },
-    { "date": "2026-06-27T06:00:00Z", "magnitude": 3.8, "location": "Carabobo" },
-    { "date": "2026-06-27T09:00:00Z", "magnitude": 4.2, "location": "Miranda" },
-    { "date": "2026-06-27T12:00:00Z", "magnitude": 3.7, "location": "Falcón" },
-    { "date": "2026-06-27T15:00:00Z", "magnitude": 4.0, "location": "Caracas" },
-    { "date": "2026-06-27T18:00:00Z", "magnitude": 3.6, "location": "La Guaira" }
+    {
+      "date": "2026-06-24T18:30:00Z",
+      "magnitude": 5.2,
+      "location": "Near epicentre"
+    },
+    {
+      "date": "2026-06-24T20:15:00Z",
+      "magnitude": 4.8,
+      "location": "Carabobo"
+    },
+    {
+      "date": "2026-06-25T01:00:00Z",
+      "magnitude": 4.3,
+      "location": "Miranda"
+    },
+    {
+      "date": "2026-06-25T03:30:00Z",
+      "magnitude": 4.1,
+      "location": "Falcón"
+    },
+    {
+      "date": "2026-06-25T06:00:00Z",
+      "magnitude": 4.6,
+      "location": "Yaracuy"
+    },
+    {
+      "date": "2026-06-25T09:15:00Z",
+      "magnitude": 3.9,
+      "location": "La Guaira"
+    },
+    {
+      "date": "2026-06-25T12:00:00Z",
+      "magnitude": 4.4,
+      "location": "Carabobo"
+    },
+    {
+      "date": "2026-06-25T15:30:00Z",
+      "magnitude": 3.7,
+      "location": "Miranda"
+    },
+    {
+      "date": "2026-06-25T18:00:00Z",
+      "magnitude": 4.0,
+      "location": "Falcón"
+    },
+    {
+      "date": "2026-06-25T21:00:00Z",
+      "magnitude": 5.1,
+      "location": "Tucacas, Falcón"
+    },
+    {
+      "date": "2026-06-26T00:30:00Z",
+      "magnitude": 4.4,
+      "location": "Guatire, Miranda"
+    },
+    {
+      "date": "2026-06-26T03:00:00Z",
+      "magnitude": 4.2,
+      "location": "Caracas"
+    },
+    {
+      "date": "2026-06-26T06:00:00Z",
+      "magnitude": 3.8,
+      "location": "La Guaira"
+    },
+    {
+      "date": "2026-06-26T09:00:00Z",
+      "magnitude": 4.5,
+      "location": "Yaracuy"
+    },
+    {
+      "date": "2026-06-26T12:00:00Z",
+      "magnitude": 3.6,
+      "location": "Carabobo"
+    },
+    {
+      "date": "2026-06-26T15:00:00Z",
+      "magnitude": 4.1,
+      "location": "Miranda"
+    },
+    {
+      "date": "2026-06-26T18:00:00Z",
+      "magnitude": 3.9,
+      "location": "Falcón"
+    },
+    {
+      "date": "2026-06-26T21:00:00Z",
+      "magnitude": 4.3,
+      "location": "Caracas"
+    },
+    {
+      "date": "2026-06-27T00:00:00Z",
+      "magnitude": 4.0,
+      "location": "La Guaira"
+    },
+    {
+      "date": "2026-06-27T03:00:00Z",
+      "magnitude": 3.5,
+      "location": "Yaracuy"
+    },
+    {
+      "date": "2026-06-27T06:00:00Z",
+      "magnitude": 3.8,
+      "location": "Carabobo"
+    },
+    {
+      "date": "2026-06-27T09:00:00Z",
+      "magnitude": 4.2,
+      "location": "Miranda"
+    },
+    {
+      "date": "2026-06-27T12:00:00Z",
+      "magnitude": 3.7,
+      "location": "Falcón"
+    },
+    {
+      "date": "2026-06-27T15:00:00Z",
+      "magnitude": 4.0,
+      "location": "Caracas"
+    },
+    {
+      "date": "2026-06-27T18:00:00Z",
+      "magnitude": 3.6,
+      "location": "La Guaira"
+    }
   ],
   "missing_persons_data": [
-    { "date": "2026-06-24", "reported": 5000, "found": 200 },
-    { "date": "2026-06-25", "reported": 15000, "found": 1200 },
-    { "date": "2026-06-26", "reported": 35000, "found": 3500 },
-    { "date": "2026-06-27", "reported": 50000, "found": 6000 }
+    {
+      "date": "2026-06-24",
+      "reported": 5000,
+      "found": 200
+    },
+    {
+      "date": "2026-06-25",
+      "reported": 15000,
+      "found": 1200
+    },
+    {
+      "date": "2026-06-26",
+      "reported": 35000,
+      "found": 3500
+    },
+    {
+      "date": "2026-06-27",
+      "reported": 50000,
+      "found": 6000
+    }
   ],
   "zones": [
     {
@@ -65,10 +181,19 @@
         "Copernicus EMSR884 — grading maps pending"
       ],
       "resources": [
-        { "name": "Vantor Imagery", "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE", "type": "satellite_imagery" },
-        { "name": "Euronews Before/After Gallery", "url": "https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster", "type": "news" }
+        {
+          "name": "Vantor Imagery",
+          "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE",
+          "type": "satellite_imagery"
+        },
+        {
+          "name": "Euronews Before/After Gallery",
+          "url": "https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster",
+          "type": "news"
+        }
       ],
-      "damage_notes": "Entire blocks flattened in port area. Buildings constructed before modern seismic codes. Concrete frame structures with masonry infill — catastrophic failure in many cases."
+      "damage_notes": "Entire blocks flattened in port area. Buildings constructed before modern seismic codes. Concrete frame structures with masonry infill — catastrophic failure in many cases.",
+      "status_note": "Disaster zone. Access restricted."
     },
     {
       "name": "Catia La Mar",
@@ -88,10 +213,19 @@
         "Vantor before/after pairs"
       ],
       "resources": [
-        { "name": "Microsoft AI4G Dataset", "url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar", "type": "dataset" },
-        { "name": "NYT Damage Analysis", "url": "https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html", "type": "news" }
+        {
+          "name": "Microsoft AI4G Dataset",
+          "url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar",
+          "type": "dataset"
+        },
+        {
+          "name": "NYT Damage Analysis",
+          "url": "https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html",
+          "type": "news"
+        }
       ],
-      "damage_notes": "Microsoft AI damage assessment model predictions available. Filter recommendation: damage_pct_0m >= 0.8 due to orthorectification issues."
+      "damage_notes": "Microsoft AI damage assessment model predictions available. Filter recommendation: damage_pct_0m >= 0.8 due to orthorectification issues.",
+      "status_note": "Disaster zone. Access restricted."
     },
     {
       "name": "Caracas",
@@ -112,11 +246,24 @@
         "Vantor imagery"
       ],
       "resources": [
-        { "name": "Copernicus EMSR884", "url": "https://mapping.emergency.copernicus.eu/activations/EMSR884/", "type": "satellite_imagery" },
-        { "name": "Miyamoto Assessment", "url": "https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/", "type": "report" },
-        { "name": "OSM Community Forum", "url": "https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882", "type": "coordination" }
+        {
+          "name": "Copernicus EMSR884",
+          "url": "https://mapping.emergency.copernicus.eu/activations/EMSR884/",
+          "type": "satellite_imagery"
+        },
+        {
+          "name": "Miyamoto Assessment",
+          "url": "https://miyamotointernational.com/venezuela-earthquake-rapid-exposure-assessment/",
+          "type": "report"
+        },
+        {
+          "name": "OSM Community Forum",
+          "url": "https://community.openstreetmap.org/t/mapping-to-support-the-venezuela-earthquake-response/144882",
+          "type": "coordination"
+        }
       ],
-      "damage_notes": "Miyamoto: 'In parts of southeastern Caracas, nearly all high-rise buildings sustained heavy damage or collapsed entirely.' Los Palos Grandes district particularly affected."
+      "damage_notes": "Miyamoto: 'In parts of southeastern Caracas, nearly all high-rise buildings sustained heavy damage or collapsed entirely.' Los Palos Grandes district particularly affected.",
+      "status_note": "Major damage. Avoid damaged buildings."
     },
     {
       "name": "Morón",
@@ -135,7 +282,8 @@
         "Copernicus EMSR884 (sectors pending)"
       ],
       "resources": [],
-      "damage_notes": "Proximity to epicentre suggests severe shaking. Limited media coverage — likely underreported."
+      "damage_notes": "Proximity to epicentre suggests severe shaking. Limited media coverage — likely underreported.",
+      "status_note": "Disaster zone. Access restricted."
     },
     {
       "name": "San Felipe",
@@ -154,7 +302,8 @@
         "Copernicus EMSR884 (sectors pending)"
       ],
       "resources": [],
-      "damage_notes": "Both M7.2 and M7.5 epicentres nearby. Likely experienced MMI VIII-IX shaking."
+      "damage_notes": "Both M7.2 and M7.5 epicentres nearby. Likely experienced MMI VIII-IX shaking.",
+      "status_note": "Disaster zone. Access restricted."
     },
     {
       "name": "Maiquetia",
@@ -173,9 +322,14 @@
         "Vantor — pre-event April 30, post-event June 25"
       ],
       "resources": [
-        { "name": "Vantor Imagery", "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE", "type": "satellite_imagery" }
+        {
+          "name": "Vantor Imagery",
+          "url": "https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE",
+          "type": "satellite_imagery"
+        }
       ],
-      "damage_notes": "Airport damage severe enough to close main international gateway. Vantor has April 30 pre-event and June 25 post-event imagery."
+      "damage_notes": "Airport damage severe enough to close main international gateway. Vantor has April 30 pre-event and June 25 post-event imagery.",
+      "status_note": "Disaster zone. Access restricted."
     },
     {
       "name": "Valencia",
@@ -192,7 +346,8 @@
       ],
       "imagery_sources": [],
       "resources": [],
-      "damage_notes": "59km from epicentre. Lower damage but large population means significant overall impact."
+      "damage_notes": "59km from epicentre. Lower damage but large population means significant overall impact.",
+      "status_note": "Moderate damage. Check structures before entering."
     }
   ],
   "tracks": [
@@ -204,12 +359,25 @@
       "priority": "high",
       "description": "Classify building damage from before/after satellite imagery into structured GeoJSON for responders.",
       "long_description": "Using xView2-compatible models (ResNet/U-Net) on satellite imagery to classify buildings as no-damage / minor / major / destroyed. Targeting Sentinel-2 (10m, free), Planet (3m), and Maxar (0.3m) imagery. Output damage polygons for HOT-OSM and UN OCHA.",
-      "data_sources": ["Sentinel-2 (10m, free)", "Planet Labs (3m, research)", "Maxar (0.3m, restricted)", "NASA Black Marble (500m, night lights)"],
-      "models": ["xView2 baseline", "ResNet/U-Net on pretrained backbone", "Siamese network (change detection)"],
+      "data_sources": [
+        "Sentinel-2 (10m, free)",
+        "Planet Labs (3m, research)",
+        "Maxar (0.3m, restricted)",
+        "NASA Black Marble (500m, night lights)"
+      ],
+      "models": [
+        "xView2 baseline",
+        "ResNet/U-Net on pretrained backbone",
+        "Siamese network (change detection)"
+      ],
       "code_url": null,
       "data_url": "https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar",
       "output": "GeoJSON damage polygons per building",
-      "milestones": ["Baseline xView2 inference on Catia La Mar", "Fine-tune on Venezuela imagery", "Deliver to HOT-OSM Tasking Manager"]
+      "milestones": [
+        "Baseline xView2 inference on Catia La Mar",
+        "Fine-tune on Venezuela imagery",
+        "Deliver to HOT-OSM Tasking Manager"
+      ]
     },
     {
       "id": 2,
@@ -219,12 +387,24 @@
       "priority": "high",
       "description": "Automate building and road footprint extraction for OpenStreetMap.",
       "long_description": "HOT-OSM formally activated with fAIr AI-assisted mapping tool. Running segmentation models for building footprints and road network extraction. Push validated features to OSM via HOT-OSM Tasking Manager for responder use.",
-      "data_sources": ["Sentinel-2", "Planet (if available)", "HOT fAIr building density predictions (HDX)"],
-      "models": ["SpaceNet / building segmentation (U-Net)", "Road extraction: RoadTracer, VecNet", "SAM (zero-shot building detection)"],
+      "data_sources": [
+        "Sentinel-2",
+        "Planet (if available)",
+        "HOT fAIr building density predictions (HDX)"
+      ],
+      "models": [
+        "SpaceNet / building segmentation (U-Net)",
+        "Road extraction: RoadTracer, VecNet",
+        "SAM (zero-shot building detection)"
+      ],
       "code_url": null,
       "data_url": "https://data.humdata.org/event/venezuela-earthquake",
       "output": "OSM XML / GeoJSON → JOSM validation",
-      "milestones": ["Check HOT-OSM Tasking Manager for projects", "Run building segmentation on Caracas/La Guaira", "Submit validated footprints to OSM"]
+      "milestones": [
+        "Check HOT-OSM Tasking Manager for projects",
+        "Run building segmentation on Caracas/La Guaira",
+        "Submit validated footprints to OSM"
+      ]
     },
     {
       "id": 3,
@@ -234,12 +414,23 @@
       "priority": "medium",
       "description": "Classify road passability and optimise aid delivery routes.",
       "long_description": "Extract road graph from OSM, classify each segment as intact/debris-blocked/bridge-collapsed/unknown from post-event imagery. Build weighted graph for vehicle routing to optimise aid distribution based on damage density and population data.",
-      "data_sources": ["OSM road network (Overpass API)", "Post-event satellite/drone imagery", "WorldPop population data"],
-      "models": ["Road damage classification (transfer from Track 1)", "Graph optimisation (network routing)"],
+      "data_sources": [
+        "OSM road network (Overpass API)",
+        "Post-event satellite/drone imagery",
+        "WorldPop population data"
+      ],
+      "models": [
+        "Road damage classification (transfer from Track 1)",
+        "Graph optimisation (network routing)"
+      ],
       "code_url": null,
       "data_url": null,
       "output": "Weighted road network graph with passability scores",
-      "milestones": ["Pull OSM road network for affected area", "Build road damage classifier", "Integrate with logistics cluster (WFP / UN OCHA)"]
+      "milestones": [
+        "Pull OSM road network for affected area",
+        "Build road damage classifier",
+        "Integrate with logistics cluster (WFP / UN OCHA)"
+      ]
     },
     {
       "id": 4,
@@ -249,12 +440,23 @@
       "priority": "low",
       "description": "Detect survivors in rubble using ML on thermal or acoustic data.",
       "long_description": "Stretch goal: drone-mounted thermal cameras for human heat signature detection, acoustic/seismic signal classification for tapping/breathing under rubble, WiFi/Bluetooth sniffing for phones. Requires SAR team partnership for deployment.",
-      "data_sources": ["Thermal drone imagery", "Seismic/acoustic sensors", "WiFi/BT scanners"],
-      "models": ["YOLO/DETR fine-tuned on thermal", "1D CNN or spectrogram classifier"],
+      "data_sources": [
+        "Thermal drone imagery",
+        "Seismic/acoustic sensors",
+        "WiFi/BT scanners"
+      ],
+      "models": [
+        "YOLO/DETR fine-tuned on thermal",
+        "1D CNN or spectrogram classifier"
+      ],
       "code_url": null,
       "data_url": null,
       "output": "Detection alerts with coordinates",
-      "milestones": ["Find SAR team partner", "Collect thermal training data", "Field test with SAR team"]
+      "milestones": [
+        "Find SAR team partner",
+        "Collect thermal training data",
+        "Field test with SAR team"
+      ]
     },
     {
       "id": 5,
@@ -264,12 +466,25 @@
       "priority": "medium",
       "description": "ML-enhanced ETAS models for aftershock sequence prediction.",
       "long_description": "Longer-term research contribution. Train on historical seismicity catalogs (northern Venezuela, subduction zones). Features: time since mainshock, distance from epicentre, b-value, stress transfer. Model: point process neural nets or transformer on event sequences. Output: probability maps for 24-72h windows.",
-      "data_sources": ["USGS earthquake catalog", "Historical Venezuela seismicity (1900-present)", "InSAR ground displacement data"],
-      "models": ["Point process neural nets", "Transformer on event sequences", "ETAS statistical baselines"],
+      "data_sources": [
+        "USGS earthquake catalog",
+        "Historical Venezuela seismicity (1900-present)",
+        "InSAR ground displacement data"
+      ],
+      "models": [
+        "Point process neural nets",
+        "Transformer on event sequences",
+        "ETAS statistical baselines"
+      ],
       "code_url": null,
       "data_url": null,
       "output": "Aftershock probability maps (24-72h)",
-      "milestones": ["USGS catalog download", "Historical seismicity compilation", "Baseline ETAS model", "ML-enhanced model evaluation"]
+      "milestones": [
+        "USGS catalog download",
+        "Historical seismicity compilation",
+        "Baseline ETAS model",
+        "ML-enhanced model evaluation"
+      ]
     },
     {
       "id": 6,
@@ -279,12 +494,25 @@
       "priority": "high",
       "description": "Aggregate scattered missing-person reports into a structured, searchable database.",
       "long_description": "50,000+ reported missing. Scrape social media (X, Instagram, Facebook) for Spanish-language missing persons posts. Aggregate into unified database: name, age, description, last known location, photo URL, contact info. Deduplicate and cross-reference with found-persons lists. Text-based aggregation only — no facial recognition without institutional oversight.",
-      "data_sources": ["X/Twitter", "Instagram", "Facebook", "Desaparecidos Terremoto Venezuela database", "ICRC Family Links"],
-      "models": ["NLP for name normalisation", "Deduplication algorithms"],
+      "data_sources": [
+        "X/Twitter",
+        "Instagram",
+        "Facebook",
+        "Desaparecidos Terremoto Venezuela database",
+        "ICRC Family Links"
+      ],
+      "models": [
+        "NLP for name normalisation",
+        "Deduplication algorithms"
+      ],
       "code_url": null,
       "data_url": null,
       "output": "Searchable missing persons database",
-      "milestones": ["Phase 1: Text aggregation (do now)", "Phase 2: ICRC partnership (if activated)", "Phase 3: Research paper on ethical framework"]
+      "milestones": [
+        "Phase 1: Text aggregation (do now)",
+        "Phase 2: ICRC partnership (if activated)",
+        "Phase 3: Research paper on ethical framework"
+      ]
     }
   ],
   "gaps": [

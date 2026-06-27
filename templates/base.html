@@ -210,14 +210,16 @@
   <div class="section-label">Zones</div>
   <a href="zone_la_guaira.html" class="{% if page == 'zone_la_guaira' %}active{% endif %}">La Guaira</a>
   <a href="zone_caracas.html" class="{% if page == 'zone_caracas' %}active{% endif %}">Caracas</a>
-  <div class="section-label">Contributing</div>
-  <a href="contributing.html" class="{% if page == 'contributing' %}active{% endif %}">ML Tracks & How to Help</a>
 </nav>
 <main>
   {% block content %}{% endblock %}
   <div class="footer">
     <p>Data compiled from UN OCHA, Miyamoto International, HOT-OSM, Copernicus EMS, Microsoft AI4G, ReliefWeb, and open-source intelligence. Last updated: {{ last_updated }}.</p>
-    <p style="margin-top: 0.5rem;"><a href="contributing.html">Contributing — ML Tracks & How to Help →</a></p>
+    <p style="margin-top: 0.5rem;">
+      <a href="handbook.html">Full Handbook</a> ·
+      <a href="intel.html">Live Intel</a> ·
+      <a href="contributing.html">Contributing (ML)</a>
+    </p>
   </div>
 </main>
 </body>
