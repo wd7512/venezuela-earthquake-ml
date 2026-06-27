@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 04:45 UTC (morning scout — US $150M aid, IOM 6.76M affected, 172 trapped, M4.7 aftershock)
+Last updated: 2026-06-28 08:30 UTC (overnight scout — 72hr window closing, 51K missing, 7 Chinese dead, IFRC $61.8M appeal, US sanctions lifted)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
