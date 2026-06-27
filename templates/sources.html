@@ -10,14 +10,10 @@
   Numbers on this site (deaths, missing, aftershocks, building collapses) come from the <em>Situation Reports</em>, <em>UN OCHA</em>, <em>USGS</em>, and <em>Miyamoto International</em> entries below. Satellite imagery and damage maps come from <em>Copernicus</em>, <em>Vantor</em>, and <em>Microsoft AI4G</em>. Missing persons data comes from independent trackers and the <em>Desaparecidos Terremoto Venezuela</em> database.
 </div>
 
-{% set ns = namespace(last_type = '') %}
-{% for resource in resources %}
-  {% if resource.type != ns.last_type %}
-    {% if ns.last_type != '' %}</div>{% endif %}
-    <h2 style="margin-top: 2rem; text-transform: capitalize;">{{ resource.type.replace('_', ' ') }} Sources</h2>
-    <div class="grid">
-    {% set ns.last_type = resource.type %}
-  {% endif %}
+{% for type, resources in resources|groupby("type") %}
+  <h2 style="margin-top: 2rem; text-transform: capitalize;">{{ type.replace("_", " ") }} Sources</h2>
+  <div class="grid">
+  {% for resource in resources %}
   <div class="card">
     <h3><a href="{{ resource.url }}" target="_blank" rel="noopener">{{ resource.name }}</a></h3>
     <p>{{ resource.description }}</p>
@@ -26,8 +22,9 @@
       <a href="{{ resource.url }}" target="_blank" rel="noopener" class="source-link">{{ resource.url[:80] }}{% if resource.url|length > 80 %}...{% endif %}</a>
     </div>
   </div>
+  {% endfor %}
+  </div>
 {% endfor %}
-{% if resources %}</div>{% endif %}
 
 <div class="card" style="border-left: 4px solid var(--orange); margin-top: 2rem;">
   <strong>Missing a source?</strong>

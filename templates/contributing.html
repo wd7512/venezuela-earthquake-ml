@@ -5,6 +5,8 @@
 <h1>Contributing</h1>
 <p>This hub is a public resource. If you're a researcher, data scientist, or engineer who can help fill the gaps below, this page explains where to plug in.</p>
 
+<p style="font-size: 0.85rem; color: var(--text-muted);">Looking to donate or share information? See <a href="help.html">How to Help</a> — this page is for developers and data scientists who want to contribute data, mapping, or analysis.</p>
+
 <div class="alert alert-info">
   <strong>Public-first:</strong> the pages visible in the main navigation (Overview, Intel, Handbook, How to Help, Sources, Statistics) are for responders and the public. This Contributing section is for people who want to contribute data, mapping, or analysis.
 </div>
@@ -62,6 +64,7 @@ uv run python build_site.py
       <li style="padding: 0.2rem 0; color: var(--text-muted);">→ {{ m }}</li>
       {% endfor %}
     </ul>
+    {% if track.status == "research" %}<p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">This is a longer-term research goal — not an active track for the current response window. No data or milestones are available yet.</p>{% endif %}
   </div>
 
   <div style="margin-top: 0.75rem; font-size: 0.8rem;">
@@ -77,10 +80,10 @@ uv run python build_site.py
 {% endfor %}
 
 <h2>Data Pipeline</h2>
-<p>The site data lives in <code>data.json</code>. A cron job regenerates it periodically from <code>INTEL_SCOUTING.md</code> and live sources. To update manually:</p>
+<p>The site data lives in <code>data.json</code>. Rebuilt as needed from <code>INTEL_SCOUTING.md</code> and live sources. To update manually:</p>
 <pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; overflow-x: auto;"><code>uv run python build_site.py    # regenerates charts + rebuilds all pages from data.json</code></pre>
 
 <h2>Repository</h2>
-<p><a href="https://github.com/william-dennis/venezuela-earthquake">github.com/william-dennis/venezuela-earthquake</a></p>
+<p>The site data lives in <code>data.json</code>. The repository name reflects the machine-learning components used in data processing (satellite damage assessment, casualty estimation). The public-facing site is not an ML system. Source: <a href="https://github.com/wd7512/venezuela-earthquake-ml">github.com/wd7512/venezuela-earthquake-ml</a></p>
 
 {% endblock %}

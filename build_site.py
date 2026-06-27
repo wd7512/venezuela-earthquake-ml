@@ -52,6 +52,7 @@ def build_site():
         "tracks": data["tracks"],
         "gaps": data["gaps"],
         "resources": data["resources"],
+        "death_toll_note": data.get("death_toll_note", ""),
         "show_zone_pages": config.get("show_zone_pages", True),
     }
 

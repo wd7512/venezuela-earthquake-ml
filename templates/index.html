@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="alert alert-danger">
-  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. {{ stats.deaths.value }}+ confirmed dead, ~{{ "{:,}".format(stats.missing_independent.value) }} reported missing (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). Information changing rapidly. Cross-reference all figures across multiple sources.
+  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. {{ stats.deaths.value }}+ confirmed dead, ~{{ "{:,}".format(stats.missing_independent.value) }} reported missing (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). Information changing rapidly. Cross-reference all figures across multiple sources. <a href="statistics.html" style="color: #000; text-decoration: underline; font-weight: 700;">Statistics page →</a>
 </div>
 
 <h1>Earthquake Response Hub</h1>
@@ -27,6 +27,7 @@
   </tr>
   {% endfor %}
 </table>
+<p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Population figures based on the 2011 Venezuelan Census (INE).</p>
 
 <h2>Key Numbers</h2>
 <div class="stat-grid">
@@ -37,6 +38,10 @@
   <a href="{{ stats.missing_independent.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
     <div class="value">{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</div>
     <div class="label">Missing (independent) · {{ stats.missing_independent.source }}</div>
+  </a>
+  <a href="{{ stats.injured.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
+    <div class="value">{{ stats.injured.value }}{{ stats.injured.suffix }}</div>
+    <div class="label">Injured · {{ stats.injured.source }}</div>
   </a>
   <a href="{{ stats.aftershocks.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
     <div class="value">{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</div>
@@ -58,6 +63,7 @@
     <li><strong>ICRC Restoring Family Links</strong> — <a href="https://www.icrc.org/en/restoring-family-links">Connect across borders</a></li>
     <li><strong>Google Person Finder</strong> — <a href="https://google.org/personfinder">Search or register</a></li>
   </ul>
+  <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">These platforms are volunteer-operated and were verified live as of June 27, 2026.</p>
   <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Search by full name + neighbourhood. Post to all three platforms simultaneously. Never publish personal phone numbers.</p>
 </div>
 
