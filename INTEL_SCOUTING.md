@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-29 14:00 UTC (cron scout — CNN live updates: 1,600 rescuers arrived, 1,400 buildings damaged, aftershocks slowing ops; AA M4.7 aftershock; Al Jazeera recovery phase shift; Surfer ocean footage)
+Last updated: 2026-06-29 20:00 UTC (cron scout — 🎉 COPERNICAS EMSR884 CARACAS GRADING MAPS NOW DOWNLOADABLE; full AOI list (03 Valencia, 10 Guacara, 11 Villa de Cura, 12 Caraballeda) now public; 383 buildings severely damaged incl. 13 hospitals + 25 shopping centers; 2,927 families displaced; 1,002 additional facilities damaged)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1750,4 +1750,104 @@ Key findings from their assessment:
 ### What's not working (updated):
 - **NYT paywall/DataDome** — blocking direct access to live blog; use search snippets instead
 - **Building damage count reconciliation** — jumped from 250 to 1,400; unclear if this is cumulative or includes minor damage
+- *(All previous "what's not working" entries still valid)*
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-29 20:00 UTC Scout — 🎉 COPERNICUS CARACAS GRADING MAPS NOW DOWNLOADABLE + Full AOI List Public)
+
+### 1. 🎉 MAJOR: Copernicus EMSR884 — Caracas Grading Maps NOW DOWNLOADABLE
+- **Activation page:** https://mapping.emergency.copernicus.eu/activations/EMSR884/
+- **What changed:** As of June 29, the Download Products tab now shows ALL 13 AOIs in the dropdown selector (previously only AOI 00 was available)
+- **AOI 02 Caracas — NOW AVAILABLE:**
+  - **Grading** product — Image acquisition: 25/06/2026 14:59 UTC, delivered 26/06/2026 04:01 UTC
+    - Download buttons: Vector data, GeoPackage, Map, Summary Table
+  - **Grading Monitoring 1** product — Image acquisition: 26/06/2026 15:19 UTC, delivered 27/06/2026 11:50 UTC
+    - Download buttons: Vector data, GeoPackage, Map, Summary Table
+- **AOI 06 Moron — also available:**
+  - **Grading** — delivered 25/06/2026 20:36 UTC (Vector, GeoPackage, Map, Summary Table)
+  - **Grading Monitoring 1** — delivered 26/06/2026 15:11 UTC (Vector, GeoPackage, Map, Summary Table)
+- **Bulk download buttons now present:**
+  - "ALL PRODUCTS (ZIP)" — downloads entire activation package
+  - "ALL AOIs (JSON)" — metadata for all AOIs
+- **Full AOI list now public (13 total):**
+  - 00 Central Coastal Venezuela (Ground Movement — already available)
+  - 01 Petare (Grading — Planned 28/06 afternoon)
+  - 02 Caracas ✅ NOW DOWNLOADABLE
+  - 03 Antimano (Not produced)
+  - 04 Maracay (Planned 28/06 early morning)
+  - 05 Santa Cruz (Planned 27/06 afternoon)
+  - 06 Moron ✅ NOW DOWNLOADABLE
+  - 07 Puerto Cabello (Not produced; Monitoring 1 planned 28/06 early morning)
+  - 08 San Felipe (Monitoring 1 — status check needed)
+  - 09 Valencia (NEW — not previously visible)
+  - 10 Guacara (NEW — not previously visible)
+  - 11 Villa de Cura (NEW — not previously visible)
+  - 12 Caraballeda (NEW — not previously visible)
+- **ML relevance:** ⭐⭐⭐⭐⭐ — THIS IS THE BREAKTHROUGH. We can now download per-building damage severity grading for Caracas and Moron. These are authoritative EU-produced ground-truth labels. Immediate action: download GeoPackage vector data for Caracas (AOI 02) and use as training/validation labels.
+- **Action items:**
+  - [ ] IMMEDIATELY download Caracas Grading + Grading Monitoring 1 GeoPackages
+  - [ ] Download Moron Grading + Grading Monitoring 1 GeoPackages
+  - [ ] Download "ALL PRODUCTS (ZIP)" for complete archive
+  - [ ] Check remaining AOIs (01 Petare, 04 Maracay, 05 Santa Cruz, 08 San Felipe, 09-12) daily for status updates
+  - [ ] Parse GeoPackage vector data into ML-ready damage labels (building-level damage severity classes)
+
+### 2. Updated Building Damage Breakdown — Jorge Rodriguez (More Granular)
+- **Source:** BBC, Bastille Post, Mercopress, LIGA.net, Miami Herald, AV Press (June 27-28)
+- **New official figures from National Assembly President Jorge Rodriguez:**
+  - **383 buildings severely damaged or destroyed** (mostly in La Guaira state)
+  - **13 hospitals** damaged (some requiring evacuation)
+  - **25 shopping centers** damaged
+  - **1,002 additional facilities** with varying degrees of damage
+  - **Total: ~1,385+ structures** affected (383 + 1,002)
+- **Context:** This reconciles with the NYT "1,400 buildings" figure — the 383 are severe/destroyed, the remaining ~1,002 are moderate/minor damage
+- **AV Press (June 28):** "383 buildings were severely damaged or destroyed, and eight hospitals have been affected, some badly enough to require evacuation"
+- **ML relevance:** ⭐⭐⭐⭐ — The 383 severely damaged buildings are the priority target for our ML model. The 13 hospitals are a specific high-value subclass.
+
+### 3. Displacement Figure — 2,927 Families
+- **Source:** MSN, Miami Herald, AV Press, The Daily News Online (June 27-28)
+- **New figure:** At least **2,927 families displaced** (per government)
+- **Also:** 157 reported missing (this appears to be a subset/older figure), 200 people trapped, 250 damaged buildings (earlier count)
+- **ML relevance:** ⭐⭐⭐ — Displacement data correlates with uninhabitable buildings; useful for validating severe damage predictions
+
+### 4. UNFPA Flash Update (June 24-26)
+- **Source:** UNFPA (June 28)
+- **URL:** https://www.unfpa.org/resources/flash-update-earthquakes-venezuela-24-26-june-2026
+- **What:** UNFPA published a flash update covering the first 48 hours
+- **Content:** Focus on reproductive health, gender-based violence risks in displacement settings
+- **ML relevance:** ⭐ — Not directly ML-relevant but adds to the humanitarian picture
+
+### 5. NYT Live Update (June 27) — Consolidates Building Count
+- **Source:** NYT Live (June 27, 2 hours before search)
+- **URL:** https://www.nytimes.com/live/2026/06/27/world/venezuela-earthquake
+- **Key quote:** "About 1,400 buildings have been damaged, Rodríguez added, including 13 hospitals and 25 shopping centers"
+- **Context:** This is the consolidated media-cited figure that matches the 383 + 1,002 breakdown
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-29 20:00)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| Copernicus EMSR884 activation page (direct browser) | ⭐⭐⭐⭐⭐ | **MAJOR UPDATE: All 13 AOIs now in dropdown; Caracas + Moron grading maps downloadable with Vector/GeoPackage/Map/Summary Table** |
+| "Venezuela earthquake" + "383 buildings" + hospitals | ⭐⭐⭐⭐⭐ | **NEW: 383 severely damaged + 13 hospitals + 25 shopping centers + 1,002 additional facilities** |
+| "Venezuela earthquake" + "2,927" + families | ⭐⭐⭐⭐ | **NEW: 2,927 families displaced per government** |
+| "Venezuela earthquake" + "1,002" facilities | ⭐⭐⭐⭐ | **NEW: 1,002 additional facilities with varying damage** |
+| "Venezuela earthquake" + UNFPA + flash update | ⭐⭐⭐ | **NEW: UNFPA flash update published June 28** |
+| "Venezuela earthquake" + "eight hospitals" + evacuated | ⭐⭐⭐⭐ | **NEW: 8 hospitals affected badly enough to require evacuation** |
+| EMSR884 + "ALL PRODUCTS" + ZIP | ⭐⭐⭐⭐⭐ | **NEW: Bulk download now available — entire activation package as ZIP** |
+
+### What's working (updated):
+- **Copernicus EMS activation page** — direct browser access now shows ALL AOIs available for download. Caracas grading maps are live. This is the single most important development for our ML project.
+- **Bulk download (ALL PRODUCTS ZIP)** — enables one-click download of entire activation package
+- **Jorge Rodriguez statements** — consistently providing granular damage breakdowns (buildings by type)
+- **AV Press / Miami Herald** — good for consolidated government figures
+- **LIGA.net** — good for European perspective + damage summaries
+- *(All previous "what's working" entries still valid)*
+
+### What's not working (updated):
+- **Copernicus download dropdown** — ✅ RESOLVED: All 13 AOIs now visible and selectable
+- **Some AOIs still "Planned"** — Petare (01), Maracay (04), Santa Cruz (05), Puerto Cabello Monitoring 1 (07), San Felipe (08), Valencia (09), Guacara (10), Villa de Cura (11), Caraballeda (12) — check daily
+- **Antimano (03) + Puerto Cabello (07) Grading** — "Not produced" — likely imagery issues
+- **Building damage count reconciliation** — 383 severe + 1,002 moderate = ~1,385 total (matches NYT's ~1,400)
 - *(All previous "what's not working" entries still valid)*
