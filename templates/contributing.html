@@ -80,7 +80,7 @@ uv run python build_site.py
 {% endfor %}
 
 <h2>Data Pipeline</h2>
-<p>The site data lives in <code>data.json</code>. Rebuilt as needed from <code>INTEL_SCOUTING.md</code> and live sources. To update manually:</p>
+<p>The site data lives in <code>data.json</code>. A cron job regenerates it every 6 hours from <code>INTEL_SCOUTING.md</code> and live sources. To update manually:</p>
 <pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; overflow-x: auto;"><code>uv run python build_site.py    # regenerates charts + rebuilds all pages from data.json</code></pre>
 
 <h2>Repository</h2>
