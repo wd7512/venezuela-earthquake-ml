@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 04:15 UTC (overnight scout — US military deployment, new collapse details, Microsoft stat)
+Last updated: 2026-06-28 04:45 UTC (morning scout — US $150M aid, IOM 6.76M affected, 172 trapped, M4.7 aftershock)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -518,6 +518,115 @@ Key findings from their assessment:
 - **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
 - **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
 - **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 Morning Scout)
+
+### 1. US State Department — $150M Emergency Aid Package
+- **Source:** NPR, State Department, ABC, Facebook/KETV (June 26-27)
+- **What:** US committing **$150 million** in emergency funding:
+  - **$100 million** to UN pooled fund (OCHA)
+  - **$50 million** for on-the-ground operations
+  - DART (Disaster Assistance Response Team) deploying — includes search-and-rescue, canine teams, physicians
+  - Faith-based partners: **Samaritan's Purse** + **Catholic Relief Services** funded
+- **Context:** Trump offered assistance; Secretary Rubio coordinating with Delcy Rodriguez
+- **ML relevance:** ⭐⭐ — Funding scale confirms disaster severity; USG engagement may facilitate data sharing
+
+### 2. Updated Casualty & Impact Figures (Official Government Stats)
+- **Source:** NYT, Chosun Daily, Jakarta Post, GMA Network, Wikipedia (June 27)
+- **Official Venezuelan government figures (per Jorge Rodriguez, National Assembly President):**
+  - **920+ confirmed dead**
+  - **3,360+ injured** (some sources now say 4,500+ including Wikipedia)
+  - **172 people still trapped** under rubble
+  - **50,000+ people missing** (per UN aid chief Tom Fletcher)
+  - **250 buildings destroyed** (official count)
+  - **Nearly 3,000 families homeless**
+- **IOM updated estimate:** **6.76 million people affected** across Venezuela; **2 million in Caracas alone**
+- **UN News:** "Nearly seven million Venezuelans could be affected"
+- **Aftershocks:** 300+ since mainshock; **M4.7 aftershock on June 26** (54km N of El Limon) in addition to M4.9 already noted
+- **ML relevance:** ⭐⭐⭐ — Official building count (250) gives us a denominator for damage rate estimation
+
+### 3. Displacement Crisis — Venezuelans Sleeping in Streets
+- **Source:** NYT (June 26), NYT live updates (June 26)
+- **Key finding:** Hundreds of Venezuelans spent second night sleeping in parks, parking lots, plazas, and cars
+- **Reason:** Fear of aftershocks; homes destroyed or unsafe
+- **Government response:** Dispatched **100+ heavy machines** to clear debris (after criticism of inadequate response)
+- **ML relevance:** ⭐⭐⭐ — Displacement data indicates areas where buildings are uninhabitable; correlates with severe damage zones
+
+### 4. International Rescue Mobilization — 10+ Countries
+- **Source:** NYT (June 26), WION, Al Jazeera, CBC (June 27)
+- **Scale:** Rescue teams from at least 10 countries racing to Venezuela
+- **Key deployments:**
+  - **US:** DART team (hundreds of rescue workers)
+  - **Colombia:** 63-member rescue team (searching La Guaira in AP photos)
+  - **Mexico:** 250 rescuers
+  - **El Salvador:** 188 rescuers
+  - **Spain:** ~100 rescuers
+  - **Switzerland:** 80 rescuers
+  - **Dominican Republic:** first to deploy to La Guaira
+  - **EU:** 520+ rescuers total (Czech, France, Germany, Italy, Netherlands, Portugal, Spain)
+- **Context:** Foreign rescue teams arriving late Thursday/Friday; some from countries at odds with Venezuela
+- **ML relevance:** ⭐⭐ — International presence may bring additional satellite/imagery assets
+
+### 5. Samaritan's Purse DART Deployment
+- **Source:** Samaritan's Purse website, State Department, BonteraTech (June 27)
+- **What:** Disaster Assistance Response Team deploying to Venezuela
+- **Part of:** $50M on-the-ground operations allocation
+- **ML relevance:** ⭐ — Faith-based orgs may have local network access for ground-truth collection
+
+### 6. NYT Feature — "In Venezuela's Rubble, Listening for Whispers And Longing for Help"
+- **URL:** https://www.nytimes.com/2026/06/26/world/americas/venezuela-earthquakes-rescues.html
+- **Published:** June 26, 2026
+- **Content:** Deep-dive on rescue efforts; 100 heavy machines dispatched; international teams facing logistical hurdles
+- **Key detail:** Rodriguez spoke by phone with Trump + Rubio on Friday
+- **ML relevance:** ⭐⭐ — High-quality journalism; may contain additional ground-truth details
+
+### 7. PAHO Health Cluster SitRep #1 (June 25)
+- **URL:** https://reliefweb.int/report/venezuela-bolivarian-republic/venezuela-earthquakes-june-2026-situation-report-1-venezuela-health-cluster-paho-who
+- **Published:** June 25, 2026
+- **Key info:** Health facility assessments ongoing; patient load overwhelming hospitals
+- **ML relevance:** ⭐⭐⭐ — Health facility damage status is a specific ML-useful data point
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-28 Morning)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + "150 million" + aid | ⭐⭐⭐⭐⭐ | **NEW: US committing $150M ($100M UN + $50M ops)** |
+| "Venezuela earthquake" + "6.76 million" + affected | ⭐⭐⭐⭐⭐ | **NEW: IOM says 6.76M affected, 2M in Caracas** |
+| "Venezuela earthquake" + "172" + trapped | ⭐⭐⭐⭐⭐ | **NEW: 172 still trapped per National Assembly President** |
+| "Venezuela earthquake" + "250 buildings" | ⭐⭐⭐⭐⭐ | **NEW: Official count 250 buildings destroyed, 3,000 families homeless** |
+| "Venezuela earthquake" + "4.7" + aftershock | ⭐⭐⭐⭐ | **NEW: M4.7 aftershock June 26, in addition to M4.9** |
+| "Venezuela earthquake" + Samaritan's Purse | ⭐⭐⭐⭐ | **NEW: DART deploying; faith-based aid funded** |
+| "Venezuela earthquake" + "sleeping in streets" | ⭐⭐⭐⭐⭐ | **NEW: Mass displacement — hundreds in parks, plazas, cars** |
+| "Venezuela earthquake" + "100 heavy machines" | ⭐⭐⭐⭐ | **NEW: Government dispatching 100+ machines to clear debris** |
+| "Venezuela earthquake" + "10 countries" + rescue | ⭐⭐⭐⭐ | **NEW: 10+ countries sending rescue teams** |
+| "Venezuela earthquake" + death toll + latest | ⭐⭐⭐⭐⭐ | Toll 920+, injured 4,500+, missing 50,000+ |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
 
 ### What's not working:
 - GitHub projects are just starting — we still have an opportunity to be the primary ML project
