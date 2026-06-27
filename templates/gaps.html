@@ -24,7 +24,7 @@
   </tr>
   {% for gap in gaps %}
   <tr>
-    <td>{% if gap.zone_slug != 'general' %}<a href="zone_{{ gap.zone_slug }}.html">{{ gap.zone }}</a>{% else %}{{ gap.zone }}{% endif %}</td>
+    <td>{% if show_zone_pages %}<a href="zone_{{ gap.zone_slug }}.html">{{ gap.zone }}</a>{% else %}{{ gap.zone }}{% endif %}</td>
     <td><span class="badge badge-{{ gap.gap_type }}">{{ gap.gap_type.replace('_', ' ') }}</span></td>
     <td><span class="badge badge-{{ gap.severity }}">{{ gap.severity }}</span></td>
     <td>{{ gap.description }}</td>
