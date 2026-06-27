@@ -213,6 +213,8 @@ def build_site():
     last_dt = datetime.fromisoformat(data["last_updated"].replace("Z", "+00:00"))
     last_updated_formatted = last_dt.strftime("%d %B %Y, %I:%M %p Caracas time (UTC−4)")
 
+    config = data.get("config", {})
+
     template_vars = {
         "page": "",
         "last_updated": data["last_updated"],
@@ -223,6 +225,7 @@ def build_site():
         "tracks": data["tracks"],
         "gaps": data["gaps"],
         "resources": data["resources"],
+        "show_zone_pages": config.get("show_zone_pages", True),
     }
 
     for page in pages:

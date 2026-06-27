@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="alert alert-danger">
-  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. 920+ confirmed dead, 50,000+ missing. Information changing rapidly. Cross-reference all figures across multiple sources.
+  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. 920+ confirmed dead, 200+ registered missing. Information changing rapidly. Cross-reference all figures across multiple sources.
 </div>
 
 <h1>Earthquake Response Hub</h1>
@@ -11,10 +11,17 @@
 
 <h2>Zone Status</h2>
 <table>
-  <tr><th>Zone</th><th>Damage</th><th>Status</th></tr>
+  <tr><th>Zone</th><th>Population</th><th>Damage</th><th>Status</th></tr>
   {% for zone in zones %}
   <tr>
-    <td><a href="zone_{{ zone.slug }}.html">{{ zone.name }}</a></td>
+    <td>
+      {% if show_zone_pages %}
+      <a href="zone_{{ zone.slug }}.html">{{ zone.name }}</a>
+      {% else %}
+      {{ zone.name }}
+      {% endif %}
+    </td>
+    <td>{{ "{:,}".format(zone.population|int) }}</td>
     <td><span class="badge badge-{{ zone.damage_level }}">{{ zone.damage_level }}</span></td>
     <td>{{ zone.status_note }}</td>
   </tr>
@@ -43,10 +50,11 @@
 
 <h2>Find Missing People</h2>
 <div class="card">
-  <h3>Volunteer-Run Platforms (no login required)</h3>
+  <h3>Search External Platforms (no login required)</h3>
+  <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">These platforms let you search for or report missing persons. If someone you know is missing, check all of them — each is independently maintained.</p>
   <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
-    <li><strong>Desaparecidos Terremoto Venezuela</strong> — Search and post missing persons with photos</li>
-    <li><strong>Venezuela Te Busca</strong> — Report name, age, gender, location; searchable registry</li>
+    <li><strong><a href="https://www.desaparecidosterremotovenezuela.com/">Desaparecidos Terremoto Venezuela</a></strong> — Search and post missing persons with photos</li>
+    <li><strong><a href="https://venezuelatebusca.com/">Venezuela Te Busca</a></strong> — Report name, age, gender, location; searchable registry</li>
     <li><strong>ICRC Restoring Family Links</strong> — <a href="https://www.icrc.org/en/restoring-family-links">Connect across borders</a></li>
     <li><strong>Google Person Finder</strong> — <a href="https://google.org/personfinder">Search or register</a></li>
   </ul>

@@ -1,4 +1,7 @@
 {
+  "config": {
+    "show_zone_pages": false
+  },
   "last_updated": "2026-06-27T12:12:05Z",
   "stats": {
     "deaths": 920,
