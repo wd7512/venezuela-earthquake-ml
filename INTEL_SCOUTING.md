@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-27 12:12 UTC (cron scout — post-72hr window closing, La Guaira access restricted, Spain 80 missing, UK 68-team deployment, 243 rescued)
+Last updated: 2026-06-27 18:30 UTC (cron scout — Turkey/Chile/Israel deployments, 17 countries mobilized, $200M fund, birth-in-rubble miracle)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -854,3 +854,150 @@ Key findings from their assessment:
 - HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
 - HDX returns occasionally block Google Search — cache results quickly
 - USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-27 Evening Cron Scout — 17 Countries, New Deployments)
+
+### 1. Turkey (AFAD) — 2 Military Aircraft with SAR + Medical Teams
+- **Source:** Anadolu Agency, Daily Sabah, Hispanatolia, Turkey Today (June 26-27)
+- **What:** Türkiye's Disaster and Emergency Management Authority (AFAD) dispatched **2 military aircraft** from Istanbul Atatürk Airport carrying:
+  - Search and rescue personnel
+  - Medical teams
+  - Humanitarian aid equipment
+- **Context:** AFAD began preparations after receiving information about the twin quakes. Demonstrates Turkey's continued commitment to global humanitarian assistance (fresh from their own 2023 earthquake experience).
+- **ML relevance:** ⭐ — Additional international SAR presence; Turkish teams may bring UAV/imagery assets
+
+### 2. Chile (SENAPRED) — National Disaster Response Deployed
+- **Source:** NYT "Nations Send Rescue Teams and Aid to Venezuela" (June 26)
+- **What:** Chile's **National Service for Disaster Prevention and Response (SENAPRED)** deployed a team
+- **Context:** Chile has world-class earthquake response expertise (2010 M8.8, annual major seismic events). Their deployment adds significant technical capacity.
+- **ML relevance:** ⭐ — Chilean seismologists/structural engineers may produce post-event assessments
+
+### 3. Israel — Foreign Ministry Preparing Aid Mission
+- **Source:** Times of Israel, Jerusalem Post, United With Israel, StandWithUs Facebook (June 25-26)
+- **What:** Israel Foreign Ministry announced **"immediate preparations"** for possible deployment of:
+  - Search and rescue delegation
+  - **ZAKA emergency response** teams (in Israel, US, and Mexico) preparing for deployment
+- **Context:** Israel has historically provided rapid SAR assistance to earthquake zones worldwide (Turkey 2023, Nepal 2015, Mexico 2017, Haiti 2010)
+- **Note:** Israel-Venezuela diplomatic relations are strained, but humanitarian exceptions made
+- **ML relevance:** ⭐ — ZAKA teams are highly trained in urban search; may share structural collapse patterns
+
+### 4. Panama — 18 Tons of Aid + Rescuers
+- **Source:** NYT (June 26), Guardian live blog (June 26)
+- **What:** President José Raúl Mulino sent **18 tons of humanitarian aid** plus rescue personnel
+- **Context:** Panama serving as regional logistics hub (IFRC already dispatching from Panama)
+- **ML relevance:** ⭐ — Panama as logistics hub may facilitate data/imagery transit
+
+### 5. Ecuador — Quito Fire Department USAR Team
+- **Source:** PDC Global Facebook (June 25)
+- **What:** Quito Fire Department preparing to send **34 personnel specialized in urban search and rescue**
+- **ML relevance:** ⭐ — Additional USAR capacity in country
+
+### 6. France — Rescue Teams Arrived
+- **Source:** YouTube/Press TV (June 27)
+- **What:** French rescue teams confirmed arrived in Venezuela
+- **Context:** Part of broader EU mobilization (520+ rescuers from 8 countries)
+- **ML relevance:** ⭐ — French teams may bring reconnaissance/imagery capabilities
+
+### 7. 17 Countries Now Mobilized (Updated Count)
+- **Source:** Al Jazeera (June 27), Arab News (June 27), Orthodox Times (June 27)
+- **What:** OCHA reports **search and rescue teams from at least 17 countries** being mobilized
+- **Updated country list (from NYT + Al Jazeera + Guardian):**
+  1. United States (DART, Florida TF-1, Virginia, LA teams)
+  2. Mexico (250 rescuers)
+  3. El Salvador (188 rescuers)
+  4. Colombia (63-member team)
+  5. Spain (54 UME troops + AECID field hospital)
+  6. Switzerland (80 rescuers — arrived first)
+  7. Dominican Republic (first to La Guaira)
+  8. United Kingdom (68-strong team + £2M)
+  9. Turkey (2 AFAD aircraft)
+  10. Chile (SENAPRED team)
+  11. Panama (18 tons aid + rescuers)
+  12. France (arrived)
+  13. Czech Republic (EU mobilization)
+  14. Germany (EU mobilization)
+  15. Italy (EU mobilization)
+  16. Netherlands (EU mobilization)
+  17. Portugal (EU mobilization)
+  18. Ecuador (34 USAR personnel preparing)
+  19. Brazil (supporting/standby)
+  20. Canada (supporting/standby)
+  21. Israel (preparing)
+- **ML relevance:** ⭐⭐ — More countries = more potential satellite/imagery assets deployed
+
+### 8. Venezuela Allocates $200 Million Emergency Fund
+- **Source:** CGTN (June 25)
+- **What:** Acting President Delcy Rodriguez announced **initial fund of $200 million** using national resources
+- **Context:** Separate from international aid; domestic resource mobilization
+- **ML relevance:** ⭐ — Domestic funding may be available for damage assessment contracts
+
+### 9. Miracle Birth in Rubble — Pregnant Woman Delivered While Trapped
+- **Source:** FirstPost (June 27), Facebook/FilmyFigures (June 27)
+- **What:** A pregnant woman gave birth while trapped beneath rubble of collapsed building
+- **Outcome:** Both mother and baby survived — rare moment of hope amid devastation
+- **Context:** Symbolic of the rescue effort's urgency; 72-hour window was closing
+- **ML relevance:** ⭐ — Human interest story; demonstrates survivable void spaces in certain collapse types
+
+### 10. China SAR Team — Rescued Pregnant Woman from Sky Villa
+- **Source:** CGTN (June 25), Facebook/Sentinel Assam (June 27)
+- **What:** Chinese search and rescue reporters on ground; CGTN reports pregnant woman safely rescued from **Sky Villa apartment building** by China's SAR team
+- **Context:** China has deployed international SAR teams to multiple recent disasters
+- **ML relevance:** ⭐ — Sky Villa is a specific named building; useful as geolocated data point if imagery available
+
+### 11. Al Jazeera — Comprehensive Aid Tracker Published
+- **URL:** https://www.aljazeera.com/news/2026/6/26/which-countries-have-pledged-aid-to-venezuela-after-powerful-earthquakes
+- **Published:** June 26, 2026
+- **What:** Comprehensive tracker of all countries pledging aid — includes Americas, EU, and beyond
+- **ML relevance:** ⭐ — Reference for international response scale
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-27 Evening)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + Turkey + AFAD | ⭐⭐⭐⭐⭐ | **NEW: 2 military aircraft with SAR+medical from Istanbul** |
+| "Venezuela earthquake" + Chile + SENAPRED | ⭐⭐⭐⭐ | **NEW: Chile deployed national disaster response team** |
+| "Venezuela earthquake" + Israel + aid | ⭐⭐⭐⭐ | **NEW: Israel preparing SAR mission + ZAKA teams** |
+| "Venezuela earthquake" + Panama + 18 tons | ⭐⭐⭐⭐ | **NEW: Panama sent 18 tons aid + rescuers** |
+| "Venezuela earthquake" + "17 countries" | ⭐⭐⭐⭐⭐ | **NEW: OCHA says 17 countries mobilized (up from 10)** |
+| "Venezuela earthquake" + pregnant + birth | ⭐⭐⭐⭐ | **NEW: Woman gave birth in rubble — both survived** |
+| "Venezuela earthquake" + China + Sky Villa | ⭐⭐⭐ | **NEW: China SAR team rescued from Sky Villa building** |
+| "Venezuela earthquake" + France + arrive | ⭐⭐⭐ | **NEW: French teams confirmed arrived** |
+| "Venezuela earthquake" + Ecuador + Quito | ⭐⭐⭐ | **NEW: 34 USAR personnel from Quito Fire Dept** |
+| "Venezuela earthquake" + "$200 million" | ⭐⭐⭐ | **NEW: Venezuela allocated $200M emergency fund** |
+| "Venezuela earthquake" + Al Jazeera + pledged | ⭐⭐⭐⭐ | **NEW: Comprehensive aid tracker article** |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel, Sky Villa) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+- **Al Jazeera** — best for rescue→recovery transition narrative + comprehensive aid trackers
+- **GOV.UK / BBC** — good for UK deployment details
+- **IRC / HI websites** — good for NGO response announcements
+- **NYT "Nations Send Rescue Teams"** — comprehensive country-by-country deployment list
+- **Times of Israel / JPost** — good for Israel aid preparation updates
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+- USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
+- Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
