@@ -238,6 +238,11 @@
   <a href="aid.html" class="{% if page == 'aid' %}active{% endif %}">Obtener Ayuda</a>
   <a href="sources.html" class="{% if page == 'sources' %}active{% endif %}">Fuentes</a>
   <a href="statistics.html" class="{% if page == 'statistics' %}active{% endif %}">Estadísticas</a>
+  <div style="margin-left: auto; display: flex; align-items: center;">
+    <button onclick="document.getElementById('lang-modal').style.display='flex'" style="background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text-muted); padding: 0.35rem 0.7rem; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 0.35rem;" title="Language / Idioma">
+      <span style="font-size: 1rem;">🌐</span> <span id="lang-label">EN</span>
+    </button>
+  </div>
 </nav>
 </div>
 <main>
