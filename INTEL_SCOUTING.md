@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 14:00 UTC (cron scout — USS Fort Lauderdale/Billings arrived, PAGER 42% 10K-100K, Starlink comms, LA County USA-2 deployed, NBC satellite imagery)
+Last updated: 2026-06-28 18:00 UTC (cron scout — 4.7 aftershock Jun 27, US Treasury sanctions license into Oct, IOM SitRep #1, PAHO 91 hospitals severe shaking, oil steady 1.2M bpd, Delcy Rodriguez jeered, Residencias Los Monjes collapsed)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1234,3 +1234,107 @@ Key findings from their assessment:
 - USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
 - Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
 - Copernicus grading maps not yet released — EMSR884 activation page shows no products as of June 28
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 18:00 UTC — Aftershock, Sanctions Duration, PAHO Hospitals, Oil, IOM SitRep)
+
+### 1. M4.7 Aftershock Jolts Venezuela (June 27)
+- **Source:** Anadolu Agency, News.Az, Phys.org (June 27)
+- **What:** A **magnitude 4.7 aftershock** struck northern Venezuela on Friday, June 27, two days after the main doublet
+- **USGS forecast:** 99% chance of ≥M4 aftershock in next week; 24% chance of ≥M6; 8% chance of >M6 in next week
+- **Context:** Al Jazeera published video headline "Rescue efforts turn to recovery as aftershocks shake Venezuela" — confirming ongoing seismic activity is complicating operations
+- **ML relevance:** ⭐⭐ — Aftershocks delay rescue/recovery; may cause additional building collapses (weakened structures)
+
+### 2. US Treasury Sanctions Waiver — Specific Duration Revealed
+- **Source:** Reuters, MoneyControl, NYT (June 25-27)
+- **What:** US Treasury issued a license authorizing earthquake relief transactions **through October 2026** (4-month waiver)
+- **Details:** Allows "all transactions related to earthquake relief" that would otherwise be banned under sanctions regime
+- **Context:** NYT analysis frames this as a test of the new US-Venezuela alliance post-Maduro ouster
+- **ML relevance:** ⭐⭐ — Sanctions relief may enable import of ML compute hardware/satellite imagery licenses
+
+### 3. Oil Production Unaffected — For Now
+- **Source:** Reuters, NYT, Stockopedia (June 26-27)
+- **What:** Venezuela's crude production holding steady at **1.2 million bpd** despite earthquakes
+- **Caveat:** Shell sources say **power outages** are slowing operations at key port plants; may not sustain 1.2M bpd if power not restored
+- **Energy Minister:** Paula Henao confirmed output unaffected
+- **ML relevance:** ⭐ — Power outages affect our ability to run cloud-based inference; confirms ground-station approach needed
+
+### 4. IOM Situation Report #1 Published (June 26)
+- **Source:** ReliefWeb (posted June 27)
+- **URL:** https://reliefweb.int/report/venezuela-bolivarian-republic/venezuela-bolivarian-republic-earthquake-response-situation-report-1-26-june-2026
+- **What:** First IOM SitRep provides overview of impact + planned response in support of national efforts
+- **ML relevance:** ⭐⭐ — IOM is a key displacement tracker; their methodology for counting affected populations could inform our exposure estimates
+
+### 5. OCHA Situation Report #3 (June 26, 3:00 PM)
+- **Source:** ReliefWeb (posted ~16 hours ago)
+- **URL:** https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm
+- **Key details:**
+  - Maiquetía International Airport: **closed, no commercial flights**
+  - Caracas Metro and railways: **suspended**
+  - Power outages in multiple states
+- **ML relevance:** ⭐⭐⭐ — Airport closure = no satellite ground station access; metro suspension = population displacement patterns change
+
+### 6. PAHO Situation Report #1 — Hospital Exposure Data
+- **Source:** PAHO/WHO (June 25-26)
+- **URL:** https://www.paho.org/en/documents/earthquakes-venezuela-m72-and-m75-situation-report-1-25-june-2026
+- **Key finding:** Up to **91 emergency hospitals** located in severe shaking areas, including **20 hospitals** in highest-impact zones
+- **Affected population:** ~3.9 million people exposed to strong/severe shaking
+- **ML relevance:** ⭐⭐⭐⭐⭐ — Hospital damage data = critical ground-truth for our health-facility vulnerability model. 20 hospitals in severe zones = priority list for remote damage assessment
+
+### 7. US Military Deployment Specifics — Dover AFB Flight
+- **Source:** SOUTHCOM, Task & Purpose, ABC6 (June 26-27)
+- **What:** SOUTHCOM released specifics on airlift:
+  - **79 search-and-rescue personnel** + **6 K-9s** + **70,000 lbs equipment**
+  - Departed from **Dover Air Force Base** on C-17/C-130
+  - Arriving in Venezuela to support State Department-led efforts
+- **Maj. Gen. Kevin Jarrard** already arrived in Caracas to oversee
+- **ML relevance:** ⭐⭐ — USAR teams will produce post-search structural tagging (INSARAG standards) — potential ground-truth data source
+
+### 8. Named Collapsed Building — Residencias Los Monjes
+- **Source:** Hola! magazine (June 26)
+- **What:** **Residencias Los Monjes**, a residential building in **Playa Grande, La Guaira**, completely collapsed
+- **Detail:** Miss Venezuela coach Gisselle Reyes' mother was staying there and was killed
+- **Context:** Part of the Playa Grande cluster — "dozens of high-rise apartment buildings collapsed" north of Simón Bolívar International Airport
+- **ML relevance:** ⭐⭐⭐ — Named collapsed building in Playa Grande = ground-truth point for satellite-based damage detection validation
+
+### 9. Delcy Rodriguez Jeered by Survivors
+- **Source:** Daily Mail (June 26)
+- **What:** Acting President Delcy Rodríguez was **jeered by earthquake survivors** during a visit to affected areas
+- **Context:** Reflects public anger over slow government response; NYT notes she welcomed international rescuers
+- **ML relevance:** ⭐ — Political context; may affect coordination with government agencies on data sharing
+
+### 10. USA Today Before/After Satellite Imagery — Playa Grande Focus
+- **Source:** USA Today (June 25)
+- **URL:** https://www.usatoday.com/story/graphics/2026/06/25/venezuela-earthquakes-before-after-images-destruction/90698460007/
+- **What:** Detailed before/after satellite imagery showing **dozens of high-rise apartment buildings collapsed in Playa Grande neighborhood** north of Simón Bolívar Airport
+- **ML relevance:** ⭐⭐⭐⭐ — High-resolution before/after pairs for a specific neighborhood = ideal training/validation data for change-detection models
+
+### 11. NYT Interactive — "Trail of Devastation" Along Coast
+- **Source:** NYT (June 26)
+- **URL:** https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html
+- **What:** Interactive analysis showing building collapse patterns across the entire coastal region of La Guaira
+- **ML relevance:** ⭐⭐⭐⭐ — Systematic damage mapping along coast = potential validation dataset for our ML damage classifier
+
+### 12. NYT — "Nations Send Rescue Teams and Aid" Comprehensive List
+- **Source:** NYT (June 26)
+- **URL:** https://www.nytimes.com/2026/06/26/world/americas/venezuela-earthquake-rescue-teams-countries.html
+- **What:** Country-by-country deployment list — Brazil, Colombia, US, Spain, Turkey, Chile, Israel, and others sending teams
+- **ML relevance:** ⭐⭐ — International teams may produce compatible damage assessment data (INSARAG tags)
+
+---
+
+## New Search Effectiveness Log Entries
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + "4.7" + aftershock + June 27 | ⭐⭐⭐⭐⭐ | **NEW: M4.7 aftershock on Jun 27; USGS 24% chance ≥M6 in week** |
+| "Venezuela earthquake" + "Residencias Los Monjes" | ⭐⭐⭐⭐ | **NEW: Named collapsed building in Playa Grande** |
+| "Venezuela earthquake" + "Delcy Rodriguez" + jeered | ⭐⭐⭐ | **NEW: Acting president jeered by survivors** |
+| "Venezuela earthquake" + "91 hospitals" + PAHO | ⭐⭐⭐⭐⭐ | **NEW: 91 hospitals in severe shaking, 20 in highest impact** |
+| "Venezuela earthquake" + "1.2 million" + barrels | ⭐⭐⭐ | **NEW: Oil output steady but power outages threaten** |
+| "Venezuela earthquake" + "IOM" + situation report | ⭐⭐⭐⭐ | **NEW: IOM SitRep #1 published June 26** |
+| "Venezuela earthquake" + "sanctions" + October | ⭐⭐⭐⭐ | **NEW: Treasury license valid through October 2026** |
+| "Venezuela earthquake" + "Dover" + "79 personnel" | ⭐⭐⭐⭐ | **NEW: Specific USAR deployment details from Dover AFB** |
+| "Venezuela earthquake" + "Playa Grande" + satellite | ⭐⭐⭐⭐⭐ | **NEW: USA Today before/after imagery of Playa Grande** |
+| "Venezuela earthquake" + NYT + coast + interactive | ⭐⭐⭐⭐ | **NEW: NYT interactive trail of devastation along coast** |
