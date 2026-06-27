@@ -1,52 +1,74 @@
-# Venezuela Earthquake ML Response
+# Venezuela Earthquake Response Hub
 
-**Event:** 2026-06-24 — Mw 7.2 + Mw 7.5 doublet, San Felipe / Yaracuy / Caribbean coast
+**Event:** 2026-06-24 — Mw 7.2 + Mw 7.5 doublet, Yaracuy / Caribbean coast
 **Status:** Active response, aftershocks ongoing
+**Live site:** https://wd7512.github.io/venezuela-earthquake-ml/
 
-ML tooling for damage assessment, mapping, and logistics support.
+Static information hub for the June 2026 Venezuela earthquake response. Built with Jinja2 templates + `data.json` single source of truth. Rebuilt every 6 hours via GitHub Actions.
 
 ---
 
-## Tracks
+## What's here
 
-### 1. Satellite Damage Assessment (priority)
-- Before/after imagery → building damage classification
-- Target classes: no-damage / minor / major / destroyed
-- Data sources: Sentinel-2 (free, 10m), Planet (paid, 3m), Maxar (restricted)
-- Baseline: xView2 dataset + model
-- Output: GeoJSON damage polygons for responders
+| Page | Purpose |
+|------|---------|
+| **Overview** | Zone status, key numbers, missing persons, safety |
+| **Intel** | Seismic data, statistics, aid tracking, historical context |
+| **Handbook** | What to do during/after, finding family, communication |
+| **How to Help** | Donate, share, technical volunteer opportunities |
+| **Get Aid** | Emergency contacts, missing persons search, donate, safety |
+| **Sources** | Every data point traceable to primary source |
+| **Statistics** | All figures sourced, methodology notes |
+| **Contributing** | Contribution tracks, build instructions, data pipeline |
+| **Gaps** | Prioritized response gaps where help is needed |
 
-### 2. Humanitarian Mapping (HOT-OSM)
-- Automated building/road footprint extraction
-- Push to OpenStreetMap for responder use
-- Model suggests → human validates pipeline
+---
 
-### 3. Road Network / Logistics
-- Road passability classification from imagery
-- Route optimisation for aid delivery on damaged network
-- Demand estimation from damage density + population
+## Data
 
-### 4. Thermal / SAR Detection (stretch)
-- Person detection in thermal drone imagery
-- Acoustic/seismic signal classification for rubble
+All site content is driven by `data.json`. To update:
+1. Edit `data.json` with new figures, sources, or zone status
+2. Run `uv run python build_site.py` (outputs to `dist/`)
+3. Push to main — GitHub Actions deploys automatically
 
-### 5. Aftershock Forecasting (research)
-- ML-enhanced ETAS models for aftershock sequence prediction
-- Longer-term research contribution, not operational
+The `last_updated` field in `data.json` controls the "Updated" timestamp on all pages. Set it when you pull fresh data from sources.
+
+---
+
+## Tracks (ML / data science)
+
+The repository also contains research tracks for ML-assisted damage assessment. These are longer-term research goals, not active for the current response window:
+
+1. **Satellite Damage Assessment** — building damage classification from imagery
+2. **Humanitarian Mapping (HOT-OSM)** — automated footprint extraction
+3. **Road Network / Logistics** — passability + route optimisation
+4. **Thermal/SAR Detection** — person detection in drone imagery (research)
+5. **Aftershock Forecasting** — ML-enhanced ETAS models (research)
 
 ---
 
 ## Key Links
-- xView2: https://xview2.org/
-- HOT-OSM: https://www.hotosm.org/
-- USGS event page: https://earthquake.usgs.gov/earthquakes/map/
-- NYT damage analysis: https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html
-- DisasterEye (GitHub): https://github.com/Niiihariiikaa/disastereye
-- Drone damage detection: https://github.com/beau-rh3a/drone-disaster-damage-detection
-- Operational sUAS damage assessment: https://arxiv.org/abs/2511.03132
 
-## Getting Started
-1. Set up Python env (requirements.txt TBD)
-2. Pull test imagery over affected area
-3. Run xView2 baseline on sample tiles
-4. Iterate on model for Venezuela building types
+- USGS event page: https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/executive
+- iMMAP impact map: https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026
+- Copernicus EMS: https://emergency.copernicus.eu
+- HOT-OSM Tasking Manager: https://tasks.hotosm.org/
+- Desaparecidos Terremoto Venezuela: https://www.desaparecidososterremotovenezuela.com/
+- Venezuela Te Busca: https://venezuelatebusca.com/
+
+---
+
+## Local development
+
+```bash
+uv sync
+uv run python build_site.py        # build to dist/
+# Or serve locally:
+uv run python -m http.server --directory dist 8080
+```
+
+---
+
+## License
+
+Data compiled from public sources (UN OCHA, USGS, Miyamoto International, HOT-OSM, Copernicus EMS, ReliefWeb). Code: MIT.
