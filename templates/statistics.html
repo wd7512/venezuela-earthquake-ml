@@ -13,6 +13,9 @@
     <td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td>
   </tr>
   <tr>
+    <td colspan="3" style="font-size: 0.8rem; color: var(--text-muted); padding: 0.4rem 0.75rem;">Note: {{ death_toll_note }}</td>
+  </tr>
+  <tr>
     <td>Injured</td>
     <td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td>
     <td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td>

@@ -25,7 +25,9 @@
 <table>
   <tr><th>Metric</th><th>Figure</th><th>Source</th></tr>
   <tr><td>Confirmed dead</td><td><strong>{{ stats.deaths.value }}{{ stats.deaths.suffix }}</strong></td><td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td></tr>
+  <tr><td colspan="3"><p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">{{ death_toll_note }}</p></td></tr>
   <tr><td>Injured</td><td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td><td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td></tr>
+  <tr><td colspan="3"><p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Figures change frequently — see <a href="statistics.html">Statistics</a> for latest.</p></td></tr>
   <tr><td>Missing (independent tracker)</td><td><strong>{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</strong></td><td><a href="{{ stats.missing_independent.source_url }}" target="_blank" rel="noopener">{{ stats.missing_independent.source }}</a></td></tr>
   <tr><td>Aftershocks recorded</td><td><strong>{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</strong></td><td><a href="{{ stats.aftershocks.source_url }}" target="_blank" rel="noopener">{{ stats.aftershocks.source }}</a></td></tr>
   <tr><td>Buildings collapsed</td><td><strong>{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</strong></td><td><a href="{{ stats.buildings_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.buildings_collapsed.source }}</a></td></tr>
