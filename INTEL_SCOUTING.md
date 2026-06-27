@@ -634,3 +634,108 @@ Key findings from their assessment:
 - Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
 - HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
 - HDX returns occasionally block Google Search — cache results quickly
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 Overnight Scout — 72hr Window Closing)
+
+### 1. 72-Hour Rescue Window Nearing End
+- **Source:** Al Jazeera (June 27), US News/AP (June 27), CNN (June 27)
+- **What:** The critical 72-hour "golden window" for finding survivors is closing (quakes hit Wed evening; window ends Sat evening)
+- **Context:** Hundreds still trapped; rescue teams from 10+ countries still digging
+- **CNN live updates (June 27):** "Survivors pulled from Venezuela earthquake rubble" — video evidence of ongoing rescues
+- **Acting President Delcy Rodriguez:** Vowed to save "as many as possible"
+- **ML relevance:** ⭐⭐ — Post-72hr, focus shifts from rescue to damage assessment → our ML product becomes more relevant
+
+### 2. Missing Persons Figure Updated — 51,000+
+- **Source:** DW, Financial Express, Cebu Daily News/AP, Facebook/GMA (June 27)
+- **Figure:** **51,000 people reported missing** (up from 50,000 in earlier reports)
+- **Context:** Families searching on their own due to scarcity of government rescuers in some areas
+- **ML relevance:** ⭐⭐⭐ — Scale of missing persons indicates potential for mass casualty; areas with highest missing concentrations = priority for damage assessment
+
+### 3. Chinese Nationals — 7 Confirmed Dead
+- **Source:** Anadolu Agency, China Daily/Xinhua, Global Times (June 27)
+- **What:** At least **7 Chinese nationals confirmed dead** per Chinese embassy
+- **ML relevance:** ⭐ — International casualty dimension; may trigger additional Chinese satellite/response assets
+
+### 4. IFRC Emergency Appeal — Full Details
+- **Source:** IFRC press release, ReliefWeb, BERNAMA (June 26-27)
+- **What:** IFRC launched Emergency Appeal for **50 million Swiss francs (US$61.8 million)**
+- **Target:** Assist **300,000 people** seriously affected
+- **Immediate release:** **2 million Swiss francs** from Disaster Response Emergency Fund (DREF) released within hours
+- **First cargo:** **17 tonnes of humanitarian supplies** dispatched from Panama — includes cooking kits, hygiene products, mosquito nets
+- **ML relevance:** ⭐⭐ — Funding scale confirms severity; IFRC may commission satellite-based damage assessments
+
+### 5. US Sanctions Temporarily Lifted
+- **Source:** The Guardian (June 26), Al Jazeera (June 25)
+- **What:** US Treasury Department **temporarily removed sanctions on Venezuela**
+- **Purpose:** Allows Venezuelan government to make temporary transactions for earthquake relief
+- **Context:** Secretary Rubio coordinating with Delcy Rodriguez; Trump-Rubio phone call with Rodriguez
+- **ML relevance:** ⭐⭐ — Sanctions relief may facilitate data sharing and international coordination
+
+### 6. EU Rescue Mobilization — Country Breakdown
+- **Source:** European Commission Civil Protection (June 26), Euronews (June 27)
+- **Countries sending assistance:** Czechia, Spain, Italy, France, Luxembourg, Germany, Portugal, Netherlands
+- **Spain specifics:** 54 USAR troops from Military Emergency Unit (UME) with search dogs, rescue cameras, geophones; AECID field hospital + Panama logistics base deployed
+- **Total EU rescuers:** 520+ mobilized
+- **ML relevance:** ⭐⭐ — International presence may bring additional satellite/imagery assets
+
+### 7. Britannica Entry Published
+- **Source:** Britannica.com (June 27)
+- **What:** Encyclopedia Britannica published entry on "Venezuelan earthquakes of 2026" — unusually rapid documentation
+- **Context:** Signifies the event's historical significance
+- **ML relevance:** ⭐ — Useful reference for project documentation/context
+
+### 8. IOM SitRep #1 — Published June 27 (Updated)
+- **Source:** ReliefWeb (June 27)
+- **URL:** https://reliefweb.int/report/venezuela-bolivarian-republic/venezuela-bolivarian-republic-earthquake-response-situation-report-1-26-june-2026
+- **What:** IOM's first situation report on the earthquake response
+- **Focus:** Migration/displacement, planned IOM response in support of national efforts
+- **ML relevance:** ⭐⭐⭐ — Displacement data is ML-useful for correlating with damage zones
+
+### 9. CNN Live Updates — Ongoing (June 27)
+- **URL:** https://www.cnn.com/2026/06/27/world/live-news/venezuela-earthquake-hnk
+- **Status:** Still running on June 27 — "Race against time" narrative
+- **Key update:** Survivors still being pulled from rubble
+- **ML relevance:** ⭐⭐ — Ongoing journalism may surface additional ground-truth details
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-28 Overnight)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + "72 hours" + rescue | ⭐⭐⭐⭐⭐ | **NEW: Golden window closing — major milestone** |
+| "Venezuela earthquake" + "51,000" + missing | ⭐⭐⭐⭐⭐ | **NEW: Missing count updated to 51,000** |
+| "Venezuela earthquake" + "Chinese" + dead | ⭐⭐⭐⭐ | **NEW: 7 Chinese nationals confirmed dead** |
+| "Venezuela earthquake" + IFRC + appeal | ⭐⭐⭐⭐⭐ | **NEW: Full appeal details — $61.8M, 300K target, 17 tonnes cargo** |
+| "Venezuela earthquake" + sanctions + lifted | ⭐⭐⭐⭐ | **NEW: US Treasury temporarily removed sanctions** |
+| "Venezuela earthquake" + EU + rescue + countries | ⭐⭐⭐⭐ | **NEW: 8 EU countries named; Spain 54 UME troops with dogs** |
+| "Venezuela earthquake" + Britannica | ⭐⭐⭐ | **NEW: Britannica entry published** |
+| "Venezuela earthquake" + IOM + situation report | ⭐⭐⭐⭐ | **NEW: IOM SitRep #1 published June 27** |
+| "Venezuela earthquake" + CNN + live | ⭐⭐⭐⭐ | **NEW: CNN live updates still running June 27** |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
