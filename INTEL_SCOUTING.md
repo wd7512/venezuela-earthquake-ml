@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 18:00 UTC (cron scout — 4.7 aftershock Jun 27, US Treasury sanctions license into Oct, IOM SitRep #1, PAHO 91 hospitals severe shaking, oil steady 1.2M bpd, Delcy Rodriguez jeered, Residencias Los Monjes collapsed)
+Last updated: 2026-06-28 21:00 UTC (cron scout — UNOSAT 320 damaged bldgs, Conversation/San Andreas analysis, Portugal 28 dead, M5+ aftershocks continue, Copernicus EMSR884 still pending)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1337,4 +1337,119 @@ Key findings from their assessment:
 | "Venezuela earthquake" + "sanctions" + October | ⭐⭐⭐⭐ | **NEW: Treasury license valid through October 2026** |
 | "Venezuela earthquake" + "Dover" + "79 personnel" | ⭐⭐⭐⭐ | **NEW: Specific USAR deployment details from Dover AFB** |
 | "Venezuela earthquake" + "Playa Grande" + satellite | ⭐⭐⭐⭐⭐ | **NEW: USA Today before/after imagery of Playa Grande** |
-| "Venezuela earthquake" + NYT + coast + interactive | ⭐⭐⭐⭐ | **NEW: NYT interactive trail of devastation along coast** |
+|| "Venezuela earthquake" + NYT + coast + interactive | ⭐⭐⭐⭐ | **NEW: NYT interactive trail of devastation along coast** |
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 21:00 UTC — UNOSAT Damage Count, Portugal Toll, Conversation Analysis)
+
+### 1. UNOSAT — Preliminary Damage Assessment: 320 Damaged + 370 Potentially Damaged Buildings
+- **Source:** UNOSAT via HDX (data.humdata.org/organization/unosat), UNOSAT Twitter/X
+- **What:** UNOSAT activated for the Venezuela earthquake and produced a preliminary satellite-based damage analysis
+- **Key stat:** In the analyzed area, UNOSAT identified **~320 damaged buildings** and **~370 potentially damaged buildings** (preliminary, not yet validated)
+- **UNOSAT Live Webmap:** "UNOSAT Live webmap - M 7.5 - Caracas earthquake (24 June 2026)" — available at unosat.org/products/
+- **ML relevance:** ⭐⭐⭐⭐⭐ — This is a ready-made, UN-validated damage count for a specific AOI. We can use it as:
+  - Validation benchmark for our model
+  - Training labels (building-level damage classification)
+  - Comparison against Microsoft AI4G's Catia La Mar assessment (33% damage rate)
+- **Action:** Download UNOSAT data from HDX when available as a dataset; check the live webmap for granular building-level damage polygons
+
+### 2. The Conversation — USC Geophysicist: "Fault Similar to San Andreas"
+- **Source:** The Conversation (June 26, updated), USC Dornsife, Local News Matters
+- **URL:** https://theconversation.com/venezuelas-deadly-earthquakes-happened-on-a-fault-similar-to-the-san-andreas-and-the-risks-arent-over-yet-a-geophysicist-explains-286236
+- **Author:** Sylvain Barbot, Professor of Earth Sciences, USC
+- **Key argument:** The Boconó fault system that ruptured is a strike-slip fault similar in mechanics to California's San Andreas — stress transfer from the M7.2 foreshock triggered the M7.5 mainshock 39 seconds later
+- **Implication:** "The risks aren't over yet" — stress redistribution means further large aftershocks possible on adjacent fault segments
+- **ML relevance:** ⭐⭐⭐ — Understanding stress transfer helps us predict which areas may have experienced delayed damage or are at risk from further large aftershocks
+
+### 3. Portugal — 28 Nationals Confirmed Dead, 85 Missing
+- **Source:** Portugal Post, RTP, BBC, Jacaranda FM, Portugal Resident (June 27)
+- **Updated figures from Portuguese Foreign Ministry:**
+  - **28 Portuguese nationals/descendants confirmed dead** (up from 6 earlier in the week)
+  - **85 Portuguese citizens still missing/unaccounted for**
+  - Portugal Air Force dispatched **2 KC-390 aircraft** carrying **64 specialized rescue personnel**
+- **Broader foreign casualty breakdown (per BBC/Ucanews):**
+  - 28 Portuguese, 5 Spaniards, 2 Brazilians, 7 Chinese, 1 Chilean, 1 Italian-Venezuelan confirmed dead
+  - 85 Portuguese + 119 Spaniards missing
+- **ML relevance:** ⭐ — Large Portuguese diaspora in Venezuela (particularly Caracas/La Guaira) means some collapsed buildings had high foreign occupancy → international attention on specific collapse sites
+
+### 4. Aftershock Sequence — M5+ Events Continue
+- **Source:** USGS Earthquake Hazards Program, EMSC, Reddit r/Earthquakes (June 27-28)
+- **What:** Aftershocks continue 4+ days post-mainshock
+- **USGS aftershock forecast (still current):**
+  - 99% chance of ≥M4 aftershock in next week
+  - 24% chance of ≥M6 aftershock in next week
+  - 8% chance of >M6 in next week
+- **Recent notable aftershocks:** M5.1, M5.2 events detected by EMSC/USGS in the aftershock zone
+- **ML relevance:** ⭐⭐ — Continued M5+ events may cause additional collapses of already-weakened structures; our model should flag "at-risk" buildings that are damaged but standing
+
+### 5. Copernicus EMSR884 — Grading Maps Still Pending (Day 4)
+- **Status:** As of June 28 evening, no grading map products visible on the EMSR884 activation page
+- **Expected:** 13 sectors covering Caracas, Petare, Maracay + ~10 others
+- **Note:** The YIN-Renlong GitHub dashboard (venezuela-earthquake-copernicus-data-dashboard-2026) is ready and waiting to visualize products as soon as they're released
+- **ML relevance:** ⭐⭐⭐⭐⭐ — Still the single highest-value pending data release. Check hourly.
+
+### 6. World Vision — Venezuela Earthquake Overview Published
+- **Source:** World Vision International (June 26)
+- **URL:** https://www.wvi.org/publications/venezuela-crisis/venezuela-earthquake-overview-june-26-2026
+- **What:** WVI published an overview with a focus on child protection, displacement, family separation
+- **Key stat:** "More than 30 aftershocks" (conservative count; OCHA says 300+)
+- **ML relevance:** ⭐ — Child protection focus may mean WVI has granular data on school damage
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-28 21:00)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + UNOSAT + damaged buildings | ⭐⭐⭐⭐⭐ | **NEW: 320 damaged + 370 potentially damaged bldgs (preliminary)** |
+| "Venezuela earthquake" + "The Conversation" + San Andreas | ⭐⭐⭐⭐ | **NEW: USC geophysicist Sylvain Barbot analysis of Boconó fault** |
+| "Venezuela earthquake" + Portugal + dead + missing | ⭐⭐⭐⭐⭐ | **NEW: 28 Portuguese dead, 85 missing; 2 KC-390 aircraft deployed** |
+| "Venezuela earthquake" + M5 + aftershock + June 28 | ⭐⭐⭐⭐ | **NEW: M5.1/M5.2 aftershocks still occurring 4 days post-mainshock** |
+| "Venezuela earthquake" + World Vision + overview | ⭐⭐⭐ | **NEW: WVI published earthquake overview with child protection focus** |
+| UNOSAT + Venezuela + live webmap | ⭐⭐⭐⭐ | **NEW: UNOSAT live webmap available at unosat.org/products/** |
+
+### What's working (updated):
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined; UNOSAT data expected soon
+- **UNOSAT** — preliminary damage counts available; full dataset coming to HDX
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth (still pending day 4)
+- **The Conversation / academic sources** — increasingly publishing analysis useful for feature engineering
+- **Foreign ministry statements** — granular casualty breakdowns by nationality reveal which buildings had high international occupancy
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel, Sky Villa) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+- **Al Jazeera** — best for rescue→recovery transition narrative + comprehensive aid trackers
+- **GOV.UK / BBC** — good for UK deployment details
+- **IRC / HI websites** — good for NGO response announcements
+- **NYT "Nations Send Rescue Teams"** — comprehensive country-by-country deployment list
+- **Times of Israel / JPost** — good for Israel aid preparation updates
+- **Task & Purpose** — good for US military deployment specifics (who, what, when)
+- **CFR / CSIS** — good for policy analysis context
+- **OCHA Facebook/UNOCHA** — surprisingly current for humanitarian stats
+- **Bloomberg** — good for aid mobilization narrative + ship arrival confirmation
+- **AP Photos** — excellent for named survivor/rescue imagery with geolocation
+- **NBC News** — publishing Vantor satellite imagery comparisons
+- **Portugal Post / RTP** — good for Portuguese casualty/deployment details
+- **USGS Aftershock Forecast page** — updated probabilities for M5+ events
+
+### What's not working (updated):
+- GitHub projects are just starting — we still have an opportunity to be primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+- USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
+- Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
+- Copernicus grading maps not yet released — EMSR884 activation page shows no products as of June 28 evening (day 4)
+- UNOSAT full dataset not yet on HDX — only preliminary stats visible on their organization page
