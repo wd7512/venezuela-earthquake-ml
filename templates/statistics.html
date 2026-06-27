@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Statistics — Venezuela Earthquake Response{% endblock %}
+{% block content %}
+
+<h1>Statistics</h1>
+<p>All figures on this site, sourced and traceable. Every number below is rendered directly from <code>data.json</code> — our single source of truth. Last updated: <strong>{{ last_updated_formatted }}</strong>.</p>
+
+<table>
+  <tr><th>Statistic</th><th>Value</th><th>Source</th></tr>
+  <tr>
+    <td>Confirmed dead</td>
+    <td><strong>{{ stats.deaths.value }}{{ stats.deaths.suffix }}</strong></td>
+    <td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Injured</td>
+    <td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td>
+    <td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Missing (registered)</td>
+    <td><strong>{{ stats.missing_registered.value }}{{ stats.missing_registered.suffix }}</strong></td>
+    <td><a href="{{ stats.missing_registered.source_url }}" target="_blank" rel="noopener">{{ stats.missing_registered.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Missing (independent tracker)</td>
+    <td><strong>{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</strong></td>
+    <td><a href="{{ stats.missing_independent.source_url }}" target="_blank" rel="noopener">{{ stats.missing_independent.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Aftershocks recorded</td>
+    <td><strong>{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</strong></td>
+    <td><a href="{{ stats.aftershocks.source_url }}" target="_blank" rel="noopener">{{ stats.aftershocks.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Buildings collapsed</td>
+    <td><strong>{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</strong></td>
+    <td><a href="{{ stats.buildings_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.buildings_collapsed.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Hospitals damaged</td>
+    <td><strong>{{ stats.hospitals_damaged.value }}</strong></td>
+    <td><a href="{{ stats.hospitals_damaged.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_damaged.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Hospitals collapsed</td>
+    <td><strong>{{ stats.hospitals_collapsed.value }}</strong></td>
+    <td><a href="{{ stats.hospitals_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_collapsed.source }}</a></td>
+  </tr>
+  <tr>
+    <td>People in MMI VII+ zone</td>
+    <td><strong>{{ "{:,}".format(stats.people_exposed_mmi7.value) }}</strong></td>
+    <td><a href="{{ stats.people_exposed_mmi7.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi7.source }}</a></td>
+  </tr>
+  <tr>
+    <td>People in MMI VI zone</td>
+    <td><strong>{{ "{:,}".format(stats.people_exposed_mmi6.value) }}</strong></td>
+    <td><a href="{{ stats.people_exposed_mmi6.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi6.source }}</a></td>
+  </tr>
+  <tr>
+    <td>US emergency aid pledged</td>
+    <td><strong>${{ "{:,}".format(stats.us_aid_pledged.value) }}</strong></td>
+    <td><a href="{{ stats.us_aid_pledged.source_url }}" target="_blank" rel="noopener">{{ stats.us_aid_pledged.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Aftershock probability (Mw 6+)</td>
+    <td><strong>{{ stats.aftershock_prob_mw6.value }}%</strong></td>
+    <td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Aftershock probability (Mw 7.2+)</td>
+    <td><strong>{{ stats.aftershock_prob_mw7.value }}%</strong></td>
+    <td><a href="{{ stats.aftershock_prob_mw7.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw7.source }}</a></td>
+  </tr>
+</table>
+
+{% endblock %}
