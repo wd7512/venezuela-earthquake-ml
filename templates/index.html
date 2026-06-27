@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="alert alert-danger">
-  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. 920+ confirmed dead, ~50,000 reported missing (<a href="https://www.desaparecidosterremotovenezuela.com/">independent trackers</a>). Information changing rapidly. Cross-reference all figures across multiple sources.
+  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. {{ stats.deaths.value }}+ confirmed dead, ~{{ "{:,}".format(stats.missing_independent.value) }} reported missing (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). Information changing rapidly. Cross-reference all figures across multiple sources.
 </div>
 
 <h1>Earthquake Response Hub</h1>
@@ -30,21 +30,21 @@
 
 <h2>Key Numbers</h2>
 <div class="stat-grid">
-  <a href="https://reliefweb.int/disaster/eq-2026-000093-ven" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.deaths }}+</div>
-    <div class="label">Confirmed Dead</div>
+  <a href="{{ stats.deaths.source_url }}" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
+    <div class="value">{{ stats.deaths.value }}{{ stats.deaths.suffix }}</div>
+    <div class="label">Confirmed Dead · {{ stats.deaths.source }}</div>
   </a>
-  <a href="https://www.desaparecidosterremotovenezuela.com/" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.missing }}+</div>
-    <div class="label">Missing (registered)</div>
+  <a href="{{ stats.missing_independent.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
+    <div class="value">{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</div>
+    <div class="label">Missing (independent) · {{ stats.missing_independent.source }}</div>
   </a>
-  <a href="https://earthquake.usgs.gov/earthquakes/map/" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.aftershocks }}+</div>
-    <div class="label">Aftershocks (USGS)</div>
+  <a href="{{ stats.aftershocks.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
+    <div class="value">{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</div>
+    <div class="label">Aftershocks · {{ stats.aftershocks.source }}</div>
   </a>
-  <a href="https://reliefweb.int/disaster/eq-2026-000093-ven" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.buildings_collapsed }}+</div>
-    <div class="label">Buildings Collapsed</div>
+  <a href="{{ stats.buildings_collapsed.source_url }}" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
+    <div class="value">{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</div>
+    <div class="label">Buildings Collapsed · {{ stats.buildings_collapsed.source }}</div>
   </a>
 </div>
 
@@ -82,7 +82,7 @@
 
 <h2>Safety</h2>
 <div class="alert alert-warning">
-  <strong>⚠️ Aftershock risk: 43% chance of Mw 6+ within the next week (<a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast">USGS</a>).</strong> Do not enter visibly damaged structures. Avoid hillside areas (landslide risk). Monitor official advisories.
+  <strong>⚠️ Aftershock risk: {{ stats.aftershock_prob_mw6.value }}% chance of Mw 6+ within the next week (<a href="{{ stats.aftershock_prob_mw6.source_url }}">{{ stats.aftershock_prob_mw6.source }}</a>).</strong> Do not enter visibly damaged structures. Avoid hillside areas (landslide risk). Monitor official advisories.
 </div>
 <div class="card">
   <h3>What to Do</h3>

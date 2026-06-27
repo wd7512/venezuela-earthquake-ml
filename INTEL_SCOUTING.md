@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 21:00 UTC (cron scout — UNOSAT 320 damaged bldgs, Conversation/San Andreas analysis, Portugal 28 dead, M5+ aftershocks continue, Copernicus EMSR884 still pending)
+Last updated: 2026-06-28 23:00 UTC (cron scout — Death toll 929, Copernicus EMSR884 detailed product status, PAHO 90+ hospitals, MapAction deployed, 72h window closed)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1453,3 +1453,99 @@ Key findings from their assessment:
 - Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
 - Copernicus grading maps not yet released — EMSR884 activation page shows no products as of June 28 evening (day 4)
 - UNOSAT full dataset not yet on HDX — only preliminary stats visible on their organization page
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 23:00 UTC Scout — Day 4, Rescue Window Closed)
+
+### 1. Death Toll Surges to 929; 51,000 Still Missing
+- **Source:** AFP (via Khaleej Times, The Federal, Al Mayadeen), BBC, CNN, Yahoo News (all June 26-27)
+- **Death toll:** 929 confirmed (up from 920 in previous scout)
+- **Missing:** 51,000 (up from ~50,000 — per missing persons website)
+- **Injured:** 3,360+ (some sources 4,300+)
+- **Context:** 72-hour rescue window closed June 27 (Al Jazeera). Survivors increasingly unlikely. Focus shifting to recovery.
+- **CNN live updates still running** (June 27-28) — "Rescuers digging through rubble in desperate search"
+
+### 2. Copernicus EMSR884 — Detailed Product Status (LIVE from activation page)
+- **Activation page:** https://mapping.emergency.copernicus.eu/activations/EMSR884/
+- **Status:** ONGOING | 13 AOIs | 13 Products | 13 Maps
+- **AOI-by-AOI breakdown (from Products Viewer tab):**
+
+| AOI | Product | Status | Date |
+|-----|---------|--------|------|
+| 00 Central Coastal Venezuela | Ground Movement | ✅ Completed | 25/06/2026 22:42 UTC |
+| 01 Petare | Grading | 📋 Planned | 28/06/2026 afternoon |
+| 02 Caracas | Grading | ✅ Completed | 25/06/2026 14:59 UTC |
+| 02 Caracas | Grading Monitoring 1 | ✅ Completed | 26/06/2026 15:19 UTC |
+| 03 Antimano | Grading | ❌ Not produced | 25/06/2026 15:17 UTC |
+| 04 Maracay | Grading | 📋 Planned | 28/06/2026 early morning |
+| 05 Santa Cruz | Grading | 📋 Planned | 27/06/2026 afternoon |
+| 06 Moron | Grading | ✅ Completed | 25/06/2026 20:36 UTC |
+| 06 Moron | Grading Monitoring 1 | ✅ Completed | 26/06/2026 15:11 UTC |
+| 07 Puerto Cabello | Grading | ❌ Not produced | 26/06/2026 14:03 UTC |
+| 07 Puerto Cabello | Grading Monitoring 1 | 📋 Planned | 28/06/2026 early morning |
+| 08 San Felipe | Grading Monitoring 1 | (truncated — check page) | — |
+| 09-12 (remaining AOIs) | — | — | — |
+
+- **Download Products tab:** Only AOI 00 (Central Coastal Venezuela) Ground Movement product is currently available for download (Vector data, GeoPackage, Map, Summary Table)
+- **Key finding:** Caracas + Moron grading maps are COMPLETED but NOT YET in the download dropdown. Expected to appear within hours.
+- **ML relevance:** ⭐⭐⭐⭐⭐ — As each grading map becomes downloadable, we get free per-building damage severity labels. Caracas grading map is the highest-priority download.
+- **Action:** Check https://mapping.emergency.copernicus.eu/activations/EMSR884/ daily — select each completed AOI from the dropdown to download GeoPackage vector data
+
+### 3. PAHO — 90+ Hospitals Exposed to MMI VI-VII Shaking
+- **Source:** UN Press Conference (via Yahoo News, SCMP, BSS News, Millichronicle), June 27
+- **Finding:** "PAHO experts were working on mapping the affected health facilities. They had identified more than 90 hospitals exposed to shaking intensities beyond six and seven on the Modified Mercalli intensity scale."
+- **Context:** PAHO is mapping health facility functionality/safety across the affected area
+- **ML relevance:** ⭐⭐⭐⭐ — Health facility damage is a specific, high-value target class. If PAHO publishes facility-level damage assessments, these are authoritative validation labels.
+- **PAHO SitRep #1 (June 25):** https://www.paho.org/en/documents/earthquakes-venezuela-m72-and-m75-situation-report-1-25-june-2026
+
+### 4. MapAction — Deployed, Published Country Overview Map
+- **Source:** ReliefWeb (June 25)
+- **Map:** "Venezuela: Earthquake - Country Overview with Admin 1 Boundaries"
+- **URL:** https://reliefweb.int/map/venezuela-bolivarian-republic/venezuela-earthquake-country-overview-admin-1-boundaries-24-jun-2026
+- **Content:** Admin boundaries + earthquake context — useful for our own mapping/disaggregation
+- **ML relevance:** ⭐⭐ — Administrative boundaries useful for aggregating damage predictions by region
+
+### 5. Venezuela Limiting Access to La Guaira
+- **Source:** CBS News (June 27)
+- **Finding:** Venezuela to limit access to hard-hit La Guaira region
+- **Context:** Continued militarization (per Delcy Rodriguez's earlier announcement). May affect ground-truth data collection.
+- **ML relevance:** ⭐⭐ — Access restrictions may delay ground-truth validation efforts
+
+### 6. 72-Hour Rescue Window Closed
+- **Source:** Al Jazeera (June 27), BBC Live (June 27)
+- **Context:** Standard 72-hour survival window after earthquake closed on June 27 evening. Death toll expected to rise further as rubble is cleared.
+- **BBC:** "Overwhelmed rescuers 'pulling people out with their bare hands'" — student in Caracas
+- **ML relevance:** ⭐ — Timeline context: we're now in recovery phase, not rescue. ML damage assessment becomes more valuable as focus shifts to reconstruction planning.
+
+### 7. Britannica Entry Published
+- **URL:** https://www.britannica.com/event/Venezuelan-earthquakes-of-2026
+- **Content:** Comprehensive overview of the doublet, tectonic setting, damage summary
+- **ML relevance:** ⭐ — Useful for project background/context documentation
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-28 23:00)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| Copernicus EMSR884 activation page (direct browser) | ⭐⭐⭐⭐⭐ | **MAJOR: Detailed AOI-by-AOI product status — Caracas + Moron grading COMPLETED, Petare/Maracay/Puerto Cabello still planned, Antimano/Pto Cabello "Not produced"** |
+| "Venezuela" + "929" + earthquake | ⭐⭐⭐⭐⭐ | **NEW: Death toll updated to 929 (from 920), 51,000 missing** |
+| PAHO + Venezuela + hospitals + MMI | ⭐⭐⭐⭐⭐ | **NEW: 90+ hospitals exposed to MMI VI-VII shaking** |
+| MapAction + Venezuela + earthquake | ⭐⭐⭐ | **NEW: MapAction deployed, published country overview with admin boundaries** |
+| Venezuela + La Guaira + access + limit | ⭐⭐⭐ | **NEW: Venezuela limiting access to La Guaira region** |
+| Venezuela earthquake + Britannica | ⭐⭐ | **NEW: Britannica entry published** |
+| Venezuela earthquake + 72 hours + rescue window | ⭐⭐⭐⭐ | **NEW: 72-hour window closed June 27; focus shifting to recovery** |
+
+### What's working (updated):
+- **Copernicus EMS activation page** — direct browser access gives real-time product status per AOI. Caracas grading map is completed but not yet downloadable. Check daily.
+- **PAHO press briefings** — UN press conferences picked up by Yahoo/SCMP/BSS give specific health infrastructure stats
+- **ReliefWeb Map section** — MapAction maps appearing here with admin boundaries
+- **CNN live updates** — still running 4 days post-event, good for real-time casualty updates
+- **Missing persons website data** — 51,000 missing figure now being cited by mainstream media
+
+### What's not working (updated):
+- **Copernicus download dropdown** — only shows AOI 00 despite multiple AOIs being "Completed". Likely a UI lag — check back frequently
+- **HDX still returns 403** on direct event page — use dataset-specific URLs instead
+- **Full list of 13 Copernicus AOIs** — only 9 visible in Products Viewer; AOIs 09-12 not shown in page snapshot (may require scroll or are classified)
+- **Antimano + Puerto Cabello** — grading maps "Not produced" — likely due to imagery acquisition issues or cloud cover

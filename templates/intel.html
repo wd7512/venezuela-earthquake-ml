@@ -24,19 +24,16 @@
 <h2 id="statistics">Key Statistics</h2>
 <table>
   <tr><th>Metric</th><th>Figure</th><th>Source</th></tr>
-  <tr><td>Confirmed dead</td><td><strong>920+</strong></td><td><a href="https://reliefweb.int/disaster/eq-2026-000093-ven" target="_blank" rel="noopener">Venezuela National Assembly</a></td></tr>
-  <tr><td>Injured</td><td><strong>3,360+</strong></td><td><a href="https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm" target="_blank" rel="noopener">Health Minister Carlos Alvarado</a></td></tr>
-  <tr><td>Missing (independent tracker)</td><td><strong>50,000+</strong></td><td><a href="https://desaparecidosterremoto.com" target="_blank" rel="noopener">Desaparecidos Terremoto Venezuela</a></td></tr>
-  <tr><td>Missing in La Guaira alone</td><td><strong>11,200+</strong></td><td><a href="https://desaparecidosterremoto.com" target="_blank" rel="noopener">Independent database</a></td></tr>
-  <tr><td>Still trapped under rubble</td><td><strong>172+</strong></td><td><a href="https://reliefweb.int/disaster/eq-2026-000093-ven" target="_blank" rel="noopener">Venezuelan rescue services</a></td></tr>
-  <tr><td>Aftershocks recorded</td><td><strong>302+</strong></td><td><a href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank" rel="noopener">USGS</a></td></tr>
-  <tr><td>Hospitals damaged</td><td><strong>13</strong></td><td><a href="https://reliefweb.int/disaster/eq-2026-000093-ven" target="_blank" rel="noopener">National Assembly</a></td></tr>
-  <tr><td>Hospitals collapsed</td><td><strong>2</strong> (Caracas + La Guaira)</td><td><a href="https://www.cnn.com/2026/06/25/americas/venezuela-earthquake-intl" target="_blank" rel="noopener">Dr. Huniades Urbina-Medina, CNN</a></td></tr>
-  <tr><td>USGS PAGER: prob. >10,000 deaths</td><td><strong>43%</strong></td><td><a href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank" rel="noopener">USGS PAGER</a></td></tr>
-  <tr><td>USGS PAGER: prob. >100,000 deaths</td><td><strong>22%</strong></td><td><a href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank" rel="noopener">USGS PAGER</a></td></tr>
-  <tr><td>People in MMI VII+ shaking zones</td><td><strong>~590,000</strong></td><td><a href="https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026" target="_blank" rel="noopener">iMMAP / WorldPop 2026</a></td></tr>
-  <tr><td>People in MMI VI shaking zone</td><td><strong>~4.8 million</strong></td><td><a href="https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026" target="_blank" rel="noopener">iMMAP / WorldPop 2026</a></td></tr>
-  <tr><td>US emergency aid pledged</td><td><strong>$150 million</strong></td><td><a href="https://www.state.gov/venezuela-earthquake-response/" target="_blank" rel="noopener">US Government</a></td></tr>
+  <tr><td>Confirmed dead</td><td><strong>{{ stats.deaths.value }}{{ stats.deaths.suffix }}</strong></td><td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td></tr>
+  <tr><td>Injured</td><td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td><td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td></tr>
+  <tr><td>Missing (independent tracker)</td><td><strong>{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</strong></td><td><a href="{{ stats.missing_independent.source_url }}" target="_blank" rel="noopener">{{ stats.missing_independent.source }}</a></td></tr>
+  <tr><td>Aftershocks recorded</td><td><strong>{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</strong></td><td><a href="{{ stats.aftershocks.source_url }}" target="_blank" rel="noopener">{{ stats.aftershocks.source }}</a></td></tr>
+  <tr><td>Buildings collapsed</td><td><strong>{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</strong></td><td><a href="{{ stats.buildings_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.buildings_collapsed.source }}</a></td></tr>
+  <tr><td>Hospitals damaged</td><td><strong>{{ stats.hospitals_damaged.value }}</strong></td><td><a href="{{ stats.hospitals_damaged.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_damaged.source }}</a></td></tr>
+  <tr><td>Hospitals collapsed</td><td><strong>{{ stats.hospitals_collapsed.value }}</strong> (Caracas + La Guaira)</td><td><a href="{{ stats.hospitals_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_collapsed.source }}</a></td></tr>
+  <tr><td>People in MMI VII+ shaking zones</td><td><strong>{{ "{:,}".format(stats.people_exposed_mmi7.value) }}</strong></td><td><a href="{{ stats.people_exposed_mmi7.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi7.source }}</a></td></tr>
+  <tr><td>People in MMI VI shaking zone</td><td><strong>{{ "{:,}".format(stats.people_exposed_mmi6.value) }}</strong></td><td><a href="{{ stats.people_exposed_mmi6.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi6.source }}</a></td></tr>
+  <tr><td>US emergency aid pledged</td><td><strong>${{ "{:,}".format(stats.us_aid_pledged.value) }}</strong></td><td><a href="{{ stats.us_aid_pledged.source_url }}" target="_blank" rel="noopener">{{ stats.us_aid_pledged.source }}</a></td></tr>
 </table>
 
 
@@ -44,9 +41,9 @@
 <h3>Secondary Hazards — Ongoing Risks</h3>
 <ul style="color: var(--text-muted); font-size: 0.85rem;">
   <li><strong>Landslides & liquefaction:</strong> Active risk across northern coastal mountains → <a href="https://blogs.agu.org/landslideblog/">AGU Landslide Blog</a></li>
-  <li><strong>Aftershocks:</strong> Mw 6+ has <strong>43% probability within next week</strong> (<a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast">USGS</a>)</li>
+  <li><strong>Aftershocks:</strong> Mw 6+ has <strong>{{ stats.aftershock_prob_mw6.value }}% probability within next week</strong> (<a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a>)</li>
   <li><strong>Structurally compromised buildings:</strong> Avoid all potentially weakened structures</li>
-  <li><strong>Hospital infrastructure:</strong> 2 collapsed, 13 damaged. Critical shortages of water, antibiotics, IV solution, anaesthetics</li>
+  <li><strong>Hospital infrastructure:</strong> {{ stats.hospitals_collapsed.value }} collapsed, {{ stats.hospitals_damaged.value }} damaged. Critical shortages of water, antibiotics, IV solution, anaesthetics</li>
 </ul>
 
 <h2 id="missing">Finding Missing People</h2>
@@ -159,7 +156,7 @@
 <table>
   <tr><th>Infrastructure</th><th>Status</th><th>Notes</th></tr>
   <tr><td><strong>Simón Bolívar Airport (CCS)</strong></td><td><span class="badge badge-severe">CLOSED</span></td><td>Structural roof damage. All flights cancelled.</td></tr>
-  <tr><td><strong>Hospitals</strong></td><td><span class="badge badge-severe">CRITICAL</span></td><td>13 damaged; 2 collapsed. Shortages of water, antibiotics, IV fluids, anaesthetics. Patients treated outdoors.</td></tr>
+  <tr><td><strong>Hospitals</strong></td><td><span class="badge badge-severe">CRITICAL</span></td><td>{{ stats.hospitals_damaged.value }} damaged; {{ stats.hospitals_collapsed.value }} collapsed. Shortages of water, antibiotics, IV fluids, anaesthetics. Patients treated outdoors.</td></tr>
   <tr><td><strong>Mobile networks</strong></td><td><span class="badge badge-severe">CONGESTED</span></td><td>Heavy outages across northern Venezuela</td></tr>
   <tr><td><strong>Internet</strong></td><td><span class="badge badge-high">PARTIAL</span></td><td>200+ sites blocked. X partially unblocked 26 Jun.</td></tr>
   <tr><td><strong>Caracas–La Guaira highway</strong></td><td><span class="badge badge-high">DAMAGED</span></td><td>Open. Volunteers using it to transport aid.</td></tr>
@@ -179,18 +176,18 @@
 </ul>
 
 <h2 id="aftershock">Aftershock Forecast</h2>
-<p>Based on <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast" target="_blank" rel="noopener">USGS probabilistic modelling</a> as of 25 June 2026:</p>
+<p>Based on <a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a> as of 25 June 2026:</p>
 
 <table>
-  <tr><th>Aftershock Magnitude</th><th>Probability (next 7 days)</th></tr>
-  <tr><td>Mw 4+</td><td><strong>99%</strong></td></tr>
-  <tr><td>Mw 5+</td><td><strong>98%</strong></td></tr>
-  <tr><td>Mw 6+</td><td><strong>43%</strong></td></tr>
-  <tr><td>Mw 7.2+ (new major event)</td><td><strong>~2%</strong></td></tr>
+  <tr><th>Aftershock Magnitude</th><th>Probability (next 7 days)</th><th>Source</th></tr>
+  <tr><td>Mw 4+</td><td><strong>99%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 5+</td><td><strong>98%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 6+</td><td><strong>{{ stats.aftershock_prob_mw6.value }}%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 7.2+ (new major event)</td><td><strong>~{{ stats.aftershock_prob_mw7.value }}%</strong></td><td><a href="{{ stats.aftershock_prob_mw7.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw7.source }}</a></td></tr>
 </table>
 
 <div class="alert alert-danger">
-  <strong>⚠️ A Mw 6+ aftershock has a near-50% chance this week.</strong> Already-weakened structures must be treated as potentially unsafe. Live forecast: <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast">USGS Aftershock Forecast</a>
+  <strong>⚠️ A Mw 6+ aftershock has a near-50% chance this week.</strong> Already-weakened structures must be treated as potentially unsafe. Live forecast: <a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a>
 </div>
 
 <h2 id="history">Historical Context</h2>

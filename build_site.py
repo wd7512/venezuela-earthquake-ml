@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Build the Venezuela Earthquake Response static site.
 
-Reads data.json, generates 4 matplotlib charts, renders 7 Jinja2 templates,
-and outputs everything to dist/.
+Reads data.json, renders 8 Jinja2 templates, and outputs everything to dist/.
 """
 
 import json
@@ -15,9 +14,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(ROOT, "data.json")
 TEMPLATES_DIR = os.path.join(ROOT, "templates")
 DIST_DIR = os.path.join(ROOT, "dist")
-IMAGES_DIR = os.path.join(DIST_DIR, "images")
 os.makedirs(DIST_DIR, exist_ok=True)
-os.makedirs(IMAGES_DIR, exist_ok=True)
 
 
 def load_data():
