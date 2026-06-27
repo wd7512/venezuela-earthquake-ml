@@ -226,5 +226,18 @@
     </p>
   </div>
 </main>
+<script>
+function toggleChart(card) {
+  var container = card.querySelector('.chart-container');
+  var label = card.querySelector('.chart-expand-label');
+  if (container.style.display === 'block') {
+    container.style.display = 'none';
+    label.textContent = '▼ click to expand';
+  } else {
+    container.style.display = 'block';
+    label.textContent = '▲ click to collapse';
+  }
+}
+</script>
 </body>
 </html>
