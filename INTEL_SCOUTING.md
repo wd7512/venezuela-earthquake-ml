@@ -1,6 +1,7 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Compiled 2026-06-27 from swarm search. This is the "where to look and what's been found" document.
+Last updated: 2026-06-27 (evening scout run)
+Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
 ---
 
@@ -98,11 +99,15 @@ Key findings from their assessment:
 
 | Location | Damage Level | Notes |
 |----------|-------------|-------|
-| La Guaira | Severe | Worst-affected; dozens of buildings collapsed; port area |
+| La Guaira | Severe | Worst-affected; 100+ buildings collapsed (UN OCHA); port area; Vantor before/after imagery available |
+| Catia La Mar | Severe | Adjacent to airport; Microsoft AI4G damage dataset available; NYT featured destruction |
 | Caracas (capital) | Major | Los Palos Grandes, Catia La Mar; stadium damage; hospital evacuated |
-| Morón | Epicentre zone | Near epicentre; rural/semi-urban |
-| San Felipe, Yaracuy | Epicentre zone | Both quakes centred here |
+| Morón | Epicentre zone | Near epicentre (Carabobo State); rural/semi-urban |
+| San Felipe, Yaracuy | Epicentre zone | Both quakes centred here (updated: epicentres near Yumare, 23km SE) |
+| Maiquetia | Severe | Airport area; Vantor imagery shows building damage; main international airport closed |
 | Valencia | Moderate | 59km from M7.5 epicentre |
+| Tucacas, Falcón | Aftershock-hit | M5.1 aftershock on night of June 25 |
+| Guatire, Miranda | Aftershock-hit | M4.4 aftershock early June 26 |
 
 ---
 
@@ -122,3 +127,115 @@ Key findings from their assessment:
 - [ ] Contact Miyamoto about sharing damage assessment data
 - [ ] Check if HOT-OSM has imagery partnerships (Planet, Maxar) we can piggyback on
 - [ ] Set up X search alerts for "Venezuela terremoto daño colapsado" with geolocation
+- [ ] Download & evaluate Microsoft AI4G Catia La Mar dataset as training/validation data
+- [ ] Access Vantor Open Data Program imagery for broader coverage
+- [ ] Mine OCHA SitRep #3 for structured damage/needs data
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-27 Evening Scout)
+
+### 1. Microsoft AI for Good Lab — Building Damage Assessment Dataset (Catia La Mar)
+- **URL:** https://data.humdata.org/dataset/venezuela-earthquakes-catia-la-mar
+- **Published:** 2026-06-26 (updated 2026-06-27)
+- **What:** Microsoft AI4G Lab ran damage assessment AI models on satellite imagery from 25 June 2026 for Catia La Mar
+- **Files available:**
+  - `predicted_damage_catia_la_mar_footprints.gpkg` — GeoPackage with building footprints + damage predictions
+  - `venezuela-2026-page-2-updated.jpg` — overview image
+  - Additional data resource (preview image)
+- **Key metadata from the dataset description:**
+  - "Damaged = 1 will take any building with at least a pixel showing damage"
+  - Recommendation: filter with `damage_pct_0m >= 0.8` or `damage_pct_10m` because post-event scene had orthorectification issues
+- **ML relevance:** ⭐⭐⭐⭐⭐ — This is a ready-made labeled dataset for Catia La Mar. We can use it as:
+  - Training data (building-level damage labels)
+  - Validation/benchmark for our own model
+  - Comparison point to evaluate our model's accuracy vs. Microsoft's
+- **Croissant ML metadata:** Available at `?profiles=croissant` — standardized ML dataset description
+
+### 2. Vantor Open Data Program — Free Satellite Imagery
+- **URL:** https://www.linkedin.com/posts/vantortech_vantor-has-activated-its-open-data-program-activity-7476261311316832256-5vXE
+- **What:** Vantor activated its Open Data Program for Venezuela, releasing free high-resolution satellite imagery
+- **Imagery details:**
+  - Before/after pairs for La Guaira, Catia La Mar, Maiquetia
+  - Pre-event: June 22, 2026 (and April 30 for Maiquetia)
+  - Post-event: June 25, 2026 (morning after the quake)
+  - Used by NYT, NBC, AP, USA Today for their before/after comparisons
+- **ML relevance:** ⭐⭐⭐⭐⭐ — Free high-res before/after imagery is exactly what we need for training data. This is our primary imagery source.
+
+### 3. OCHA Situation Report #3 (26 June 2026, 3:00 PM)
+- **URL:** https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm
+- **Key new info:**
+  - 302+ aftershocks recorded
+  - M5.1 aftershock in Tucacas (Falcón state) on night of June 25
+  - M4.4 aftershock NE of Guatire (Miranda state) early June 26
+  - Sustained high-risk conditions
+- **Earlier sitreps now available:**
+  - SitRep #1 (June 25, 3:00 AM): 32 fatalities, 700+ injured (preliminary)
+  - SitRep #2 (June 25, 3:00 PM): OCHA coordination
+  - SitRep #3 (June 26, 3:00 PM): 302 aftershocks, updated impact
+  - IOM SitRep #1 (June 26): migration/displacement focus
+  - UNICEF SitRep #1 (June 25): child-focused needs
+
+### 4. Updated Death Toll & Impact Scale
+- **Current official toll:** 920+ dead, 3,360+ injured (per multiple sources including BBC, New Indian Express)
+- **Earlier reports:** 164→188→235→589→920 (escalating as rescue progresses)
+- **USGS PAGER estimate:** 44% chance final death toll exceeds 10,000
+- **UN OCHA:** 100+ buildings collapsed in La Guaira alone
+- **iMMAP impact map:** ~590,000 people in MMI VII+ shaking zones; 4.8M exposed to MMI VI from M7.5 alone; 16M+ in total footprint
+- **Economic loss estimate:** $4.7–8.7 billion (UNDP); some estimates $10–100 billion
+
+### 5. Miyamoto International — New Update Post
+- **URL:** https://miyamotointernational.com/venezuela-earthquake-update-june-2026/
+- **Published:** June 26, 2026
+- **Key info:**
+  - As of June 26: ~235 dead, ~4,300 injured (Health Ministry)
+  - National Assembly count: at least 188 dead
+  - Officials expect toll to rise
+  - Airport status: main international airport closed
+  - Multiple governments advising against travel
+
+### 6. iMMAP — Venezuela Earthquake Impact Map
+- **URL:** https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026
+- **Based on:** USGS ShakeMap + WorldPop 2026 data
+- **Key stats:**
+  - ~590,000 people in severe-to-violent shaking zones (MMI VII+) across both events
+  - 4.8 million exposed to strong shaking (MMI VI) from M 7.5 alone
+  - Over 16 million people within total earthquake footprint
+- **ML relevance:** ⭐⭐⭐ — Population exposure data useful for prioritizing areas for ML damage mapping
+
+### 7. Euronews — Before/After Satellite Image Gallery
+- **URL:** https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster
+- **Published:** Today (June 27)
+- **Content:** Curated set of before/after satellite images showing La Guaira destruction
+- **Source:** Vantor imagery (see #2 above)
+
+### 8. IFRC Emergency Page
+- **URL:** https://go.ifrc.org/emergencies/7990/details
+- **Emergency ID:** VEN: Earthquake - 06-2026
+- **Status:** Active, with situational overview and Red Cross response details
+
+---
+
+## Search Effectiveness Log
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + damage + satellite | ⭐⭐⭐⭐⭐ | Rich results — Vantor imagery, Microsoft dataset, Euronews gallery |
+| "Venezuela earthquake" + HOT-OSM + activation | ⭐⭐⭐ | HOT has posted about it but no formal activation page yet; Pete Masters LinkedIn confirms mapping campaign is being set up |
+| "Venezuela earthquake" + Miyamoto | ⭐⭐⭐⭐ | New update post (June 26) with current toll + airport status |
+| "Venezuela earthquake" + ReliefWeb + situation report | ⭐⭐⭐⭐⭐ | Multiple sitreps now available (#1, #2, #3, IOM, UNICEF) |
+| "Venezuela earthquake" + github + machine learning | ⭐ | No github projects found yet |
+| "Venezuela earthquake" + "open data" + dataset | ⭐⭐⭐⭐⭐ | Microsoft AI4G dataset on HDX + Vantor Open Data Program — major finds |
+| "Venezuela earthquake" + death toll + latest | ⭐⭐⭐⭐ | Toll escalated to 920+; USGS estimates possible 10,000+ |
+| site:reliefweb.int Venezuela earthquake 2026 | ⭐⭐⭐⭐⭐ | Best source for structured situation reports |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — check daily
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily
+- **Vantor + Microsoft AI4G** are the two key data releases so far
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+
+### What's not working:
+- No github projects yet — opportunity for us to be first
+- No formal HOT-OSM tasking manager link yet — monitor the OSM forum thread
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
