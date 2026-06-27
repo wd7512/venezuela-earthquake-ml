@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Brechas — Respuesta al Terremoto de Venezuela{% endblock %}
+{% block content %}
+
+<h1>Brechas de Respuesta</h1>
+<p>Lo que falta en la respuesta — datos, cobertura y brechas de recursos. Ordenadas por severidad y zona. Voluntarios: estas son las áreas donde su ayuda es más necesaria.</p>
+
+<div class="card">
+
+</div>
+
+<h2>Inventario de Brechas</h2>
+<table>
+  <tr>
+    <th>Zona</th>
+    <th>Tipo de Brecha</th>
+    <th>Severidad</th>
+    <th>Descripción</th>
+    <th>Qué se Necesita</th>
+    <th>Estado</th>
+  </tr>
+  {% for gap in gaps %}
+  <tr>
+    <td>{% if show_zone_pages %}<a href="zone_{{ gap.zone_slug }}.html">{{ gap.zone }}</a>{% else %}{{ gap.zone }}{% endif %}</td>
+    <td><span class="badge badge-{{ gap.gap_type }}">{{ gap.gap_type.replace('_', ' ') }}</span></td>
+    <td><span class="badge badge-{{ gap.severity }}">{{ gap.severity }}</span></td>
+    <td>{{ gap.description }}</td>
+    <td>{{ gap.what_needed }}</td>
+    <td><span class="badge badge-{{ gap.status }}">{{ gap.status.replace('_', ' ') }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

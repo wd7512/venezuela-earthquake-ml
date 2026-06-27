@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Contribuir — Respuesta al Terremoto de Venezuela{% endblock %}
+{% block content %}
+
+<h1>Contribuir</h1>
+<p>Este centro es un recurso público. Si usted es investigador, científico de datos o ingeniero que puede ayudar a llenar las brechas a continuación, esta página explica dónde puede participar.</p>
+
+<p style="font-size: 0.85rem; color: var(--text-muted);">¿Busca donar o compartir información? Vea <a href="help.html">Cómo Ayudar</a> — esta página es para desarrolladores y científicos de datos que quieran contribuir con datos, mapeo o análisis.</p>
+
+<div class="alert alert-info">
+  <strong>Prioridad pública:</strong> las páginas visibles en la navegación principal (Resumen, Intel, Manual, Cómo Ayudar, Fuentes, Estadísticas) son para socorristas y el público. Esta sección de Contribuir es para personas que quieran aportar datos, mapeo o análisis.
+</div>
+
+<h2>Cómo Ayudar</h2>
+<div class="card">
+  <h3>1. Elija una Brecha</h3>
+  <p>Visite la página de <a href="gaps.html">Brechas</a> para una lista priorizada de dónde se necesita ayuda. Las brechas de alta severidad son los puntos de partida más impactantes.</p>
+</div>
+<div class="card">
+  <h3>2. Reclame o Abra una Vía</h3>
+  <p>A continuación hay seis vías de contribución. Cada una tiene fuentes de datos, enfoques sugeridos e hitos. Si quiere trabajar en una, abra un issue o envíe un PR con su enfoque propuesto.</p>
+</div>
+<div class="card">
+  <h3>3. Ejecute la Compilación</h3>
+  <pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; margin-top: 0.5rem; overflow-x: auto;"><code>uv sync
+uv run python build_site.py
+# Salida va a dist/</code></pre>
+</div>
+
+<h2>Vías de Contribución</h2>
+<p>Seis vías que cubren evaluación de daños, mapeo, logística, detección, pronóstico y personas desaparecidas. Cada vía tiene un estado (activo / planificado / investigación), fuentes de datos, enfoques sugeridos e hitos.</p>
+
+{% for track in tracks %}
+<div class="card">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+    <h3 style="margin: 0;">Vía {{ track.id }}: {{ track.name }}</h3>
+    <span class="badge badge-{{ track.status }}">{{ track.status }}</span>
+  </div>
+  <p>{{ track.long_description }}</p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.75rem;">
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Fuentes de Datos</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for ds in track.data_sources %}
+        <li>{{ ds }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Enfoques Sugeridos</strong>
+      <ul style="margin-top: 0.25rem; list-style: disc; padding-left: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+        {% for m in track.models %}
+        <li>{{ m }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 0.75rem;">
+    <strong style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Hitos</strong>
+    <ul style="margin-top: 0.25rem; list-style: none; padding-left: 0; font-size: 0.85rem;">
+      {% for m in track.milestones %}
+      <li style="padding: 0.2rem 0; color: var(--text-muted);">→ {{ m }}</li>
+      {% endfor %}
+    </ul>
+    {% if track.status == "research" %}<p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Esta es un objetivo de investigación a largo plazo — no una vía activa para la ventana de respuesta actual. No hay datos ni hitos disponibles aún.</p>{% endif %}
+  </div>
+
+  <div style="margin-top: 0.75rem; font-size: 0.8rem;">
+    <strong>Salida:</strong> {{ track.output }}
+    {% if track.data_url %}
+    · <strong>Datos:</strong> <a href="{{ track.data_url }}">Disponibles</a>
+    {% endif %}
+    {% if track.code_url %}
+    · <strong>Código:</strong> <a href="{{ track.code_url }}">Repositorio</a>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<h2>Pipeline de Datos</h2>
+<p>Los datos del sitio viven en <code>data.json</code>. Un trabajo cron lo regenera cada 6 horas desde <code>INTEL_SCOUTING.md</code> y fuentes en vivo. Para actualizar manualmente:</p>
+<pre style="background: var(--bg); padding: 0.75rem; border-radius: 4px; font-size: 0.8rem; overflow-x: auto;"><code>uv run python build_site.py    # regenera gráficos + reconstruye todas las páginas desde data.json</code></pre>
+
+<h2>Repositorio</h2>
+<p>Los datos del sitio viven en <code>data.json</code>. El nombre del repositorio refleja los componentes de aprendizaje automático utilizados en el procesamiento de datos (evaluación de daños por satélite, estimación de víctimas). El sitio de cara al público no es un sistema ML. Fuente: <a href="https://github.com/wd7512/venezuela-earthquake-ml">github.com/wd7512/venezuela-earthquake-ml</a></p>
+
+{% endblock %}

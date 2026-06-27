@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Estadísticas — Respuesta al Terremoto de Venezuela{% endblock %}
+{% block content %}
+
+<h1>Estadísticas</h1>
+<p>Todas las cifras en este sitio, con fuentes y trazables. Cada número a continuación se renderiza directamente desde <code>data.json</code> — nuestra única fuente de verdad. Última actualización: <strong>{{ last_updated_formatted }}</strong>.</p>
+
+<table>
+  <tr><th>Estadística</th><th>Valor</th><th>Fuente</th></tr>
+  <tr>
+    <td>Fallecidos confirmados</td>
+    <td><strong>{{ stats.deaths.value }}{{ stats.deaths.suffix }}</strong></td>
+    <td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td>
+  </tr>
+  <tr>
+    <td colspan="3" style="font-size: 0.8rem; color: var(--text-muted); padding: 0.4rem 0.75rem;">Nota: {{ death_toll_note }}</td>
+  </tr>
+  <tr>
+    <td>Heridos</td>
+    <td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td>
+    <td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Desaparecidos (registrados)</td>
+    <td><strong>{{ stats.missing_registered.value }}{{ stats.missing_registered.suffix }}</strong></td>
+    <td><a href="{{ stats.missing_registered.source_url }}" target="_blank" rel="noopener">{{ stats.missing_registered.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Desaparecidos (rastreador independiente)</td>
+    <td><strong>{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</strong></td>
+    <td><a href="{{ stats.missing_independent.source_url }}" target="_blank" rel="noopener">{{ stats.missing_independent.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Réplicas registradas</td>
+    <td><strong>{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</strong></td>
+    <td><a href="{{ stats.aftershocks.source_url }}" target="_blank" rel="noopener">{{ stats.aftershocks.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Edificios colapsados</td>
+    <td><strong>{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</strong></td>
+    <td><a href="{{ stats.buildings_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.buildings_collapsed.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Hospitales dañados</td>
+    <td><strong>{{ stats.hospitals_damaged.value }}</strong></td>
+    <td><a href="{{ stats.hospitals_damaged.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_damaged.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Hospitales colapsados</td>
+    <td><strong>{{ stats.hospitals_collapsed.value }}</strong></td>
+    <td><a href="{{ stats.hospitals_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_collapsed.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Personas en zona MMI VII+</td>
+    <td><strong>{{ "{:,}".format(stats.people_exposed_mmi7.value) }}</strong></td>
+    <td><a href="{{ stats.people_exposed_mmi7.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi7.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Personas en zona MMI VI</td>
+    <td><strong>{{ "{:,}".format(stats.people_exposed_mmi6.value) }}</strong></td>
+    <td><a href="{{ stats.people_exposed_mmi6.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi6.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Ayuda de emergencia comprometida por EE.UU.</td>
+    <td><strong>${{ "{:,}".format(stats.us_aid_pledged.value) }}</strong></td>
+    <td><a href="{{ stats.us_aid_pledged.source_url }}" target="_blank" rel="noopener">{{ stats.us_aid_pledged.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Probabilidad de réplica (Mw 6+)</td>
+    <td><strong>{{ stats.aftershock_prob_mw6.value }}%</strong></td>
+    <td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td>
+  </tr>
+  <tr>
+    <td>Probabilidad de réplica (Mw 7.2+)</td>
+    <td><strong>{{ stats.aftershock_prob_mw7.value }}%</strong></td>
+    <td><a href="{{ stats.aftershock_prob_mw7.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw7.source }}</a></td>
+  </tr>
+</table>
+
+{% endblock %}

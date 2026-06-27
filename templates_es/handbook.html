@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}Manual de Respuesta — Terremoto Venezuela{% endblock %}
+{% block content %}
+
+<h1>Manual de Respuesta</h1>
+<p>Qué hacer durante y después del terremoto. Para residentes, familias y voluntarios.</p>
+
+<div class="alert alert-danger">
+  <strong>Riesgo de réplicas: {{ stats.aftershock_prob_mw6.value }}% de probabilidad de una réplica fuerte (Mw 6+) en la próxima semana — suficientemente fuerte para colapsar edificios debilitados. Permanezca fuera de estructuras dañadas.</strong> Evite laderas y riberas. (<a href="{{ stats.aftershock_prob_mw6.source_url }}">{{ stats.aftershock_prob_mw6.source }}</a>)</p>
+</div>
+
+<h2 id="durante">Durante una Réplica</h2>
+<div class="card">
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong>Agáchese, cúbrase y agárrese</strong> — póngase debajo de una mesa o escritorio robusto</li>
+    <li>Si está al aire libre, aléjese de edificios, pasos a desnivel, líneas eléctricas</li>
+    <li>Si está conduciendo, deténgase en un área abierta, permanezca dentro</li>
+    <li>No corra afuera durante el temblor</li>
+    <li>Espere réplicas — pueden ser casi tan fuertes como el sismo principal</li>
+  </ul>
+</div>
+
+<h2 id="inmediatamente-despues">Inmediatamente Después</h2>
+<div class="card">
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li>Revise a sí mismo y a otros por lesiones — no mueva a personas con lesiones graves</li>
+    <li>Use zapatos — vidrios rotos y escombros en el suelo</li>
+    <li>Verifique fugas de gas (olor, sonido sibilante) — cierre el gas si tiene dudas</li>
+    <li>No use ascensores — use solo escaleras</li>
+    <li>Evite edificios dañados, zonas de laderas y riberas</li>
+    <li>Si está cerca de la costa, trasládese a terreno alto (riesgo de tsunami) — <em>no se emitió alerta de tsunami para este evento (falla de deslizamiento continental). Esta es una guía general de terremotos.</em></li>
+  </ul>
+</div>
+
+<h2 id="encontrando-familia">Encontrando Familia y Personas Desaparecidas</h2>
+<div class="card">
+  <h3>Plataformas Voluntarias (sin registro)</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong><a href="https://www.desaparecidosterremotovenezuela.com/">Desaparecidos Terremoto Venezuela</a></strong> — Buscar y publicar desaparecidos con fotos</li>
+    <li><strong><a href="https://venezuelatebusca.com/">Venezuela Te Busca</a></strong> — Reportar nombre, edad, género, ubicación; registro buscable</li>
+  </ul>
+  <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Verificadas activas, 27 de junio de 2026.</p>
+  <h3 style="margin-top: 0.75rem;">Institucional</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><a href="https://familylinks.icrc.org/en/pages/home/">ICRC Restaurando Vínculos Familiares</a> — Rastreo familiar transfronterizo</li>
+    <li><a href="https://google.org/personfinder">Google Person Finder</a> — Buscar o registrar desaparecidos</li>
+    <li>Contacte a la embajada de su país si es extranjero</li>
+  </ul>
+  <h3 style="margin-top: 0.75rem;">Consejos</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li>Intente llamar a líneas fijas — las redes móviles están muy congestionadas</li>
+    <li>Pubique en <strong>ambas</strong> plataformas voluntarias simultáneamente</li>
+    <li>Busque por nombre completo + barrio</li>
+    <li>Contacte hospitales locales — algunos publican listas de víctimas</li>
+    <li>Use VPNs al comunicarse (muchos sitios bloqueados dentro de Venezuela)</li>
+  </ul>
+</div>
+
+<h2 id="ayuda">Dónde Obtener Ayuda</h2>
+<div class="card">
+  <h3>Servicios de Emergencia</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong>Emergencia:</strong> 911 (Venezuela)</li>
+    <li><strong>Cruz Roja Venezolana:</strong> Capítulos locales coordinando refugios y atención médica</li>
+    <li><strong>ONU OCHA:</strong> <a href="https://www.unocha.org/venezuela">Centro de coordinación humanitaria</a></li>
+    <li><strong>OMS/OPS:</strong> <a href="https://www.paho.org/en/venezuela-earthquake-response">Emergencia sanitaria</a></li>
+  </ul>
+  <h3 style="margin-top: 0.75rem;">Líneas de Ayuda Internacionales</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong>Ciudadanos estadounidenses:</strong> +1-888-407-4747</li>
+    <li><strong>España:</strong> 119 nacionales desaparecidos — línea de emergencia consular activa</li>
+  </ul>
+</div>
+
+<h2 id="seguridad">Peligros Continuos</h2>
+<div class="card">
+  <h3>Qué Vigilar</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong>Réplicas:</strong> Pueden continuar durante semanas. Cada una debilita más las estructuras dañadas</li>
+    <li><strong>Deslizamientos:</strong> Riesgo activo en montañas costeras del norte, especialmente después de lluvias</li>
+    <li><strong>Liquefacción:</strong> Suelo saturado se comporta como líquido — los edificios se hunden o inclinan</li>
+    <li><strong>Incendios:</strong> Tuberías de gas rotas — reporte cualquier olor a gas inmediatamente</li>
+    <li><strong>Inundaciones:</strong> Daño a presas y drenaje bloqueado</li>
+    <li><strong>Enfermedades:</strong> Agua contaminada, saneamiento interrumpido — hierva el agua</li>
+  </ul>
+  <h3 style="margin-top: 0.75rem;">Estado de Infraestructura</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li><strong>Aeropuerto Simón Bolívar (CCS):</strong> CERRADO — daño estructural en techo</li>
+    <li><strong>Hospitales:</strong> {{ stats.hospitals_collapsed.value }} colapsados, {{ stats.hospitals_damaged.value }} dañados. Pacientes tratados al aire libre. Escasez crítica de insumos</li>
+    <li><strong>Redes móviles:</strong> Severamente congestionadas — use texto, no llamadas</li>
+    <li><strong>Energía:</strong> Cortes generalizados en estados del norte</li>
+    <li><strong>Internet:</strong> 200+ sitios bloqueados. WhatsApp generalmente funcional</li>
+  </ul>
+</div>
+
+<h2 id="comunicación">Mantenerse Conectado</h2>
+<div class="card">
+  <p>Venezuela tiene uno de los entornos de internet más restrictivos. Así puede sortearlo:</p>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
+    <li><strong>VPNs:</strong> Tunnelbear, Proton VPN o Psiphon funcionan en datos móviles. Comparta enllaces por SMS antes de conectarse</li>
+    <li><strong>Tor Browser:</strong> <a href="https://www.torproject.org">torproject.org</a> — Funciona en entornos fuertemente censurados</li>
+    <li><strong>VE Sin Filtro:</strong> <a href="https://vesinfiltro.com">vesinfiltro.com</a> — Rastrea qué sitios están bloqueados en tiempo real</li>
+    <li><strong>WhatsApp:</strong> Herramienta principal de comunicación dentro de Venezuela</li>
+    <li><strong>SMS:</strong> Más confiable que conexiones de datos en zonas afectadas</li>
+  </ul>
+</div>
+
+<h2 id="donar">Cómo Ayudar</h2>
+<div class="card">
+  <h3>Donar</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+    <a href="https://www.ifrc.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">IFRC</div>
+    </a>
+    <a href="https://www.unicef.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">UNICEF</div>
+    </a>
+    <a href="https://www.directrelief.org" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">Direct Relief</div>
+    </a>
+    <a href="https://www.wfp.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">WFP</div>
+    </a>
+    <a href="https://www.msf.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">MSF</div>
+    </a>
+    <a href="https://cerf.un.org" class="stat-card info" style="text-decoration: none; text-align: center;">
+      <div class="label">UN CERF</div>
+    </a>
+  </div>
+  <h3 style="margin-top: 1rem;">Otras Formas</h3>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+    <li>Comparta publicaciones de desaparecidos en redes sociales</li>
+    <li>Amplifique reportes verificados de necesidades — busque #TerremotoVenezuela en Instagram/X</li>
+    <li>Ayude a traducir — muchos venezolanos afectados en el extranjero hablan poco inglés</li>
+    <li>Comparta instrucciones de acceso a VPN/internet con personas dentro de Venezuela</li>
+    <li>Contacte a sus representantes electos para abogar por ayuda continua</li>
+  </ul>
+</div>
+
+<h2 id="fuentes">Fuentes Oficiales</h2>
+<table>
+  <tr><th>Fuente</th><th>Qué Cubre</th><th>Enlace</th></tr>
+  <tr><td>ReliefWeb</td><td>Informes de situación de la ONU</td><td><a href="https://reliefweb.int/country/ven">reliefweb.int</a></td></tr>
+  <tr><td>USGS</td><td>Datos sísmicos, pronóstico de réplicas</td><td><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/executive">USGS</a></td></tr>
+  <tr><td>CNN Live Blog</td><td>Cobertura en inglés más actualizada</td><td><a href="https://www.cnn.com/2026/06/27/world/live-news/venezuela-earthquake-hnk">CNN</a></td></tr>
+  <tr><td>Al Jazeera Live</td><td>Cobertura regional</td><td><a href="https://www.aljazeera.com/news/liveblog/2026/6/27/venezuela-earthquake-live">Al Jazeera</a></td></tr>
+  <tr><td>Copernicus EMS</td><td>Mapas de daños por satélite</td><td><a href="https://emergency.copernicus.eu">Copernicus</a></td></tr>
+  <tr><td>iMMAP</td><td>Mapas de exposición poblacional</td><td><a href="https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026">iMMAP</a></td></tr>
+</table>
+
+{% endblock %}

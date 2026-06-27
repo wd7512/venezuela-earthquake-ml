@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Cómo Ayudar — Respuesta al Terremoto de Venezuela{% endblock %}
+{% block content %}
+
+<h1>Cómo Ayudar</h1>
+<p>Formas de contribuir a la respuesta al terremoto — desde dentro de Venezuela o desde el extranjero.</p>
+
+<h2>Donar</h2>
+<p>Organizaciones verificadas con operaciones establecidas en Venezuela:</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+  <a href="https://www.ifrc.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">IFRC</div>
+  </a>
+  <a href="https://www.unicef.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">UNICEF</div>
+  </a>
+  <a href="https://www.directrelief.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">Direct Relief</div>
+  </a>
+  <a href="https://www.wfp.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">WFP</div>
+  </a>
+  <a href="https://www.msf.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">MSF</div>
+  </a>
+  <a href="https://cerf.un.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">UN CERF</div>
+  </a>
+</div>
+
+<h2>Compartir Información</h2>
+<div class="card">
+  <h3>Plataformas de Personas Desaparecidas</h3>
+  <p>Si alguien que conoce está desaparecido, busque y publique en estas plataformas operadas por voluntarios:</p>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
+    <li><strong><a href="https://www.desaparecidosterremotovenezuela.com/" target="_blank" rel="noopener">Desaparecidos Terremoto Venezuela</a></strong> — Buscar y publicar desaparecidos con fotos</li>
+    <li><strong><a href="https://venezuelatebusca.com/" target="_blank" rel="noopener">Venezuela Te Busca</a></strong> — Reportar nombre, edad, género, ubicación; registro buscable</li>
+    <li><strong><a href="https://google.org/personfinder" target="_blank" rel="noopener">Google Person Finder</a></strong> — Buscar o registrar desaparecidos</li>
+  </ul>
+  <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">Verificadas activas, 27 de junio de 2026.</p>
+</div>
+
+<h2>Voluntarios Técnicos</h2>
+<div class="card">
+  <p>Si tiene habilidades en mapeo, ciencia de datos o ingeniería, hay formas específicas de ayudar:</p>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
+    <li><strong>Mapeo HOT-OMS</strong> — Ayude a mapear zonas afectadas. <a href="https://tasks.hotosm.org/" target="_blank" rel="noopener">Revise el Tasking Manager</a></li>
+    <li><strong>Evaluación de daños por satélite</strong> — Compare imágenes antes/después. <a href="https://mapping.emergency.copernicus.eu/activations/EMSR884/" target="_blank" rel="noopener">Copernicus EMS</a></li>
+    <li><strong>ML / ciencia de datos</strong> — <a href="contributing.html">Vea la página de Contribuir</a> para proyectos activos</li>
+  </ul>
+</div>
+
+<h2>Brechas de Respuesta Detalladas</h2>
+<div class="card" style="border-left: 4px solid var(--orange);">
+  <p>Para socorristas y coordinadores: un inventario en vivo de lo que falta en terreno — imágenes, evaluaciones de daños, logística y más. <a href="gaps.html">Ver brechas de respuesta →</a></p>
+</div>
+
+{% endblock %}

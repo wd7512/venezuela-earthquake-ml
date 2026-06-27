@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% block title %}Intel — Respuesta al Terremoto de Venezuela{% endblock %}
+{% block content %}
+
+<h1>Intel</h1>
+<p>Seguimiento integral y guía de respuesta para el terremoto del 24 de junio de 2026 en Venezuela. <strong>Desastre activo — la información cambia rápidamente.</strong></p>
+
+<div class="alert alert-danger">
+  <strong>⚠️ CRÍTICO:</strong> Venezuela opera uno de los entornos mediáticos más restrictivos del mundo. 200+ sitios web bloqueados. <strong>Siempre verifique las cifras con múltiples fuentes independientes.</strong> Las cifras oficiales del gobierno son probablemente subestimaciones significativas.
+</div>
+
+<h2 id="situacion">Resumen de la Situación</h2>
+<p>El <strong>miércoles 24 de junio de 2026 a las 18:04 VET (22:04 UTC)</strong>, Venezuela fue golpeada por una de las secuencias sísmicas más catastróficas de la historia sudamericana — un raro <strong>dobelette sísmico</strong> con dos sismos de magnitud casi igual separados por apenas <strong>39 segundos</strong>.</p>
+
+<table>
+  <tr><th>Evento</th><th>Magnitud</th><th>Profundidad</th><th>Epicentro</th><th>Hora (VET)</th></tr>
+  <tr><td>Precursor</td><td><strong>Mw 7.2</strong></td><td>20.3 km</td><td>~23 km SE de Yumare, Yaracuy</td><td>18:04</td></tr>
+  <tr><td>Principal</td><td><strong>Mw 7.5</strong></td><td>10.0 km</td><td>Área Yumare–Morón, Yaracuy</td><td>18:04 + 39s</td></tr>
+  <tr><td>Réplica</td><td><strong>Mw 4.9</strong></td><td>—</td><td>61 km NO de Maracay</td><td>26 Jun</td></tr>
+</table>
+
+<p>Ambos epicentros en el <strong>municipio Veroes, estado Yaracuy</strong>, ~284–293 km al oeste de Caracas, a lo largo del sistema de fallas de San Sebastián — límite entre las placas del Caribe y Sudamérica. La profundidad superficial (10 km) amplificó dramáticamente la destrucción en superficie. <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/executive" target="_blank" rel="noopener">USGS</a> clasificó esto como el <strong>terremoto más grande en Venezuela desde el evento de San Narciso de 1900 (Mw 7.7)</strong>.</p>
+
+<h2 id="estadisticas">Estadísticas Clave</h2>
+<table>
+  <tr><th>Métrica</th><th>Cifra</th><th>Fuente</th></tr>
+  <tr><td>Fallecidos confirmados</td><td><strong>{{ stats.deaths.value }}{{ stats.deaths.suffix }}</strong></td><td><a href="{{ stats.deaths.source_url }}" target="_blank" rel="noopener">{{ stats.deaths.source }}</a></td></tr>
+  <tr><td colspan="3"><p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">{{ death_toll_note }}</p></td></tr>
+  <tr><td>Heridos</td><td><strong>{{ stats.injured.value }}{{ stats.injured.suffix }}</strong></td><td><a href="{{ stats.injured.source_url }}" target="_blank" rel="noopener">{{ stats.injured.source }}</a></td></tr>
+  <tr><td colspan="3"><p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Las cifras cambian frecuentemente — vea <a href="statistics.html">Estadísticas</a> para la más reciente.</p></td></tr>
+  <tr><td>Desaparecidos (rastreador independiente)</td><td><strong>{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</strong></td><td><a href="{{ stats.missing_independent.source_url }}" target="_blank" rel="noopener">{{ stats.missing_independent.source }}</a></td></tr>
+  <tr><td>Réplicas registradas</td><td><strong>{{ stats.aftershocks.value }}{{ stats.aftershocks.suffix }}</strong></td><td><a href="{{ stats.aftershocks.source_url }}" target="_blank" rel="noopener">{{ stats.aftershocks.source }}</a></td></tr>
+  <tr><td>Edificios colapsados</td><td><strong>{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</strong></td><td><a href="{{ stats.buildings_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.buildings_collapsed.source }}</a></td></tr>
+  <tr><td>Hospitales dañados</td><td><strong>{{ stats.hospitals_damaged.value }}</strong></td><td><a href="{{ stats.hospitals_damaged.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_damaged.source }}</a></td></tr>
+  <tr><td>Hospitales colapsados</td><td><strong>{{ stats.hospitals_collapsed.value }}</strong> (Caracas + La Guaira)</td><td><a href="{{ stats.hospitals_collapsed.source_url }}" target="_blank" rel="noopener">{{ stats.hospitals_collapsed.source }}</a></td></tr>
+  <tr><td>Personas en zonas de sacudida MMI VII+</td><td><strong>{{ "{:,}".format(stats.people_exposed_mmi7.value) }}</strong></td><td><a href="{{ stats.people_exposed_mmi7.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi7.source }}</a></td></tr>
+  <tr><td>Personas en zona de sacudida MMI VI</td><td><strong>{{ "{:,}".format(stats.people_exposed_mmi6.value) }}</strong></td><td><a href="{{ stats.people_exposed_mmi6.source_url }}" target="_blank" rel="noopener">{{ stats.people_exposed_mmi6.source }}</a></td></tr>
+  <tr><td>Ayuda de emergencia comprometida por EE.UU.</td><td><strong>${{ "{:,}".format(stats.us_aid_pledged.value) }}</strong></td><td><a href="{{ stats.us_aid_pledged.source_url }}" target="_blank" rel="noopener">{{ stats.us_aid_pledged.source }}</a></td></tr>
+</table>
+
+
+<h3>Peligros Secundarios — Riesgos Continuos</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li><strong>Deslizamientos y licuefacción:</strong> Riesgo activo en montañas costeras del norte → <a href="https://blogs.agu.org/landslideblog/">AGU Landslide Blog</a></li>
+  <li><strong>Réplicas:</strong> Mw 6+ tiene <strong>{{ stats.aftershock_prob_mw6.value }}% de probabilidad en la próxima semana</strong> (<a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a>)</li>
+  <li><strong>Edificios estructuralmente comprometidos:</strong> Evite todas las estructuras potencialmente debilitadas</li>
+  <li><strong>Infraestructura hospitalaria:</strong> {{ stats.hospitals_collapsed.value }} colapsados, {{ stats.hospitals_damaged.value }} dañados. Escasez crítica de agua, antibióticos, soluciones intravenosas, anestésicos</li>
+</ul>
+
+<h2 id="desaparecidos">Encontrando Personas Desaparecidas</h2>
+
+<div class="alert alert-warning">
+  <strong>Nunca publique números de teléfono personales o información médica sensible.</strong> Verifique antes de compartir. Respete la privacidad.
+</div>
+
+<h3>Plataformas Construidas por Voluntarios</h3>
+<p>Creadas por la sociedad civil venezolana en cuestión de horas. No requieren registro.</p>
+<table>
+  <tr><th>Plataforma</th><th>Qué Hace</th></tr>
+  <tr><td><strong><a href="https://www.desaparecidosterremotovenezuela.com/" target="_blank" rel="noopener">Desaparecidos Terremoto Venezuela</a></strong></td><td>Buscar y publicar desaparecidos con fotos. La más utilizada. Creada por voluntarios.</td></tr>
+  <tr><td><strong><a href="https://venezuelatebusca.com/" target="_blank" rel="noopener">Venezuela Te Busca</a></strong></td><td>Reportar nombre, edad, género, ubicación, foto; registro buscable. Operada por ciudadanos independientes.</td></tr>
+</table>
+
+<h3>Herramientas Institucionales</h3>
+<ul class="resource-list">
+  <li><span class="res-type">Cruz Roja</span> <a href="https://familylinks.icrc.org/en/pages/home/">ICRC Restaurando Vínculos Familiares</a> — Reunificación familiar transfronteriza</li>
+  <li><span class="res-type">Google</span> <a href="https://google.org/personfinder">Person Finder</a> — Buscar o registrar desaparecidos</li>
+  <li><span class="res-type">España</span> <a href="https://www.exteriores.gob.es">119 nacionales españoles desaparecidos</a> — Línea de emergencia consular activa</li>
+  <li><span class="res-type">EE.UU.</span> <a href="https://www.state.gov/venezuela">Línea de emergencia para ciudadanos estadounidenses:</a> +1-888-407-4747</li>
+</ul>
+
+<h3>Coordinación en Redes Sociales</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li><strong>WhatsApp, Facebook, Instagram, X:</strong> Venezolanos comparten volantes digitales. Busque nombre + #VenezuelaEarthquake o #TerremotoVenezuela</li>
+  <li><strong>Lele Pons</strong> (Instagram: @lelepons) — 52M+ seguidores, coordinando activamente ayuda. Los comentarios funcionan como mapa informal de necesidades.</li>
+  <li><strong>X (Twitter):</strong> Parcialmente desbloqueada el 26 Jun tras presión de la ONU. Aún inaccesible sin alternativas.</li>
+</ul>
+
+<h3>Consejos de Búsqueda para la Diáspora</h3>
+<ol style="color: var(--text-muted); font-size: 0.85rem; padding-left: 1.25rem;">
+  <li>Intente llamar a líneas fijas — las redes móviles están muy congestionadas</li>
+  <li>Contacte a la Cruz Roja Venezolana a través de cualquier capítulo de la Cruz Roja en su país</li>
+  <li>Publique en <strong>los tres</strong> sitios web de desaparecidos simultáneamente</li>
+  <li>Verifique si el hospital de la persona podría estar publicando listas de víctimas externamente</li>
+  <li>Use VPNs al comunicarse con contactos dentro de Venezuela</li>
+</ol>
+
+<h2 id="noticias">Noticias en Vivo y Actualizaciones de Situación</h2>
+
+<table>
+  <tr><th>Fuente</th><th>URL</th><th>Fortaleza</th></tr>
+  <tr><td>CNN Live Blog</td><td><a href="https://www.cnn.com/2026/06/27/world/live-news/venezuela-earthquake-hnk">CNN</a></td><td>Más frecuentemente actualizado. Inglés. Material verificado.</td></tr>
+  <tr><td>Al Jazeera Live</td><td><a href="https://www.aljazeera.com/news/liveblog/2026/6/27/venezuela-earthquake-live">Al Jazeera</a></td><td>Fuerte cobertura regional. Actualizado cada hora.</td></tr>
+  <tr><td>BBC</td><td><a href="https://www.bbc.com/news/topics/c302m85q5ljt">BBC</a></td><td>Mapas, material verificado, respuesta internacional</td></tr>
+  <tr><td>Wikipedia</td><td><a href="https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes">Terremotos de Venezuela 2026</a></td><td>Excelente referencia agregada. Casi en tiempo real.</td></tr>
+</table>
+
+<h2 id="ciencia">Datos Científicos y Sísmicos</h2>
+
+<h3>Monitoreo Primario</h3>
+<ul class="resource-list">
+  <li><span class="res-type">USGS</span> <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/executive">Página del Evento</a> · <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/pager">PAGER</a> · <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast">Pronóstico de Réplicas</a> · <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/shakemap">Shake Map</a></li>
+  <li><span class="res-type">Europa</span> <a href="https://www.emsc-csem.org">EMSC</a> — Seguimiento de réplicas en tiempo real</li>
+  <li><span class="res-type">Nacional</span> <a href="http://www.funvisis.gob.ve">FUNVISIS</a> — Operando con retrasos debido a daños</li>
+  <li><span class="res-type">Ciencia</span> <a href="https://www.gfz-potsdam.de">GFZ Potsdam</a> — Agencia alemana independiente de geociencias</li>
+  <li><span class="res-type">Experto</span> <a href="https://earthquakeinsights.substack.com/p/catastrophic-m75-earthquake-strikes">Earthquake Insights (Substack)</a> — Análisis de mecánica de ruptura</li>
+  <li><span class="res-type">Ciencia</span> <a href="https://eos.org/research-and-developments/venezuelan-earthquakes-struck-in-a-complex-zone-of-faults">EOS / AGU</a> — Ciencia tectónica revisada por pares</li>
+</ul>
+
+<h3>Contexto Tectónico</h3>
+<ul style="color: var(--text-muted); font-size: 0.85rem;">
+  <li><strong>Sistema de fallas de San Sebastián</strong> — deslizamiento lateral derecho en límite de placas Caribe/Sudamérica</li>
+  <li>Placas moviéndose a ~20 mm/año · Falla se extiende ~400 km mar adentro</li>
+  <li>Mismo sistema causó terremotos mayores en 1641, 1766, 1812, 1900, 1967</li>
+  <li>La estructura de doblette (dos eventos casi iguales separados 39s) es <strong>científicamente rara</strong></li>
+  <li>El deslizamiento en la ruptura principal alcanzó <strong>2 metros</strong> al oeste de Puerto Cruz — zona de daño máximo</li>
+</ul>
+
+<h2 id="mapas">Mapas y Visualización de Impacto</h2>
+<ul class="resource-list">
+  <li><a href="https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026">iMMAP Mapa de Impacto Rápido</a> — Exposición poblacional por intensidad de sacudida</li>
+  <li><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/shakemap">USGS Shake Map</a> — Zonas de Intensidad Mercalli Modificada</li>
+  <li><a href="https://www.bbc.com/news/topics/c302m85q5ljt">Mapas BBC</a> — Ubicaciones de colapsos de edificios, visualización de profundidad</li>
+  <li><a href="https://www.guideoftheworld.com/venezuela-earthquakes-2026-and-maps.html">Guide of the World</a> — Mapas y sismicidad histórica</li>
+</ul>
+
+<h2 id="ayuda">Ayuda Humanitaria — Quién Está Respondiendo</h2>
+
+<table>
+  <tr><th>País / Organización</th><th>Contribución</th><th>Estado</th></tr>
+  <tr><td>🇺🇸 Estados Unidos</td><td>2 equipos USAR de élite (Fairfax County + LA County, 151 personal, 12 perros); USS Fort Lauderdale; C-17/C-130; $150M de ayuda</td><td><span class="badge badge-active">Desplegado</span></td></tr>
+  <tr><td>🇲🇽 México</td><td>Personal de rescate y salud</td><td><span class="badge badge-active">Llegó 26 Jun</span></td></tr>
+  <tr><td>🇸🇻 El Salvador</td><td>Equipo de rescate — ubicó a niña de 15 años atrapada en Catia La Mar</td><td><span class="badge badge-active">Llegó 26 Jun</span></td></tr>
+  <tr><td>🇩🇴 República Dominicana</td><td>Convoy de rescate</td><td><span class="badge badge-active">Llegó 26 Jun</span></td></tr>
+  <tr><td>🇨🇴 Colombia</td><td>60+ rescatistas, 4 perros, ayuda humanitaria</td><td><span class="badge badge-active">Desplegado</span></td></tr>
+  <tr><td>🇨🇺 Cuba</td><td>Personal de salud cooperando activamente</td><td><span class="badge badge-active">Desplegado</span></td></tr>
+  <tr><td>🇵🇦 Panamá</td><td>Sistema Nacional de Protección Civil</td><td><span class="badge badge-planned">Enviado</span></td></tr>
+  <tr><td>🇪🇸 España</td><td>Suministros de ayuda, financiación, hospital de campaña</td><td><span class="badge badge-planned">Desplegando</span></td></tr>
+  <tr><td>🇨🇱 Chile</td><td>Equipos de emergencia y suministros médicos</td><td><span class="badge badge-planned">Desplegando</span></td></tr>
+  <tr><td>🇺🇳 ONU OCHA</td><td>Coordinando despliegues internacionales de USAR</td><td><span class="badge badge-active">Activo</span></td></tr>
+</table>
+
+<h3>Donar — Organizaciones Verificadas</h3>
+<ul class="resource-list">
+  <li><a href="https://www.ifrc.org/donate">IFRC</a> — Red más grande en terreno; Cruz Roja Venezolana activa</li>
+  <li><a href="https://www.unicef.org/donate">UNICEF</a> — Suministros de emergencia para niños; activo en Venezuela antes del desastre</li>
+  <li><a href="https://www.directrelief.org">Direct Relief</a> — Suministros médicos; trabaja en Venezuela; finanzas transparentes</li>
+  <li><a href="https://www.wfp.org/donate">WFP</a> — Ayuda alimentaria; infraestructura existente en Venezuela</li>
+  <li><a href="https://www.msf.org/donate">MSF</a> — Equipos médicos; crítico dado el colapso hospitalario</li>
+  <li><a href="https://cerf.un.org">UN CERF</a> — EE.UU. comprometió $100M aquí específicamente para Venezuela</li>
+</ul>
+
+<h2 id="infraestructura">Infraestructura y Estado de Acceso</h2>
+
+<table>
+  <tr><th>Infraestructura</th><th>Estado</th><th>Notas</th></tr>
+  <tr><td><strong>Aeropuerto Simón Bolívar (CCS)</strong></td><td><span class="badge badge-severe">CERRADO</span></td><td>Daño estructural en techo. Todos los vuelos cancelados.</td></tr>
+  <tr><td><strong>Hospitales</strong></td><td><span class="badge badge-severe">CRÍTICO</span></td><td>{{ stats.hospitals_damaged.value }} dañados; {{ stats.hospitals_collapsed.value }} colapsados. Escasez de agua, antibióticos, fluidos IV, anestésicos. Pacientes tratados al aire libre.</td></tr>
+  <tr><td><strong>Redes móviles</strong></td><td><span class="badge badge-severe">CONGESTIONADAS</span></td><td>Cortes generalizados en el norte de Venezuela</td></tr>
+  <tr><td><strong>Internet</strong></td><td><span class="badge badge-high">PARCIAL</span></td><td>200+ sitios bloqueados. X parcialmente desbloqueada el 26 Jun.</td></tr>
+  <tr><td><strong>Autopista Caracas–La Guaira</strong></td><td><span class="badge badge-high">DAÑADA</span></td><td>Abierta. Voluntarios usan para transportar ayuda.</td></tr>
+  <tr><td><strong>Suministro eléctrico</strong></td><td><span class="badge badge-high">CORTES</span></td><td>Generalizado en estados del norte</td></tr>
+  <tr><td><strong>Escuelas</strong></td><td><span class="badge badge-severe">CERRADAS</span></td><td>Cerradas por el resto de la semana</td></tr>
+  <tr><td><strong>Equipo pesado de rescate</strong></td><td><span class="badge badge-severe">ESCASEZ</span></td><td>Cavando con manos por falta de maquinaria</td></tr>
+</table>
+
+<h2 id="comms">Medios y Alternativas de Comunicación</h2>
+<p>El gobierno de Venezuela mantiene uno de los entornos de internet más restrictivos de América Latina.</p>
+<ul class="resource-list">
+  <li><strong>VPNs:</strong> Tunnelbear, Proton VPN o Psiphon funcionan en datos móviles. Comparta enlaces por SMS antes de conectarse.</li>
+  <li><strong>Tor Browser:</strong> <a href="https://www.torproject.org">torproject.org</a> — Funciona en entornos fuertemente censurados</li>
+  <li><strong>VE Sin Filtro:</strong> <a href="https://vesinfiltro.com">vesinfiltro.com</a> — Rastrea qué sitios están bloqueados en tiempo real</li>
+  <li><strong>WhatsApp:</strong> Generalmente funcional incluso con restricción; herramienta principal de comunicación dentro de Venezuela</li>
+  <li><strong>SMS:</strong> Más confiable que conexiones de datos para alcanzar personas en zonas afectadas</li>
+</ul>
+
+<h2 id="aftershock">Pronóstico de Réplicas</h2>
+<p>Basado en <a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a> al 25 de junio de 2026:</p>
+
+<table>
+  <tr><th>Magnitud de Réplica</th><th>Probabilidad (próximos 7 días)</th><th>Fuente</th></tr>
+  <tr><td>Mw 4+</td><td><strong>99%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 5+</td><td><strong>98%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 6+</td><td><strong>{{ stats.aftershock_prob_mw6.value }}%</strong></td><td><a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a></td></tr>
+  <tr><td>Mw 7.2+ (nuevo evento mayor)</td><td><strong>~{{ stats.aftershock_prob_mw7.value }}%</strong></td><td><a href="{{ stats.aftershock_prob_mw7.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw7.source }}</a></td></tr>
+</table>
+
+<div class="alert alert-danger">
+  <strong>⚠️ Una réplica Mw 6+ tiene casi 50% de probabilidad esta semana.</strong> Las estructuras ya debilitadas deben tratarse como potencialmente inseguras. Pronóstico en vivo: <a href="{{ stats.aftershock_prob_mw6.source_url }}" target="_blank" rel="noopener">{{ stats.aftershock_prob_mw6.source }}</a>
+</div>
+
+<h2 id="historia">Contexto Histórico</h2>
+<table>
+  <tr><th>Año</th><th>Magnitud</th><th>Ubicación</th><th>Fallecidos</th><th>Notas</th></tr>
+  <tr><td>1641</td><td>~7.5</td><td>Región de Caracas</td><td>Miles</td><td>Destrucción de la era colonial</td></tr>
+  <tr><td>1766</td><td>~7.0</td><td>Cumaná</td><td>Cientos</td><td>Límite de placa del Caribe</td></tr>
+  <tr><td>1812</td><td>7.7</td><td>Caracas / Barquisimeto</td><td>10,000–20,000</td><td>El más letal en la historia venezolana</td></tr>
+  <tr><td>1900</td><td>7.7</td><td>NE de Caracas (San Narciso)</td><td>~100</td><td>El más grande registrado instrumentalmente anterior</td></tr>
+  <tr><td>1967</td><td>6.5</td><td>Caracas</td><td>272</td><td>Impulsó códigos de construcción sísmica</td></tr>
+  <tr><td>1997</td><td>6.9</td><td>Sucre</td><td>Menor</td><td>Era de monitoreo moderno</td></tr>
+  <tr><td><strong>2026</strong></td><td><strong>7.5 (doblette)</strong></td><td><strong>Yaracuy / La Guaira</strong></td><td><strong>{{ stats.deaths.value }}+ (aumentando)</strong></td><td><strong>El más grande desde 1900; impacto urbano catastrófico</strong></td></tr>
+</table>
+
+<p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">El terremoto de 1967 llevó a códigos formales de construcción sísmica — pero décadas de colapso económico significaron que grandes proporciones del parque de viviendas se construyeran fuera del cumplimiento del código. Esta vulnerabilidad estructural es un factor principal en el número actual de víctimas.</p>
+
+<h2 id="checklist">Lista de Verificación para Socorristas Activos</h2>
+
+<div class="card">
+  <h3>Mañana (Diario)</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Revise <strong>CNN Live Blog</strong> y <strong>Al Jazeera</strong> para novedades nocturnas</li>
+    <li>Actualice <strong>Estadísticas Clave</strong> con las últimas cifras verificadas</li>
+    <li>Revise el <strong>Pronóstico de Réplicas USGS</strong> para nuevos eventos sísmicos</li>
+    <li>Revise <strong>ReliefWeb</strong> para nuevos informes de situación</li>
+  </ul>
+</div>
+<div class="card">
+  <h3>Tarde</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Busque en <strong>Desaparecidos Terremoto Venezuela</strong> y <strong>Venezuela Te Busca</strong></li>
+    <li>Monitoree <strong>#TerremotoVenezuela</strong> y <strong>#VenezuelaEarthquake</strong> en X e Instagram</li>
+    <li>Revise <strong>ONU OCHA Venezuela</strong> para actualizaciones de coordinación</li>
+    <li>Revise <strong>VE Sin Filtro</strong> para cambios en el acceso a internet</li>
+  </ul>
+</div>
+<div class="card">
+  <h3>Noche</h3>
+  <ul style="color: var(--text-muted); font-size: 0.85rem;">
+    <li>Revise <strong>EMSC</strong> y <strong>FUNVISIS</strong> para nuevas réplicas</li>
+    <li>Monitoree <strong>AGU Landslide Blog</strong> para reportes de peligros secundarios</li>
+    <li>Verifique si el <strong>aeropuerto ha reabierto</strong> (crítico para logística de ayuda)</li>
+    <li>Archivar fuentes · Preparar lista de vigilancia para el día siguiente</li>
+  </ul>
+</div>
+
+<h2 id="recursos">Todos los Recursos</h2>
+<table>
+  <tr><th>Nombre</th><th>Tipo</th><th>Enlace</th><th>Descripción</th></tr>
+  {% for res in resources %}
+  <tr>
+    <td>{{ res.name }}</td>
+    <td><span class="badge badge-{{ res.type }}">{{ res.type.replace('_', ' ') }}</span></td>
+    <td><a href="{{ res.url }}">Ver</a></td>
+    <td>{{ res.description }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
