@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}How to Help — Venezuela Earthquake Response{% endblock %}
+{% block content %}
+
+<h1>How to Help</h1>
+<p>Ways to contribute to the earthquake response — from inside Venezuela or abroad.</p>
+
+<h2>Donate</h2>
+<p>Verified organisations with established Venezuela operations:</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+  <a href="https://www.ifrc.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">IFRC</div>
+  </a>
+  <a href="https://www.unicef.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">UNICEF</div>
+  </a>
+  <a href="https://www.directrelief.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">Direct Relief</div>
+  </a>
+  <a href="https://www.wfp.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">WFP</div>
+  </a>
+  <a href="https://www.msf.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">MSF</div>
+  </a>
+  <a href="https://cerf.un.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">UN CERF</div>
+  </a>
+</div>
+
+<h2>Share Information</h2>
+<div class="card">
+  <h3>Missing Persons Platforms</h3>
+  <p>If someone you know is missing, search and post on these volunteer-run platforms:</p>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
+    <li><strong><a href="https://www.desaparecidosterremotovenezuela.com/" target="_blank" rel="noopener">Desaparecidos Terremoto Venezuela</a></strong> — Search and post missing persons with photos</li>
+    <li><strong><a href="https://venezuelatebusca.com/" target="_blank" rel="noopener">Venezuela Te Busca</a></strong> — Report name, age, gender, location; searchable registry</li>
+    <li><strong><a href="https://google.org/personfinder" target="_blank" rel="noopener">Google Person Finder</a></strong> — Search or register missing persons</li>
+  </ul>
+</div>
+
+<h2>Technical Volunteers</h2>
+<div class="card">
+  <p>If you have skills in mapping, data science, or engineering, there are specific ways to help:</p>
+  <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
+    <li><strong>HOT-OSM mapping</strong> — Help map affected areas. <a href="https://tasks.hotosm.org/" target="_blank" rel="noopener">Check the Tasking Manager</a></li>
+    <li><strong>Satellite damage assessment</strong> — Compare before/after imagery. <a href="https://mapping.emergency.copernicus.eu/activations/EMSR884/" target="_blank" rel="noopener">Copernicus EMS</a></li>
+    <li><strong>ML / data science</strong> — <a href="contributing.html">See the Contributing page</a> for active projects</li>
+  </ul>
+</div>
+
+<h2>Detailed Response Gaps</h2>
+<div class="card" style="border-left: 4px solid var(--orange);">
+  <p>For responders and coordinators: a live inventory of what's missing on the ground — imagery, damage assessments, logistics, and more. <a href="gaps.html">View response gaps →</a></p>
+</div>
+
+{% endblock %}
