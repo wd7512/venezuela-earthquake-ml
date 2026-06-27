@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-27 18:30 UTC (cron scout — Turkey/Chile/Israel deployments, 17 countries mobilized, $200M fund, birth-in-rubble miracle)
+Last updated: 2026-06-28 06:30 UTC (cron scout — US Maj. Gen. Jarrard deployed, invasion fears, 7.9M humanitarian, CFR/CSIS analysis)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1001,3 +1001,127 @@ Key findings from their assessment:
 - HDX returns occasionally block Google Search — cache results quickly
 - USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
 - Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 Morning Cron Scout — US Military Escalation + Think Tank Analysis)
+
+### 1. US Military Escalation — Maj. Gen. Kevin Jarrard (4th Marine) Leading First Wave
+- **Source:** Task & Purpose (June 27-28)
+- **What:** US deploying warships, aircraft, and a Marine general to Venezuela earthquake relief
+- **Key detail:** **Maj. Gen. Kevin Jarrard**, commanding general of 4th Marine Aircraft Wing, is the **lead officer** for the US military response
+- **Context:** First wave of relief forces arrived overnight (June 26-27). This is a significant escalation beyond the earlier-reported DART/SAR deployments
+- **ML relevance:** ⭐⭐ — US military presence may bring additional UAV/imagery assets useful for damage assessment
+
+### 2. Venezuela Invasion Fears — US Warships Off Coast
+- **Source:** RFI, NZ Herald, NDTV, Insider Paper, Fox News (June 27-28)
+- **What:** Venezuela on **high alert** as US military deployment off its coast has stirred **invasion fears**
+- **Government response:** Maduro calling for **disaster preparedness drills on Saturday** (June 28)
+- **Context:** Venezuela was already on edge; US warships near shore for earthquake relief being interpreted through lens of geopolitical tension
+- **ML relevance:** ⭐⭐ — Political instability may affect data sharing, access, and coordination for ML damage assessment
+
+### 3. OCHA: 7.9 Million Venezuelans Need Humanitarian Support
+- **Source:** OCHA Facebook/UNOCHA (June 27), Armstrong & Getty (June 27)
+- **What:** **7.9 million people across Venezuela need humanitarian support** — even before the earthquake
+- **Drivers:** Economic stagnation, inflation, strained public services
+- **Earthquake compounds:** Adds acute displacement/trauma on top of chronic crisis
+- **ML relevance:** ⭐⭐⭐ — Pre-existing vulnerability data helps prioritize areas where earthquake damage will have worst impact
+
+### 4. CFR Analysis — "Venezuela's Earthquakes Test U.S. Disaster Relief"
+- **URL:** https://www.cfr.org/articles/as-death-toll-spikes-venezuelas-earthquakes-test-u-s-disaster-relief
+- **Published:** June 25, 2026
+- **Author:** Sam Vigersky
+- **Key argument:** The earthquake response is a major test of US leadership and Washington's new relationship with Caracas
+- **Context:** Geopolitical implications of US aid to a sanctioned adversary
+- **ML relevance:** ⭐⭐ — Policy context; US engagement may facilitate satellite data sharing
+
+### 5. CSIS Analysis — "Venezuela Suffered Its Worst Earthquake in Decades: What Comes Next?"
+- **URL:** https://www.csis.org/analysis/venezuela-suffered-its-worst-earthquake-decades-what-comes-next
+- **Published:** ~18 hours ago (June 27)
+- **Authors:** Henry Ziemer and Joseph Ruelas
+- **Key argument:** International response will be a major test of US leadership and Washington's new relationship with Caracas
+- **ML relevance:** ⭐⭐ — Think tank analysis may influence funding/priorities for damage assessment
+
+### 6. NRC — "Deadly Earthquake Will Deepen Suffering"
+- **URL:** https://www.nrc.no/news/2026/venezuela-deadly-earthquake-will-deepen-suffering
+- **Published:** June 26, 2026
+- **Key quote:** "This earthquake will deepen the suffering for millions already in dire need. More than a quarter of the country's population needed urgent aid even before the earthquakes."
+- **Context:** Norwegian Refugee Council highlighting compounding crises
+- **ML relevance:** ⭐⭐ — Pre-earthquake vulnerability baseline useful for impact assessment
+
+### 7. BBC — Rescuers "Pulling People Out With Their Bare Hands"
+- **URL:** https://www.bbc.com/news/live/c621z18wznet
+- **Key detail:** In Caracas, overwhelmed rescuers are "pulling people out with their bare hands" — per student eyewitness
+- **Context:** 920+ dead, 3,360 injured per official figures; rescue capacity overwhelmed
+- **ML relevance:** ⭐⭐⭐ — Indicates extreme resource constraint; ML-based rapid damage assessment could help prioritize where to send limited rescue resources
+
+### 8. Neighbors Taking Search Into Own Hands
+- **Source:** Austin Statesman (June 28), ClickOnDetroit (June 26), KFOXTV (June 27)
+- **What:** Desperate families across northern Venezuela searching ruins themselves due to scarcity of government rescuers
+- **Key detail:** Franklin Fuentes searching for missing relatives in collapsed building where they lived — 2 days after quake
+- **Context:** Government response criticized as inadequate; communities self-organizing
+- **ML relevance:** ⭐⭐⭐ — Citizen-led search = crowdsourced ground-truth data opportunity (geolocated photos/videos of collapsed buildings)
+
+### 9. IFRC Emergency Page — New URL
+- **URL:** https://www.ifrc.org/emergency/venezuela-earthquake-2026
+- **Status:** Active, with situational overview and Red Cross response details
+- **Note:** Different from the earlier go.ifrc.org link — this is the main IFRC emergency page
+- **ML relevance:** ⭐⭐ — IFRC may commission satellite-based damage assessments
+
+### 10. Copernicus EMSR884 — Grading Maps Still Pending
+- **Status:** No grading map products visible on the EMSR884 activation page as of June 28 morning
+- **Expected:** 13 sectors covering Caracas, Petare, Maracay + ~10 others
+- **ML relevance:** ⭐⭐⭐⭐⭐ — When released, these will be the gold-standard ground-truth labels. Check daily.
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-28 Morning)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + "Maj. Gen." + Jarrard | ⭐⭐⭐⭐⭐ | **NEW: Marine Gen. Kevin Jarrard leading US military response** |
+| "Venezuela earthquake" + invasion + fears + warships | ⭐⭐⭐⭐⭐ | **NEW: Venezuela on high alert; Maduro calling Sat drills** |
+| "Venezuela earthquake" + "7.9 million" + humanitarian | ⭐⭐⭐⭐⭐ | **NEW: OCHA says 7.9M need aid even before quakes** |
+| "Venezuela earthquake" + CFR + test | ⭐⭐⭐⭐ | **NEW: CFR analysis on US disaster relief test** |
+| "Venezuela earthquake" + CSIS + "what comes next" | ⭐⭐⭐⭐ | **NEW: CSIS analysis on what comes next** |
+| "Venezuela earthquake" + NRC + deepen suffering | ⭐⭐⭐⭐ | **NEW: Norwegian Refugee Council statement** |
+| "Venezuela earthquake" + "bare hands" + BBC | ⭐⭐⭐⭐ | **NEW: Rescuers overwhelmed, using bare hands in Caracas** |
+| "Venezuela earthquake" + neighbors + dig + rubble | ⭐⭐⭐⭐ | **NEW: Citizens taking search into own hands** |
+| "Venezuela earthquake" + IFRC + emergency | ⭐⭐⭐⭐ | **NEW: IFRC emergency page at new URL** |
+| EMSR884 + grading + product + released | ⭐⭐ | **No products yet — still pending** |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel, Sky Villa) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+- **Al Jazeera** — best for rescue→recovery transition narrative + comprehensive aid trackers
+- **GOV.UK / BBC** — good for UK deployment details
+- **IRC / HI websites** — good for NGO response announcements
+- **NYT "Nations Send Rescue Teams"** — comprehensive country-by-country deployment list
+- **Times of Israel / JPost** — good for Israel aid preparation updates
+- **Task & Purpose** — good for US military deployment specifics (who, what, when)
+- **CFR / CSIS** — good for policy analysis context
+- **OCHA Facebook/UNOCHA** — surprisingly current for humanitarian stats
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+- USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
+- Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
+- Copernicus grading maps not yet released — EMSR884 activation page shows no products as of June 28

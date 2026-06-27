@@ -2,7 +2,7 @@
   "config": {
     "show_zone_pages": false
   },
-  "last_updated": "2026-06-27T12:12:05Z",
+  "last_updated": "2026-06-27T12:53:09Z",
   "stats": {
     "deaths": 920,
     "injured": 3360,
@@ -236,7 +236,7 @@
       "damage_level": "major",
       "damage_score": 80,
       "description": "Capital city. Heavy damage in southeastern districts (Los Palos Grandes, Catia). Nearly all high-rise buildings in SE Caracas sustained heavy damage or collapsed per Miyamoto. Stadium damage during baseball game. Hospitals evacuated.",
-      "building_collapses": "50–100+",
+      "building_collapses": "50\u2013100+",
       "coordinates": "10.4806\u00b0N, 66.9036\u00b0W",
       "population": 3000000,
       "key_infrastructure": [
