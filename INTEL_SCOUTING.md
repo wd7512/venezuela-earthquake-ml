@@ -1,6 +1,8 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-29 20:00 UTC (cron scout — 🎉 COPERNICAS EMSR884 CARACAS GRADING MAPS NOW DOWNLOADABLE; full AOI list (03 Valencia, 10 Guacara, 11 Villa de Cura, 12 Caraballeda) now public; 383 buildings severely damaged incl. 13 hospitals + 25 shopping centers; 2,927 families displaced; 1,002 additional facilities damaged)
+Last updated: 2026-06-29 04:17 UTC (cron scout — USGS PAGER red alert issued: economic losses 1-4% GDP; Seismological Society of America free papers until July 16; IOCHR fact-finding mission statement)
+Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
+Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
