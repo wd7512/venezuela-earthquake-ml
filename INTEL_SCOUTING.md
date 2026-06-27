@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 06:30 UTC (cron scout — US Maj. Gen. Jarrard deployed, invasion fears, 7.9M humanitarian, CFR/CSIS analysis)
+Last updated: 2026-06-28 14:00 UTC (cron scout — USS Fort Lauderdale/Billings arrived, PAGER 42% 10K-100K, Starlink comms, LA County USA-2 deployed, NBC satellite imagery)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1115,6 +1115,115 @@ Key findings from their assessment:
 - **Task & Purpose** — good for US military deployment specifics (who, what, when)
 - **CFR / CSIS** — good for policy analysis context
 - **OCHA Facebook/UNOCHA** — surprisingly current for humanitarian stats
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+- USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
+- Some international deployment details (Turkey, Chile) only in local-language sources — use country name + "Venezuela" + "earthquake" in searches
+- Copernicus grading maps not yet released — EMSR884 activation page shows no products as of June 28
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 Cron Scout — Ships Arrive, PAGER Updated, Communications Down)
+
+### 1. US Warships Arrive Off Venezuelan Coast
+- **Source:** Bloomberg (June 27), Military Times (June 27)
+- **What:** USS Fort Lauderdale (LPD-28) and USS Billings (LCS-15) **arrived near Venezuelan waters on Friday** to mobilize SAR teams
+- **Bloomberg angle:** "Two of the US military ships used in a blockade meant to pressure Nicolás Maduro have headed back toward Venezuela, this time with rescue teams, equipment and medical aid"
+- **Assets:** C-17 Globemaster, C-130 Hercules cargo aircraft, reconnaissance platforms, helicopters
+- **ML relevance:** ⭐⭐ — Ships arrived = additional UAV/recon assets possibly being deployed for damage assessment
+
+### 2. USGS PAGER — Updated Death Toll Probabilities (More Specific)
+- **Source:** USGS PAGER page, MSN, CiberCuba, TheGlobalStatistics.com (June 25-27)
+- **Updated PAGER probabilities for M7.5 event:**
+  - **42% probability** of 10,000–100,000 deaths (new specific figure)
+  - **39% probability** of 1,000–10,000 deaths
+  - **37% probability** of 10,000–100,000 deaths
+  - **11% probability** of exceeding 100,000 deaths
+- **Note:** Wikipedia cites PAGER as predicting "potentially exceeding 100,000"
+- **ML relevance:** ⭐⭐⭐ — Higher-than-expected casualty probability justifies urgent ML damage assessment
+
+### 3. Daniel Cordero Rescued — Catia La Mar (Named Survivor)
+- **Source:** AP Photo/Fernando Vergara (June 26), Newsday, SFGate, The Hour (June 27)
+- **What:** Rescue workers pulled **Daniel Cordero** from rubble of his home in Catia La Mar two days after the quake (June 26)
+- **Context:** Widely distributed AP photo — became iconic image of rescue efforts
+- **ML relevance:** ⭐⭐ — Named survivor from known location = ground-truth data point for survivable void space
+
+### 4. LA County Search & Rescue (USA-2) Deployed
+- **Source:** CBS LA, KTLA, NBC LA, mynewsla.com (June 25-27)
+- **What:** Los Angeles County Fire Department's International Urban Search and Rescue team (**USA-2**) activated by US State Department
+- **Team composition:** USAR specialists with equipment
+- **ML relevance:** ⭐ — Another professional SAR team on ground; may produce post-search structural assessments
+
+### 5. Communications Infrastructure Damaged — Starlink/Radio
+- **Source:** NYT (June 26-27), NPR (June 26)
+- **What:** Earthquake disabled much of the **commercial cellphone network** in affected areas
+- **Workaround:** Emergency workers resorting to **radio systems and Starlink satellite internet**
+- **ML relevance:** ⭐⭐ — Communications damage affects ground-truth data collection; satellite-based assessment (our ML product) doesn't rely on ground comms
+
+### 6. Updated Casualty Figures (Wikipedia + Media Consensus)
+- **Source:** Wikipedia (updated June 27-28), LA Times, Sky News, New Indian Express (June 27)
+- **Updated official figures:**
+  - **920+ confirmed dead** (some sources now say "**nearly 1,000**" or "**approaching 1,000**")
+  - **4,500+ injured** (Wikipedia updated from 3,360)
+  - **50,000+ missing** (51,000 per some sources)
+  - **250+ buildings destroyed** (official count)
+  - Total fatalities now listed as **164–10,000+** on Wikipedia's disaster list (range reflecting uncertainty)
+- **ML relevance:** ⭐⭐⭐ — Updated building count and casualty figures help calibrate model expectations
+
+### 7. NBC News — Satellite Imagery Scope of Devastation
+- **Source:** NBC News (June 27)
+- **URL:** https://www.nbcnews.com/world/venezuela/satellite-images-show-scope-devastation-venezuela-dual-earthquakes-rcna352017
+- **What:** Detailed satellite imagery comparison showing La Guaira apartment building (June 22 vs June 25)
+- **ML relevance:** ⭐⭐⭐⭐ — More Vantor imagery published; useful for before/after training pairs
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-28)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + USS Fort Lauderdale + arrive | ⭐⭐⭐⭐⭐ | **NEW: Ships arrived Friday; blockade ships repurposed for rescue** |
+| "Venezuela earthquake" + PAGER + 42% + 10000 | ⭐⭐⭐⭐⭐ | **NEW: Updated PAGER probs — 42% chance of 10K-100K deaths** |
+| "Venezuela earthquake" + "Daniel Cordero" | ⭐⭐⭐⭐ | **NEW: Named survivor rescued from Catia La Mar rubble** |
+| "Venezuela earthquake" + LA County + search rescue | ⭐⭐⭐⭐⭐ | **NEW: USA-2 team deployed by State Department** |
+| "Venezuela earthquake" + Starlink + communications | ⭐⭐⭐⭐ | **NEW: Cell networks down; Starlink/radio being used** |
+| "Venezuela earthquake" + NBC + satellite images | ⭐⭐⭐⭐ | **NEW: NBC publishes Vantor La Guaira before/after** |
+| "Venezuela earthquake" + "nearly 1000" + dead | ⭐⭐⭐⭐ | **NEW: Media consensus shifting to ~1000 death toll** |
+| "Venezuela earthquake" + Wikipedia + updated | ⭐⭐⭐⭐ | **Wikipedia now shows 920+ dead, 4,500+ injured, 50,000+ missing** |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel, Sky Villa) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+- **Al Jazeera** — best for rescue→recovery transition narrative + comprehensive aid trackers
+- **GOV.UK / BBC** — good for UK deployment details
+- **IRC / HI websites** — good for NGO response announcements
+- **NYT "Nations Send Rescue Teams"** — comprehensive country-by-country deployment list
+- **Times of Israel / JPost** — good for Israel aid preparation updates
+- **Task & Purpose** — good for US military deployment specifics (who, what, when)
+- **CFR / CSIS** — good for policy analysis context
+- **OCHA Facebook/UNOCHA** — surprisingly current for humanitarian stats
+- **Bloomberg** — good for aid mobilization narrative + ship arrival confirmation
+- **AP Photos** — excellent for named survivor/rescue imagery with geolocation
+- **NBC News** — publishing Vantor satellite imagery comparisons
 
 ### What's not working:
 - GitHub projects are just starting — we still have an opportunity to be primary ML project
