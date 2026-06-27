@@ -148,13 +148,6 @@
   .badge-in_progress { background: rgba(241, 196, 15, 0.2); color: #f1c40f; }
   .badge-filled { background: rgba(39, 174, 96, 0.2); color: #27ae60; }
   .badge-help { background: rgba(52, 152, 219, 0.2); color: #3498db; }
-  .chart-container {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
   .chart-container img { width: 100%; height: auto; display: block; }
   .alert {
     padding: 0.75rem 1rem;
@@ -223,18 +216,6 @@
     </p>
   </div>
 </main>
-<script>
-function toggleChart(card) {
-  var container = card.querySelector('.chart-container');
-  var label = card.querySelector('.chart-expand-label');
-  if (container.style.display === 'block') {
-    container.style.display = 'none';
-    label.textContent = '▼ click to expand';
-  } else {
-    container.style.display = 'block';
-    label.textContent = '▲ click to collapse';
-  }
-}
-</script>
+
 </body>
 </html>
