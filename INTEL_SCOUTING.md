@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 08:30 UTC (overnight scout — 72hr window closing, 51K missing, 7 Chinese dead, IFRC $61.8M appeal, US sanctions lifted)
+Last updated: 2026-06-27 12:12 UTC (cron scout — post-72hr window closing, La Guaira access restricted, Spain 80 missing, UK 68-team deployment, 243 rescued)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -739,3 +739,118 @@ Key findings from their assessment:
 - Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
 - HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
 - HDX returns occasionally block Google Search — cache results quickly
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-27 Cron Scout — Post-72hr Window)
+
+### 1. La Guaira Access Restricted — Rescue→Recovery Transition
+- **Source:** Al Jazeera (June 27), AP (June 27)
+- **What:** Venezuelan authorities moved on **Friday night (June 27)** to **restrict access** to La Guaira as traffic chaos hampered search efforts
+- **New rule:** Anyone entering the La Guaira area must now seek official permits
+- **Context:** 72-hour "golden window" ended Saturday evening; focus shifting from rescue to recovery
+- **Jorge Rodriguez (National Assembly President):** "Each person saved is a miracle" + "We are not going to hide absolutely anything about the magnitude of this tragedy"
+- **ML relevance:** ⭐⭐⭐ — Access restrictions may limit ground-truth collection; satellite-based ML damage assessment becomes even more critical
+
+### 2. Spain — 80 Nationals Unaccounted For (Updated)
+- **Source:** Democrata.es (June 26), Indian Express (June 27)
+- **Updated figures from Spanish Foreign Ministry:**
+  - **2 Spanish nationals confirmed dead** (up from earlier reports)
+  - **80 Spanish citizens remain unaccounted for** (up from 68 in earlier NYT report)
+- **ML relevance:** ⭐ — International dimension; Spanish UME team (54 troops) already deployed with dogs/geophones
+
+### 3. UK Deploys 68-Strong Search & Rescue Team
+- **Source:** BBC (June 27), GOV.UK (June 27)
+- **Deployment details:**
+  - **68-strong UK search and rescue team** deployed via RAF Brize Norton (Oxfordshire)
+  - **Specialist search dogs + drones** on board
+  - **Specialists from 14 UK fire services**, led by Merseyside Fire and Rescue
+  - **£2 million UK humanitarian funding** committed
+- **ML relevance:** ⭐⭐ — International SAR presence may bring additional imagery/assessment assets
+
+### 4. Updated Rescue & Casualty Figures (Al Jazeera June 27)
+- **Source:** Al Jazeera (June 27), AP (June 27)
+- **Key stats:**
+  - **920+ confirmed dead** (official)
+  - **51,000+ missing** (per independent digital databases)
+  - **3,300+ injured** (as of midday Friday)
+  - **243 people rescued** alive so far
+  - **861 international volunteers** from Mexico, US, El Salvador, Switzerland, Colombia and beyond already in country
+  - **IOM:** Up to 6.76 million people could be affected; ~2 million in Caracas alone
+- **ML relevance:** ⭐⭐⭐ — 243 rescues = 243 data points of where people were found (correlates with survivable void spaces in collapsed buildings)
+
+### 5. IRC Launches Emergency Response
+- **Source:** IRC press release (June 26), IRC website (June 27)
+- **What:** International Rescue Committee launched emergency response in Venezuela
+- **Services:** Health, nutrition, water/sanitation, protection
+- **Quote:** "What we are seeing is catastrophic" — IRC Venezuela
+- **ML relevance:** ⭐⭐ — IRC on the ground may have access to localized damage data
+
+### 6. Humanity & Inclusion (HI) Responds
+- **Source:** HI website (June 27)
+- **What:** Humanity & Inclusion (formerly Handicap International) responding to Venezuela earthquake
+- **Focus:** Emergency response amid growing medical crisis
+- **ML relevance:** ⭐ — Another org on the ground; potential data-sharing partner
+
+### 7. Miami-Dade Fire Rescue Deployment
+- **Source:** WJNO/iHeart (June 26), NYT live blog (June 26)
+- **What:** Miami-Dade Fire Rescue deploying **Florida Task Force One** (~80 specialists + canine teams)
+- **ML relevance:** ⭐ — US urban search & rescue team with canine units; may produce post-search structural assessments
+
+### 8. Gulf News — "Nearly 1,000" Death Toll Headline
+- **Source:** Gulf News (June 27)
+- **Headline:** "Venezuela earthquakes kill nearly 1000, tens of thousands missing"
+- **Context:** Some media outlets now rounding to "nearly 1,000" though official count remains 920+
+- **ML relevance:** ⭐ — Media narrative shifting to four-digit death toll anticipation
+
+### 9. Al Jazeera — "Rescue Efforts Turn to Recovery" Narrative
+- **Source:** Al Jazeera (June 27)
+- **New article:** "Rescue efforts turn to recovery as aftershocks shake Venezuela"
+- **Context:** 72-hour window closed; aftershocks continue (M4.9 tremor mentioned as "days after" the mainshock)
+- **ML relevance:** ⭐⭐⭐ — Transition to recovery phase = demand for damage assessment (our ML product) increases
+
+---
+
+## Search Effectiveness Log (Updated 2026-06-27)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| "Venezuela earthquake" + "La Guaira" + restricted access | ⭐⭐⭐⭐ | **NEW: Access permits required as of Friday night** |
+| "Venezuela earthquake" + Spain + missing | ⭐⭐⭐⭐ | **NEW: 80 Spanish unaccounted for (up from 68), 2 confirmed dead** |
+| "Venezuela earthquake" + UK + search rescue + deploy | ⭐⭐⭐⭐⭐ | **NEW: 68-strong UK team from RAF Brize Norton, £2M funding** |
+| "Venezuela earthquake" + IRC + response | ⭐⭐⭐⭐ | **NEW: IRC launched emergency response** |
+| "Venezuela earthquake" + "Humanity Inclusion" | ⭐⭐⭐ | **NEW: HI responding** |
+| "Venezuela earthquake" + Miami-Dade + deploy | ⭐⭐⭐ | **NEW: Florida Task Force One (~80 specialists + canines)** |
+| "Venezuela earthquake" + "nearly 1000" | ⭐⭐⭐⭐ | **NEW: Media rounding to ~1000** |
+| "Venezuela earthquake" + "243" + rescued | ⭐⭐⭐⭐ | **NEW: 243 people rescued alive** |
+| "Venezuela earthquake" + "861" + volunteers | ⭐⭐⭐⭐ | **NEW: 861 international volunteers in country** |
+| "Venezuela earthquake" + recovery + transition | ⭐⭐⭐⭐ | **NEW: Rescue→recovery phase transition** |
+
+### What's working:
+- **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
+- **HOT Tasking Manager** — live project stats give us contributor engagement metrics and AOI boundaries
+- **ReliefWeb** is the best source for structured damage/needs data — new sitreps daily (IOM now added)
+- **Vantor + Microsoft AI4G** are the two key imagery/data releases so far; Vantor continuing to upload
+- **Copernicus EMS** (mapping.emergency.copernicus.eu) — activation EMSR884 will produce free grading maps = ground truth
+- **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
+- **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
+- **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel) yields detailed ground-truth collapse data
+- **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
+- **NPR / State Department** — good for US aid/response announcements
+- **Wikipedia** — surprisingly current for disaster stats; updated within hours
+- **Britannica** — now has a published entry, useful for project context
+- **Anadolu Agency / China Daily** — good for international casualty reporting
+- **Al Jazeera** — best for rescue→recovery transition narrative + access restriction updates
+- **GOV.UK / BBC** — good for UK deployment details
+- **IRC / HI websites** — good for NGO response announcements
+
+### What's not working:
+- GitHub projects are just starting — we still have an opportunity to be the primary ML project
+- X/Twitter search via web_search is limited — need direct X access for OSINT mining
+- Full list of 13 Copernicus sectors not yet public — check the EMSR884 activation page for updates
+- HDX event page returns 403 sometimes — use https://data.humdata.org/dataset?vocab_Topics=crisis-venezuela-earthquake instead
+- HDX returns occasionally block Google Search — cache results quickly
+- USGS website blocks automated access (403) — use web_search with site:usgs.gov instead
