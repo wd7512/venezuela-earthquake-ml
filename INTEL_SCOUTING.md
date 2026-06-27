@@ -1853,3 +1853,58 @@ Key findings from their assessment:
 - **Antimano (03) + Puerto Cabello (07) Grading** — "Not produced" — likely imagery issues
 - **Building damage count reconciliation** — 383 severe + 1,002 moderate = ~1,385 total (matches NYT's ~1,400)
 - *(All previous "what's not working" entries still valid)*
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-29 04:17 UTC Scout — USGS Red Alert + Research Access)
+
+### 1. USGS PAGER Red Alert — Economic Losses 1–4% GDP
+- **Source:** investing.live, NBC News, The Week, Breitbart, USGS PAGER page (June 25-27)
+- **What changed:** USGS issued a **RED alert** (highest PAGER level) for both earthquakes
+  - **Economic loss alert:** Red — **1–4% of Venezuelan GDP** (estimated)
+  - **Fatality probability:** 42% chance final death toll exceeds 10,000; 11% chance exceeds 100,000
+- **ML relevance:** ⭐⭐⭐⭐ — The 1-4% GDP economic loss estimate implies massive building stock damage. This is an indirect validation target: our ML damage predictions aggregated should approximate this economic loss band.
+
+### 2. Seismological Society of America — Free Papers Until July 16
+- **Source:** seismosoc.org/news (June 27)
+- **URL:** https://www.seismosoc.org/news/free-to-read-papers-related-to-the-venezuela-earthquakes/
+- **What:** SSA has made a curated list of journal papers related to the region freely accessible until **July 16, 2026**
+- **ML relevance:** ⭐⭐⭐ — These papers contain seismotectonic framework, site amplification in Caracas basin, and building vulnerability models. Directly relevant to our ML feature engineering (soft-story identification, soil amplification zones).
+
+### 3. UN OHCHR Fact-Finding Mission Statement
+- **Source:** ohchr.org (June 27)
+- **What:** The Independent International Fact-Finding Mission on the Bolivarian Republic of Venezuela issued a statement regarding the earthquake — likely documenting human rights implications of the disaster response
+- **ML relevance:** ⭐⭐ — Indirect; may document building codes violations or construction quality issues that correlate with damage patterns
+
+### 4. EMSC Tectonic Summary Now Available
+- **Source:** EMSC-CSEM (June 27)
+- **What:** European Mediterranean Seismological Centre published tectonic summary explaining the doublet mechanism
+- **ML relevance:** ⭐⭐⭐ — Understanding stress transfer between the two ruptures helps define spatial damage corridors for our model
+
+### 5. Cross-Reference: Confirmed Casualty Figures (Consolidated)
+- **920+ dead** (Wikipedia, multiple agencies)
+- **3,360–4,500 injured** (conflicting; US News 3,360; Al Jazeera 4,300)
+- **50,000–51,000 missing** (independent monitoring databases; AP 50,000; DW/Indian Express 51,000)
+- **USGS PAGER prediction:** 10,000–100,000 deaths (30% probability of exceeding 100,000)
+- **ML relevance:** ⭐⭐⭐⭐⭐ — The gap between confirmed (920) and missing (50,000+) is the key signal. Buildings with unresolved people = likely collapsed (severe damage class). Highest-value signal for ML training labels.
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-29 04:17)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| USGS PAGER + Venezuela earthquake + red alert | ⭐⭐⭐⭐⭐ | **NEW: USGS RED alert; economic losses 1-4% GDP; 42% chance >10k deaths** |
+| Seismological Society of America + Venezuela earthquake + free | ⭐⭐⭐ | **NEW: Papers free until July 16 — Caracas basin site effects** |
+| OHCHR fact-finding mission + Venezuela earthquake | ⭐⭐ | **NEW: UN human rights mission statement on earthquake response** |
+| EMSC + Venezuela earthquake + tectonic | ⭐⭐⭐ | **NEW: EMSC tectonic summary explaining doublet mechanism** |
+| Venezuela earthquake + 51,000 + missing | ⭐⭐⭐⭐ | **Missing count confirmed 51,000 by mainstream sources** |
+
+### What's working (updated):
+- **USGS PAGER alerts** — now showing red-level economic/fatality alerts with specific probability bands. High-value for framing model impact projections.
+- **Seismological Society of America** — offering time-limited free access to relevant papers (until July 16).
+- **Mainstream media** (BBC, Reuters, DW, NYT) — citing 50,000+ missing as headline figure alongside 920+ dead.
+
+### What's not working (updated):
+- **Injured count inconsistency** — 3,360 vs 4,500 depending on source. Likely different counting methodologies.
+- **Missing vs trapped ambiguity** — 50,000+ missing may include people who fled but aren't trapped under rubble.
