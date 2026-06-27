@@ -1,6 +1,6 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-28 23:00 UTC (cron scout — Death toll 929, Copernicus EMSR884 detailed product status, PAHO 90+ hospitals, MapAction deployed, 72h window closed)
+Last updated: 2026-06-29 03:00 UTC (cron scout — AMCOPS/IMC ground reports, foreign national toll updated, China aid offer, Bancaribe collapse, IMC NPR interview, GitHub dashboard expanded)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
@@ -1549,3 +1549,125 @@ Key findings from their assessment:
 - **HDX still returns 403** on direct event page — use dataset-specific URLs instead
 - **Full list of 13 Copernicus AOIs** — only 9 visible in Products Viewer; AOIs 09-12 not shown in page snapshot (may require scroll or are classified)
 - **Antimano + Puerto Cabello** — grading maps "Not produced" — likely due to imagery acquisition issues or cloud cover
+
+---
+
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-29 03:00 UTC Scout — Day 5, Ground Reports, Foreign Toll, China Aid)
+
+### 1. International Medical Corps — SitRep #1 + NPR Interview (Fresh Ground Assessment)
+- **SitRep PDF:** https://cdn1.internationalmedicalcorps.org/wp-content/uploads/2026/06/IntlMedCorps-Venezuela_Earthquake_SitRep01R.pdf
+- **Published:** June 26, 2026
+- **NPR Interview (June 28):** https://www.npr.org/2026/06/27/nx-s1-5872652/an-emergency-response-expert-explains-the-situation-in-venezuela-after-2-earthquakes
+  - **Interviewee:** Karol Bassim, Senior Program Manager at International Medical Corps
+  - **Key points from interview:**
+    - "The situation on the ground is catastrophic" — entire neighborhoods flattened
+    - Health system completely overwhelmed — hospitals damaged AND surge of trauma cases
+    - Water/sanitation infrastructure destroyed — cholera risk highlighted
+    - Logistics extremely difficult — roads damaged, airport closed, bridges compromised
+    - Security concerns affecting aid delivery
+    - Mental health crisis emerging — children particularly affected
+- **SitRep details:**
+  - All IMC staff in Venezuela safe/accounted for, though many directly affected
+  - IMC has worked in Venezuela since 2019 — existing presence = local knowledge
+  - Conducting initial damage assessments + coordinating with other responders
+- **ML relevance:** ⭐⭐⭐⭐ — IMC has granular ground-level health infrastructure damage data. Their assessment of which health facilities are functional vs. destroyed is directly useful as validation labels. The NPR interview details water/sanitation damage → if visible in satellite imagery, it's another damage class to detect.
+
+### 2. Foreign National Death Toll — Updated Breakdown (18+ Dead, 11 Nationalities)
+- **Source:** i24NEWS (June 26), Greater Belize Media (June 26)
+- **Confirmed Foreign Fatalities (at least 18):**
+  - **9 Portuguese** (note: earlier reports said 28 Portuguese dead at 589 toll; this lower figure was at earlier toll)
+  - **3 Spaniards** (BBC later reported 5 total)
+  - **2 Brazilians**
+  - **2 Chinese nationals** (earlier reports said 7 total)
+  - **2 Chileans**
+  - **1 Italian-Venezuelan** (per BBC)
+- **Total foreign dead now likely 50+** given the 28 Portuguese + 119 Spaniards missing figure from BBC
+- **Broader foreign casualty breakdown (per BBC at higher toll):**
+  - 28 Portuguese, 5 Spaniards, 2 Brazilians, 7 Chinese, 1 Chilean, 1 Italian-Venezuelan confirmed dead
+  - 85 Portuguese + 119 Spaniards missing
+- **ML relevance:** ⭐⭐ — Foreign involvement means additional satellite/imagery assets from those nations may be deployed
+
+### 3. China — Xi Jinping Offers Disaster Relief + Reconstruction Aid
+- **Source:** The Guardian live blog (June 26), Indian Express (June 26)
+- **What:** Chinese President Xi Jinping extended condolences to Acting President Delcy Rodriguez and pledged Beijing is ready to provide "disaster relief and reconstruction" assistance
+- **Context:** China has strategic interests in Venezuela (oil, infrastructure). "Reconstruction" aid may include heavy equipment, engineering teams, and satellite/imagery assets
+- **ML relevance:** ⭐⭐ — Chinese satellite imagery (Gaofen series) may become available for damage assessment
+
+### 4. Bancaribe Bank Collapse — Named Commercial Building in Caracas
+- **Source:** NYT live blog, Boston 25 News, WFTV, DW, CNBC (June 24-25)
+- **What:** A **Bancaribe bank branch in Caracas** collapsed during the earthquake
+- **Photographer:** Juan Barreto / AFP via Getty Images — widely distributed
+- **Context:** Bancaribe is a major Venezuelan private bank. The collapse was one of the first specific commercial building collapses identified in Caracas
+- **ML relevance:** ⭐⭐ — Named commercial building collapse in Caracas = specific geolocated validation point
+
+### 5. Los Palos Grandes — "One of Capital's Most Earthquake-Prone Districts"
+- **Source:** Anadolu Agency (June 26), Daily Sabah (June 26)
+- **Key finding:** Anadolu Agency explicitly describes Los Palos Grandes as "one of the capital's most earthquake-prone districts"
+- **Historical context:** Daily Sabah notes "Los Palos Grandes was also badly affected in the 1967 quake too, with entire buildings collapsing during that incident"
+- **Implication:** The district sits on or near a localized amplification zone (likely the Caracas basin edge or a secondary fault)
+- **ML relevance:** ⭐⭐⭐⭐ — Historical seismic vulnerability of Los Palos Grandes means we can use 1967 damage maps as a baseline for "known susceptible areas" — feature engineering input
+
+### 6. GitHub Copernicus Dashboard — Expanded to Full EMSR884 AOI Coverage
+- **Source:** https://github.com/YIN-Renlong/venezuela-earthquake-copernicus-data-dashboard-2026
+- **Update:** "The project started as a Caracas / AOI02 prototype and has now been expanded into a dynamic EMSR884 AOI dashboard"
+- **ML relevance:** ⭐⭐⭐ — Community tooling is accelerating. We should monitor this dashboard for product release notifications; it may surface new Copernicus products faster than checking the activation page manually
+
+### 7. Air & Space Forces Magazine — US C-17s + Satellite Imagery
+- **Source:** Air and Space Forces Magazine (June 26)
+- **What:** US sending C-17 Globemaster III aircraft and **satellite imagery** to Venezuela
+- **Specifics:** "assessing damage, locating survivors and delivering aid" — per SOUTHCOM statement
+- **US assets deployed:** C-17s, C-130s, reconnaissance platforms, helicopters
+- **ML relevance:** ⭐⭐⭐ — US military reconnaissance platforms may produce damage assessments or imagery products that become available. "Assessing damage" is explicitly stated as a mission goal.
+
+### 8. Direct Relief + Americares — Medical NGO Response
+- **Direct Relief:** https://www.directrelief.org/2026/06/venezuela-earthquake-caracas-damage/ — Mobilizing medical aid + supporting SAR
+- **Americares:** https://www.americares.org/crisis-alerts/venezuela-earthquakes-june-2026/ — Emergency medical aid + relief supplies; health needs assessment underway
+- **International Medical Corps:** On ground since 2019, conducting damage assessments
+- **ML relevance:** ⭐⭐ — Medical NGOs assessing health facility damage = potential ground-truth data partners
+
+### 9. 85 Portuguese Missing — Updated from Earlier Count
+- **Source:** BBC, Portugal Post (June 27)
+- **Finding:** I24NEWS reported 9 Portuguese dead at 589 toll; BBC later reported 28 Portuguese dead, 85 missing at higher toll
+- **Scale:** Large Portuguese diaspora in Caracas/La Guaira → some collapsed buildings had very high foreign occupancy
+- **ML relevance:** ⭐ — International attention on specific collapse sites (e.g., buildings with high Portuguese occupancy) may yield additional imagery
+
+### 10. UN Geneva Press Briefing — Multi-Agency Response Update
+- **Source:** UN Web TV (June 26)
+- **Agencies providing updates:**
+  - **UNHCR** (Matthew Saltmarsh) — rushing to support Venezuela
+  - **IFRC** (Paolo Cravero + Loyce Pace, Americas Regional Director)
+  - **OCHA** — coordination update
+  - **IOM** — displacement update
+- **ML relevance:** ⭐⭐ — Multi-agency coordination may produce consolidated damage assessments
+
+---
+
+## New Search Effectiveness Log Entries (2026-06-29 03:00)
+
+| Query | Result | Notes |
+|-------|--------|-------|
+| International Medical Corps + Venezuela + earthquake + sitrep | ⭐⭐⭐⭐⭐ | **NEW: SitRep PDF published June 26 + NPR interview June 28 — fresh ground assessment** |
+| NPR + International Medical Corps + Venezuela + Bassim | ⭐⭐⭐⭐ | **NEW: NPR interview 3 hours ago — detailed situation on ground** |
+| Venezuela earthquake + foreign nationals + dead + updated | ⭐⭐⭐⭐⭐ | **NEW: 18+ foreign dead confirmed; BBC says 28 Portuguese, 5 Spanish, 7 Chinese** |
+| Venezuela earthquake + Xi Jinping + China + aid | ⭐⭐⭐⭐ | **NEW: China offers disaster relief + reconstruction assistance** |
+| Venezuela earthquake + Bancaribe + collapsed | ⭐⭐⭐⭐ | **NEW: Named commercial building (bank) collapsed in Caracas** |
+| Venezuela earthquake + "most earthquake-prone" + Los Palos Grandes | ⭐⭐⭐⭐ | **NEW: AA describes district as historically vulnerable; 1967 quake also caused collapses** |
+| Venezuela earthquake + GitHub + dashboard + expanded | ⭐⭐⭐ | **NEW: YIN-Renlong dashboard expanded to full EMSR884 AOI coverage** |
+| Venezuela earthquake + "Air and Space Forces" + satellite | ⭐⭐⭐⭐ | **NEW: US sending C-17s + satellite imagery; "assessing damage" is explicit mission goal** |
+| Venezuela earthquake + Direct Relief + Americares | ⭐⭐⭐ | **NEW: Medical NGOs mobilizing; health facility assessments underway** |
+| Venezuela earthquake + UN Geneva + press briefing | ⭐⭐⭐ | **NEW: Multi-agency UN briefing with UNHCR, IFRC, OCHA, IOM** |
+
+### What's working (updated):
+- **International Medical Corps** — fresh ground-level health infrastructure data + NPR interview with operational details
+- **Anadolu Agency** — surprisingly good for granular district-level damage descriptions with historical context
+- **i24NEWS** — good for foreign national casualty breakdowns
+- **Air & Space Forces Magazine** — good for US military asset deployment specifics
+- **UN Web TV** — press briefings give multi-agency consolidated updates
+- **GitHub** — community dashboards accelerating; useful for product release monitoring
+- **NPR** — high-quality expert interviews with operational details not in written reports
+- *(All previous "what's working" entries still valid)*
+
+### What's not working (updated):
+- **Copernicus grading maps** — still not downloadable despite Caracas + Moron being "Completed" for 3+ days. UI lag or deliberate embargo.
+- **Full foreign casualty reconciliation** — figures vary wildly between sources (9 vs 28 Portuguese dead) — likely different toll snapshots
+- *(All previous "what's not working" entries still valid)*
