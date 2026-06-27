@@ -1,9 +1,8 @@
 # Information Scouting — Forum & Social Media Intelligence
 
-Last updated: 2026-06-27 23:45 UTC (evening scout — Life-saving window closing + new imagery + detailed ground truth)
+Last updated: 2026-06-28 04:15 UTC (overnight scout — US military deployment, new collapse details, Microsoft stat)
 Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
-
----
+Compiled from swarm + cron search runs. This is the "where to look and what's been found" document.
 
 ## Reddit
 
@@ -357,11 +356,11 @@ Key findings from their assessment:
   - Time period: 25 June 2026 - 26 June 2026
   - Available at: https://data.humdata.org/group/ven
   - **Includes both OSM AND Overture Maps Foundation data** — this is NEW and significant
-- **Total HDX crisis page:** 30+ datasets from UNOSAT, MSFTResearch, HOT, GIScienceHD, and others
+- **HDX crisis page:** 30+ datasets from UNOSAT, MSFTResearch, HOT, GIScienceHD, and others
 - **Also listed:** Health facilities datasets specific to the earthquake zone
 - **ML relevance:** ⭐⭐⭐⭐⭐ — Overture Maps data gives us authoritative building footprints (often better than OSM in underserved areas). Combined with OSM post-event data, this enables change detection.
 
-### 4. Updated Casualty Figures & Impact Scale
+### 4. Updated Casualty Figures & Impact Scale (Overnight Update)
 - **Death toll:** 920+ confirmed (per gov, reported by BBC, CNN, CNBC, Al Jazeera)
 - **Tens of thousands missing:** Government reports >50,000 people missing (per RT, Metro News, Yahoo News)
 - **Economic loss:** UNDP estimates **US$6.7 billion** in direct damage (updated from earlier $4.7-8.7bn range)
@@ -409,6 +408,74 @@ Key findings from their assessment:
 
 ---
 
+## 🔥 NEW HIGH-VALUE INTEL (2026-06-28 Overnight Scout)
+
+### 1. Catia La Mar — "Everything Collapsed" (Detailed Ground Truth)
+- **Source:** CBS News, AFP, Geo TV, RTL (all June 26-27)
+- **Key quote:** Resident Yilsmaris Blanco (39): "Everything, everything collapsed"
+- **Context:** Catia La Mar neighborhood holds **nearly 200 housing towers**
+- **Status:** Still without electricity; residents digging through rubble themselves due to scarcity of government rescuers
+- **Larry Rojas (49):** "Right now we have nothing, not even the strength or the courage to go in there"
+- **ML relevance:** ⭐⭐⭐⭐⭐ — If ~200 towers collapsed in Catia La Mar, this is a dense urban area with near-total destruction. Ideal testbed for automated damage detection.
+
+### 2. Microsoft AI4G — Specific Damage Stat for Catia La Mar
+- **Source:** https://en.ultimasnoticias.com.ve (June 26), inkl.com (June 27)
+- **Finding:** "Nearly one in three buildings in Catia La Mar shows damage"
+- **Scale:** Microsoft assessed ~30,000 classifiable structures; ~33% show some level of impairment
+- **Methodology:** AI-based damage assessment models on satellite imagery from June 25, 2026
+- **ML relevance:** ⭐⭐⭐⭐⭐ — This gives us a base damage rate for the area. Our model should aim to detect damage at comparable or finer granularity.
+
+### 3. Eduard's Hotel Boutique — Iconic La Guaira Landmark Collapsed
+- **Source:** The Guardian, rustourismnews.com (June 26)
+- **What:** One of the best-known landmarks in La Guaira state, beachfront hotel in Macuto
+- **Status:** Almost completely destroyed — "reduced to rubble"
+- **Context:** Nearby Venezuela naval academy and tall residential buildings severely damaged
+- **ML relevance:** ⭐⭐⭐ — Known landmark collapse; useful as verification point if visible in satellite imagery
+
+### 4. San Judas Tadeo Building — El Paraiso, Caracas
+- **Source:** atlas-news.com (June 26), Al Jazeera (June 26)
+- **What:** Entire residential building collapsed in El Paraiso neighborhood (central Caracas)
+- **Status:** Rescue operations ongoing as of June 26
+- **Context:** One of multiple collapses in Caracas neighborhoods (Los Palos Grandes, Altamira, Baruta, San Bernardino, Chacao, El Paraiso, Caricuao, Sebucan)
+- **ML relevance:** ⭐⭐⭐ — Another specific geolocated collapse for validation
+
+### 5. US Military / SOUTHCOM Deployment
+- **Source:** NYT (June 26), SOUTHCOM Facebook, 6abc (June 27)
+- **Deployment details:**
+  - **2 US Navy ships** dispatched
+  - **3 Army helicopters**
+  - **C-17 flight from Dover AFB:** 79 search-and-rescue personnel + 6 K-9s + 70,000 lbs equipment
+  - SOUTHCOM "surging available assigned forces" in region
+- **Context:** Trump offered assistance; US-Venezuela relations transformed since military deployment began
+- **ML relevance:** ⭐⭐ — Not directly ML-relevant, but indicates severity level and international response scale
+
+### 6. Delcy Rodriguez — "Militarize" La Guaira + Damage Tour
+- **Source:** The Guardian, NYT, Daily Mail (June 25-26)
+- **Actions:** Interim President toured La Guaira damage; announced she would "militarize" the state
+- **Context:** Some Venezuelans hoped this meant heavy machines and organized rescue; National Assembly President Jorge Rodriguez also visited
+- **Public reaction:** Rodriguez was jeered by survivors (Daily Mail)
+- **ML relevance:** ⭐⭐ — Government response context; "militarization" may affect access/coordination
+
+### 7. EU Rescue Mobilization
+- **Source:** Euronews (June 27)
+- **Scale:** 520+ rescuers mobilized from across the EU
+- **Countries:** Czech Republic, France, Germany, Italy, Netherlands, Portugal, Spain
+- **ML relevance:** ⭐⭐ — International coordination context
+
+### 8. NYT Interactive — "A Look Along Venezuela's Devastated Coast"
+- **URL:** https://www.nytimes.com/interactive/2026/06/26/world/americas/venezuela-earthquake-damage-coast.html
+- **Published:** June 26, 2026
+- **Content:** Detailed satellite analysis of Catia La Mar showing scope of destruction
+- **ML relevance:** ⭐⭐⭐ — High-quality journalism using satellite imagery; methodology may inform our own approach
+
+### 9. Vantor — New Before/After Imagery (Caraballeda Focus)
+- **Source:** Boston Globe (June 27), Local10 (June 27)
+- **New imagery:** Caraballeda, Venezuela — December 28, 2025 vs June 26, 2026
+- **Context:** Vantor continuing to upload new imagery; AP/CNN now have before/after for this specific area
+- **ML relevance:** ⭐⭐⭐⭐⭐ — More before/after pairs = more training data
+
+---
+
 ## Search Effectiveness Log (Updated)
 
 | Query | Result | Notes |
@@ -432,6 +499,11 @@ Key findings from their assessment:
 | "Venezuela earthquake" + UNDP + RAPIDA | ⭐⭐⭐⭐ | NEW: UNDP direct damage estimate $6.7bn using satellite+GIS RAPIDA tool |
 | "Venezuela earthquake" + "4.9" aftershock | ⭐⭐⭐⭐ | M4.9 aftershock on June 26 — Reuters + Al Jazeera covered |
 | "Venezuela earthquake" + Overture Maps | ⭐⭐⭐⭐ | NEW: HDX dataset now combines OSM + Overture Maps data |
+| "Venezuela earthquake" + Catia La Mar + collapsed | ⭐⭐⭐⭐⭐ | "Everything collapsed" — 200 housing towers, detailed ground truth |
+| "Venezuela earthquake" + Microsoft + "one in three" | ⭐⭐⭐⭐ | 33% damage rate in Catia La Mar from Microsoft AI4G |
+| "Venezuela earthquake" + Eduard's Hotel | ⭐⭐⭐ | Iconic La Guaira landmark collapsed — verification point |
+| "Venezuela earthquake" + SOUTHCOM + deployment | ⭐⭐⭐ | US military response scale: 2 ships, helicopters, 79 SAR personnel |
+| "Venezuela earthquake" + Delcy Rodriguez + militarize | ⭐⭐⭐ | Government response — "militarize" La Guaira announcement |
 
 ### What's working:
 - **HDX/humdata.org** is the best source for ML-ready datasets — now 30+ datasets including OSM+Overture combined
@@ -442,8 +514,10 @@ Key findings from their assessment:
 - **HOT-OSM website** (hotosm.org/en/projects/...) — now the best source for AI-mapping coordination
 - **LinkedIn** (Pete Masters, Vantor) is surprisingly good for activation announcements
 - **X/Twitter** (MichelBaljet, CopernicusEMS) — good for activation details (sector lists, product status)
-- **Searching specific building names** (Petunia, Altamira) yields detailed ground-truth collapse data
+- **Searching specific building names** (Petunia, Altamira, Eduard's Hotel) yields detailed ground-truth collapse data
 - **humdata.org + "Overture"** — newly discovered source for combined building footprint datasets
+- **NYT Interactive** — high-quality satellite damage analysis with before/after comparisons
+- **CBS News / AFP** — best sources for ground-level survivor testimony from hardest-hit areas
 
 ### What's not working:
 - GitHub projects are just starting — we still have an opportunity to be the primary ML project
