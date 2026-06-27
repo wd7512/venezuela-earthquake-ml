@@ -16,6 +16,8 @@ DATA_FILE = os.path.join(ROOT, "data.json")
 TEMPLATES_DIR = os.path.join(ROOT, "templates")
 DIST_DIR = os.path.join(ROOT, "dist")
 IMAGES_DIR = os.path.join(DIST_DIR, "images")
+os.makedirs(DIST_DIR, exist_ok=True)
+os.makedirs(IMAGES_DIR, exist_ok=True)
 
 
 def load_data():
