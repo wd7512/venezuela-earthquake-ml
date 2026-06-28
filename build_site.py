@@ -7,7 +7,7 @@ Generates both English (root) and Spanish (es/) versions.
 
 import json
 import os
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timedelta, timezone
 
 from jinja2 import Environment, FileSystemLoader
 
