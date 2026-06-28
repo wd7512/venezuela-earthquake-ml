@@ -8,7 +8,7 @@
 <p style="font-size: 0.85rem; color: var(--text-muted);">Looking to donate or share information? See <a href="help.html">How to Help</a> — this page is for developers and data scientists who want to contribute data, mapping, or analysis.</p>
 
 <div class="alert alert-info">
-  <strong>Public-first:</strong> the pages visible in the main navigation (Overview, Intel, Handbook, How to Help, Sources, Statistics) are for responders and the public. This Contributing section is for people who want to contribute data, mapping, or analysis.
+  <strong>Thank you for wanting to contribute.</strong> Below are the areas where your skills can have the most impact. High-priority tracks need contributors with backgrounds in ML, remote sensing, geospatial analysis, and NLP.
 </div>
 
 <h2>How to Help</h2>
@@ -74,6 +74,9 @@ uv run python build_site.py
     {% endif %}
     {% if track.code_url %}
     · <strong>Code:</strong> <a href="{{ track.code_url }}">Repository</a>
+    {% endif %}
+    {% if not track.code_url and not track.data_url %}
+    <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.5rem;"><em>This track needs a maintainer to set up infrastructure. <a href="https://github.com/wd7512/venezuela-earthquake-ml/issues">Open an issue</a> if you can help bootstrap it.</em></p>
     {% endif %}
   </div>
 </div>

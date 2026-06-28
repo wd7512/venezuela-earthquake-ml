@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ zone.name }} — Zone Details{% endblock %}
+{% block content %}
+<h1>{{ zone.name }}</h1>
+<div class="alert alert-info">
+  <strong>Damage Level:</strong> <span class="badge badge-{{ zone.damage_level }}">{{ zone.damage_level }}</span> ·
+  <strong>Population:</strong> {{ "{:,}".format(zone.population|int) }} ·
+  <strong>Coordinates:</strong> {{ zone.coordinates }}
+</div>
+<p>{{ zone.description }}</p>
+<h2>Status</h2>
+<p>{{ zone.status_note }}</p>
+<h2>Damage Notes</h2>
+<p>{{ zone.damage_notes }}</p>
+<h2>Key Infrastructure</h2>
+<ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+{% for item in zone.key_infrastructure %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+<h2>Imagery Sources</h2>
+<ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.85rem;">
+{% for img in zone.imagery_sources %}
+  <li>{{ img }}</li>
+{% endfor %}
+</ul>
+{% if zone.resources %}
+<h2>Resources</h2>
+<ul class="resource-list">
+{% for res in zone.resources %}
+  <li><span class="res-type">{{ res.type }}</span> <a href="{{ res.url }}">{{ res.name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+<p style="margin-top: 1.5rem;"><a href="index.html">← Back to Overview</a></p>
+{% endblock %}

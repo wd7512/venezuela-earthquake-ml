@@ -8,24 +8,12 @@
 <h2>Donate</h2>
 <p>Verified organisations with established Venezuela operations:</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
-  <a href="https://www.ifrc.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">IFRC</div>
+{% for org in donation_links %}
+  <a href="{{ org.url }}" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
+    <div class="label">{{ org.name }}</div>
+    <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">{{ org.description }}</div>
   </a>
-  <a href="https://www.unicef.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">UNICEF</div>
-  </a>
-  <a href="https://www.directrelief.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">Direct Relief</div>
-  </a>
-  <a href="https://www.wfp.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">WFP</div>
-  </a>
-  <a href="https://www.msf.org/donate" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">MSF</div>
-  </a>
-  <a href="https://cerf.un.org" class="stat-card info" style="text-decoration: none; text-align: center;" target="_blank" rel="noopener">
-    <div class="label">UN CERF</div>
-  </a>
+{% endfor %}
 </div>
 
 <h2>Share Information</h2>

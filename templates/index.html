@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="alert alert-danger">
-  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. {{ stats.deaths.value }}+ confirmed dead, ~{{ "{:,}".format(stats.missing_independent.value) }} reported missing (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). Information changing rapidly. Cross-reference all figures across multiple sources. <a href="statistics.html" style="color: #000; text-decoration: underline; font-weight: 700;">Statistics page →</a>
+  <strong>ACTIVE DISASTER — June 24, 2026.</strong> Mw 7.2 + Mw 7.5 doublet. {{ stats.deaths.value }}+ dead (government figure), ~{{ "{:,}".format(stats.missing_independent.value) }} reported missing (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). Information changing rapidly. Cross-reference all figures across multiple sources. <a href="statistics.html" style="color: #000; text-decoration: underline; font-weight: 700;">Statistics page →</a>
 </div>
 
 <h1>Earthquake Response Hub</h1>
@@ -33,8 +33,9 @@
 <div class="stat-grid">
   <a href="{{ stats.deaths.source_url }}" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
     <div class="value">{{ stats.deaths.value }}{{ stats.deaths.suffix }}</div>
-    <div class="label">Confirmed Dead · {{ stats.deaths.source }}</div>
+    <div class="label">Reported Dead · {{ stats.deaths.source }}</div>
   </a>
+<em style="font-size:0.75rem;color:var(--text-muted);display:block;margin-top:0.5rem;">Independent estimate ~235 — <a href="statistics.html">see methodology</a></em>
   <a href="{{ stats.missing_independent.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
     <div class="value">{{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }}</div>
     <div class="label">Missing (independent) · {{ stats.missing_independent.source }}</div>

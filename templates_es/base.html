@@ -238,6 +238,7 @@
   <a href="aid.html" class="{% if page == 'aid' %}active{% endif %}">Obtener Ayuda</a>
   <a href="sources.html" class="{% if page == 'sources' %}active{% endif %}">Fuentes</a>
   <a href="statistics.html" class="{% if page == 'statistics' %}active{% endif %}">Estadísticas</a>
+  <a href="contributing.html" class="{% if page == 'contributing' %}active{% endif %}">Contribuir</a>
   <div style="margin-left: auto; display: flex; align-items: center;">
     <button onclick="document.getElementById('lang-modal').style.display='flex'" style="background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text-muted); padding: 0.35rem 0.7rem; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 0.35rem;" title="Language / Idioma">
       <span style="font-size: 1rem;">🌐</span> <span id="lang-label">EN</span>
@@ -264,7 +265,8 @@
 
 <!-- Language redirect modal -->
 <div id="lang-modal" class="lang-modal-overlay" style="display: none;">
-  <div class="lang-modal">
+  <div class="lang-modal" style="position: relative;">
+    <button onclick="dismissLangModal()" style="position: absolute; top: 0.5rem; right: 0.75rem; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; line-height: 1;" aria-label="Close">×</button>
     <h2>Choose your language / Elija su idioma</h2>
     <p>This site is available in English and Spanish. / Este sitio está disponible en inglés y español.</p>
     <div class="lang-buttons">
@@ -277,7 +279,7 @@
         Español
       </a>
     </div>
-    <small id="lang-remember-msg">Your choice will be remembered for future visits. / Su elección se recordará para futuras visitas.</small>
+    <small>Your choice will be remembered for future visits. / Su elección se recordará para futuras visitas.</small>
   </div>
 </div>
 
@@ -285,7 +287,7 @@
 (function() {
   var STORAGE_KEY = 've_lang_pref';
   var CHOICE_KEY = 've_lang_chosen';
-  // Determine where we are: root (en) or /es/ (subfolder)
+  var DISMISS_KEY = 've_lang_dismissed';
   var isInEs = window.location.pathname.indexOf('/es/') !== -1 || window.location.pathname.endsWith('/es');
   var enBase = isInEs ? '../' : '';
   var esBase = isInEs ? '' : 'es/';
@@ -299,43 +301,63 @@
       localStorage.setItem(STORAGE_KEY, lang);
       localStorage.setItem(CHOICE_KEY, '1');
     } catch(e) {}
-    // Also try cookie as fallback for the root domain
     document.cookie = 've_lang=' + lang + ';path=/;max-age=31536000';
   }
   function getCookieLang() {
     var match = document.cookie.match(/ve_lang=(en|es)/);
     return match ? match[1] : null;
   }
+  function getDismissed() {
+    try { return localStorage.getItem(DISMISS_KEY) === '1'; } catch(e) {}
+    return false;
+  }
+  function markDismissed() {
+    try { localStorage.setItem(DISMISS_KEY, '1'); } catch(e) {}
+  }
+  function detectLang() {
+    var navLang = (navigator.language || 'en').toLowerCase();
+    return navLang.startsWith('es') ? 'es' : 'en';
+  }
   window.langChosen = function(lang) {
     remember(lang);
     var modal = document.getElementById('lang-modal');
     if (modal) modal.style.display = 'none';
-    // If we're on the root and chooser picked es, redirect
     if (!isInEs && lang === 'es') {
-      window.location.href = 'es/' + window.location.pathname.split('/').pop();
+      window.location.href = 'es/' + (window.location.pathname.split('/').pop() || 'index.html');
       return;
     }
     if (isInEs && lang === 'en') {
-      window.location.href = '../' + window.location.pathname.split('/').pop();
+      window.location.href = '../' + (window.location.pathname.split('/').pop() || 'index.html');
       return;
     }
   };
+  window.dismissLangModal = function() {
+    markDismissed();
+    var modal = document.getElementById('lang-modal');
+    if (modal) modal.style.display = 'none';
+  };
 
-  // Show modal if no preference stored AND haven't dismissed before
   var stored = getStored() || getCookieLang();
-  var dismissed = false;
-  // If navigated from a language-specific link (has /es/ in path), don't auto-redirect
-  if (!stored && !dismissed) {
-    // Language of current page
-    var modalEl = document.getElementById('lang-modal');
-    if (modalEl) {
-      // Update links to point to correct destinations
-      var btns = modalEl.querySelectorAll('.lang-btn');
-      if (btns.length >= 2) {
-        btns[0].setAttribute('href', enBase + 'index.html');
-        btns[1].setAttribute('href', esBase + 'index.html');
+  if (!stored && !getDismissed()) {
+    // Auto-detect from browser as fallback
+    var detected = detectLang();
+    if (detected === 'es' && !isInEs) {
+      remember('es');
+      window.location.href = 'es/' + (window.location.pathname.split('/').pop() || 'index.html');
+    } else if (detected === 'en' && isInEs) {
+      remember('en');
+      window.location.href = '../' + (window.location.pathname.split('/').pop() || 'index.html');
+    } else {
+      // No clear preference, show modal
+      var modalEl = document.getElementById('lang-modal');
+      if (modalEl) {
+        var btns = modalEl.querySelectorAll('.lang-btn');
+        if (btns.length >= 2) {
+          btns[0].setAttribute('href', enBase + 'index.html');
+          btns[1].setAttribute('href', esBase + 'index.html');
+        }
+        modalEl.style.display = 'flex';
       }
-      modalEl.style.display = 'flex';
     }
   }
 })();
