@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="alert alert-danger">
-  <strong>DESASTRE ACTIVO — 24 de junio de 2026.</strong> Dobelette sísmica Mw 7.2 + Mw 7.5. {{ stats.deaths.value }}+ fallecidos (cifra gubernamental), ~{{ "{:,}".format(stats.missing_independent.value) }} desaparecidos reportados (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). La información cambia rápidamente. Verifique todas las cifras con múltiples fuentes. <a href="statistics.html" style="color: #000; text-decoration: underline; font-weight: 700;">Página de estadísticas →</a>
+  <strong>DESASTRE ACTIVO — 24 de junio de 2026.</strong> Dobelette sísmica Mw 7.2 + Mw 7.5. {{ "{:,}".format(stats.deaths.value) }}{{ stats.deaths.suffix }} fallecidos (<a href="{{ stats.deaths.source_url }}">{{ stats.deaths.source }}</a>), {{ "{:,}".format(stats.missing_independent.value) }}{{ stats.missing_independent.suffix }} desaparecidos reportados (<a href="{{ stats.missing_independent.source_url }}">{{ stats.missing_independent.source }}</a>). La información cambia rápidamente. Verifique todas las cifras con múltiples fuentes. <a href="statistics.html" style="color: #000; text-decoration: underline; font-weight: 700;">Página de estadísticas →</a>
 </div>
 
 <h1>Centro de Respuesta al Terremoto</h1>
@@ -39,7 +39,7 @@
 <h2>Cifras Clave</h2>
 <div class="stat-grid">
   <a href="{{ stats.deaths.source_url }}" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.deaths.value }}{{ stats.deaths.suffix }}</div>
+    <div class="value">{{ "{:,}".format(stats.deaths.value) }}{{ stats.deaths.suffix }}</div>
     <div class="label">Fallecidos Reportados · {{ stats.deaths.source }}</div>
   </a>
 <em style="font-size:0.75rem;color:var(--text-muted);display:block;margin-top:0.5rem;">Estimación independiente ~235 — <a href="statistics.html">ver metodología</a></em>
@@ -48,7 +48,7 @@
     <div class="label">Desaparecidos (independiente) · {{ stats.missing_independent.source }}</div>
   </a>
   <a href="{{ stats.injured.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.injured.value }}{{ stats.injured.suffix }}</div>
+    <div class="value">{{ "{:,}".format(stats.injured.value) }}{{ stats.injured.suffix }}</div>
     <div class="label">Heridos · {{ stats.injured.source }}</div>
   </a>
   <a href="{{ stats.aftershocks.source_url }}" class="stat-card warning" style="text-decoration: none;" target="_blank" rel="noopener">
@@ -56,8 +56,8 @@
     <div class="label">Réplicas · {{ stats.aftershocks.source }}</div>
   </a>
   <a href="{{ stats.buildings_collapsed.source_url }}" class="stat-card danger" style="text-decoration: none;" target="_blank" rel="noopener">
-    <div class="value">{{ stats.buildings_collapsed.value }}{{ stats.buildings_collapsed.suffix }}</div>
-    <div class="label">Edificios Colapsados · {{ stats.buildings_collapsed.source }}</div>
+    <div class="value">{{ "{:,}".format(stats.buildings_collapsed.value) }}{{ stats.buildings_collapsed.suffix }}</div>
+    <div class="label">Edificios Dañados/Destruidos · {{ stats.buildings_collapsed.source }}</div>
   </a>
 </div>
 

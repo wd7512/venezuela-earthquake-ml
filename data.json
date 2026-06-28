@@ -3,27 +3,57 @@
     "show_zone_pages": true
   },
   "donation_links": [
-    {"name": "IFRC", "full_name": "International Federation of Red Cross", "url": "https://go.ifrc.org/emergencies/7990/details", "description": "Emergency shelter, medical care, and relief supplies"},
-    {"name": "UNICEF", "full_name": "UNICEF", "url": "https://www.unicef.org/appeals/venezuela-earthquake", "description": "Child protection, education, and emergency supplies for children"},
-    {"name": "Direct Relief", "full_name": "Direct Relief", "url": "https://www.directrelief.org/emergency-response/venezuela-earthquake/", "description": "Medical aid and essential medicines for affected communities"},
-    {"name": "WFP", "full_name": "World Food Programme", "url": "https://www.wfp.org/emergencies/venezuela-earthquake", "description": "Food assistance and logistics for displaced families"},
-    {"name": "MSF", "full_name": "Doctors Without Borders", "url": "https://www.msf.org/venezuela-earthquake", "description": "Emergency medical care and surgical support"},
-    {"name": "UN CERF", "full_name": "UN Central Emergency Response Fund", "url": "https://cerf.un.org/", "description": "Rapid-response funding for UN agencies in crises"}
+    {
+      "name": "IFRC",
+      "full_name": "International Federation of Red Cross",
+      "url": "https://go.ifrc.org/emergencies/7990/details",
+      "description": "Emergency shelter, medical care, and relief supplies"
+    },
+    {
+      "name": "UNICEF",
+      "full_name": "UNICEF",
+      "url": "https://www.unicef.org/appeals/venezuela-earthquake",
+      "description": "Child protection, education, and emergency supplies for children"
+    },
+    {
+      "name": "Direct Relief",
+      "full_name": "Direct Relief",
+      "url": "https://www.directrelief.org/emergency-response/venezuela-earthquake/",
+      "description": "Medical aid and essential medicines for affected communities"
+    },
+    {
+      "name": "WFP",
+      "full_name": "World Food Programme",
+      "url": "https://www.wfp.org/emergencies/venezuela-earthquake",
+      "description": "Food assistance and logistics for displaced families"
+    },
+    {
+      "name": "MSF",
+      "full_name": "Doctors Without Borders",
+      "url": "https://www.msf.org/venezuela-earthquake",
+      "description": "Emergency medical care and surgical support"
+    },
+    {
+      "name": "UN CERF",
+      "full_name": "UN Central Emergency Response Fund",
+      "url": "https://cerf.un.org/",
+      "description": "Rapid-response funding for UN agencies in crises"
+    }
   ],
-  "last_updated": "2026-06-27T13:59:18Z",
+  "last_updated": "2026-06-28T17:00:00Z",
   "death_toll_note": "Government figure (920+) via National Assembly. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
-      "value": 920,
-      "suffix": "+",
-      "source": "Venezuela National Assembly",
-      "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
+      "value": 1430,
+      "suffix": "",
+      "source": "Jorge Rodríguez / OCHA SitRep #4",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-4-27-june-2026"
     },
     "injured": {
-      "value": 3360,
+      "value": 3238,
       "suffix": "+",
-      "source": "Health Minister Carlos Alvarado",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm"
+      "source": "OCHA SitRep #4",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-4-27-june-2026"
     },
     "missing_registered": {
       "value": 200,
@@ -32,22 +62,22 @@
       "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
     },
     "missing_independent": {
-      "value": 50000,
-      "suffix": "+",
-      "source": "Desaparecidos Terremoto Venezuela",
+      "value": 68900,
+      "suffix": "",
+      "source": "Desaparecidos Terremoto Venezuela / humanitarian tallies",
       "source_url": "https://www.desaparecidosterremotovenezuela.com/"
     },
     "aftershocks": {
-      "value": 302,
+      "value": 400,
       "suffix": "+",
       "source": "USGS",
       "source_url": "https://earthquake.usgs.gov/earthquakes/map/"
     },
     "buildings_collapsed": {
-      "value": 250,
-      "suffix": "+",
-      "source": "National Assembly",
-      "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
+      "value": 60000,
+      "suffix": "",
+      "source": "Satellite damage analysis (ABC/AP / Microsoft AI for Good)",
+      "source_url": "https://abcnews.com/International/live-updates/venezuela-earthquakes-updates/"
     },
     "hospitals_damaged": {
       "value": 13,
