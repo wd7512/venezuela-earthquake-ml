@@ -40,20 +40,20 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T03:45:00Z",
-  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
+  "last_updated": "2026-06-29T03:18:00Z",
+  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
       "value": 1450,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) / OCHA SitRep #4",
-      "source_url": "https://www.nytimes.com/live/2026/06/28/world/venezuela-earthquake"
+      "source": "Jorge Rodríguez (National Assembly) / OCHA SitRep #5",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
     },
     "injured": {
-      "value": 3238,
+      "value": 3150,
       "suffix": "+",
-      "source": "OCHA SitRep #4",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-4-27-june-2026"
+      "source": "OCHA SitRep #5",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
     },
     "missing_registered": {
       "value": 200,
@@ -67,11 +67,17 @@
       "source": "Desaparecidos Terremoto Venezuela / humanitarian tallies",
       "source_url": "https://www.desaparecidosterremotovenezuela.com/"
     },
+    "displaced": {
+      "value": 12721,
+      "suffix": "",
+      "source": "OCHA SitRep #5",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+    },
     "aftershocks": {
-      "value": 400,
+      "value": 512,
       "suffix": "+",
-      "source": "USGS",
-      "source_url": "https://earthquake.usgs.gov/earthquakes/map/"
+      "source": "OCHA SitRep #5",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
     },
     "buildings_collapsed": {
       "value": 189,
