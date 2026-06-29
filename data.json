@@ -40,8 +40,8 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T12:36:00Z",
-  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, NBC, NYT, Euronews, The National) report toll 'nearing 1,500' as of June 29 — no new official update yet. OCHA SitRep #5 also confirms 38 hospitals and 774 buildings affected. UAE pledged $10M, China $14M in additional aid (June 29).",
+  "last_updated": "2026-06-29T18:00:00Z",
+  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, NBC, NYT, Euronews, The National) report toll 'nearing 1,500' as of June 29 — no new official update yet. OCHA SitRep #5 also confirms 38 hospitals and 774 buildings affected. UAE pledged $10M, China $14M in additional aid (June 29). US increased total commitment to >$300M (June 29 State Department).",
   "stats": {
     "deaths": {
       "value": 1450,
@@ -135,11 +135,11 @@
       "source_url": "https://immap.org/publications-and-resources/venezuela-earthquake-impact-map-24th-june-2026"
     },
     "us_aid_pledged": {
-      "value": 150000000,
+      "value": 300000000,
       "prefix": "$",
       "suffix": "",
-      "source": "US Government",
-      "source_url": "https://www.state.gov/venezuela-earthquake-response/"
+      "source": "US State Department (June 29 update)",
+      "source_url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/update-on-the-trump-administrations-robust-and-rapid-delivery-of-life-saving-u-s-assistance-to-venezuela/"
     },
     "aftershock_prob_mw6": {
       "value": 5.76,
