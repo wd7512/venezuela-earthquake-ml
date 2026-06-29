@@ -40,7 +40,7 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T03:18:00Z",
+  "last_updated": "2026-06-29T04:24:00Z",
   "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
@@ -90,6 +90,12 @@
       "suffix": "",
       "source": "UN ECLAC/PAHO assessment (via Bloomberg) — 1.7 million buildings affected, $6.7 billion direct damage",
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
+    },
+    "buildings_damaged_satellite": {
+      "value": 60000,
+      "suffix": "",
+      "source": "Oregon State University satellite image analysis (via ABC News) — nearly 60,000 buildings damaged or destroyed",
+      "source_url": "https://abcnews.com/International/live-updates/venezuela-earthquakes-updates/?id=134196335"
     },
     "economic_damage_usd": {
       "value": 6700000000,
