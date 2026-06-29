@@ -40,8 +40,8 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T10:00:00Z",
-  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, National, Euronews) report toll 'nearing 1,500' as of June 29 — no new official update yet. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
+  "last_updated": "2026-06-29T12:36:00Z",
+  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, NBC, NYT, Euronews, The National) report toll 'nearing 1,500' as of June 29 — no new official update yet. OCHA SitRep #5 also confirms 38 hospitals and 774 buildings affected. UAE pledged $10M, China $14M in additional aid (June 29).",
   "stats": {
     "deaths": {
       "value": 1450,
@@ -105,10 +105,16 @@
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
     },
     "hospitals_damaged": {
-      "value": 13,
+      "value": 38,
       "suffix": "",
-      "source": "National Assembly",
-      "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
+      "source": "OCHA SitRep #5",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+    },
+    "infrastructures_affected_total": {
+      "value": 2501,
+      "suffix": "",
+      "source": "OCHA SitRep #5 — includes 38 hospitals and 774 buildings",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
     },
     "hospitals_collapsed": {
       "value": 2,
