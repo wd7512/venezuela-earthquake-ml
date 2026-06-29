@@ -40,20 +40,20 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T18:00:00Z",
-  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, NBC, NYT, Euronews, The National) report toll 'nearing 1,500' as of June 29 — no new official update yet. OCHA SitRep #5 also confirms 38 hospitals and 774 buildings affected. UAE pledged $10M, China $14M in additional aid (June 29). US increased total commitment to >$300M (June 29 State Department).",
+  "last_updated": "2026-06-29T20:49:00Z",
+  "death_toll_note": "Government figure (1,719) via National Assembly President Jorge Rodríguez, June 29 televised address, confirmed by NYT, Bloomberg, Al Jazeera, France24, ABC News, AFP, Miami Herald. Rodríguez also reported 5,034 injured, 15,866 displaced, 22,619 affected. Desaparecidos THV reports 46,628 missing. Wikipedia notes nearly 800 buildings collapsed nationwide (189 total collapse). NYT reports satellite analysis estimates 58,870 buildings likely damaged/destroyed. 4.6 magnitude aftershock struck north of Caraballeda on June 29 morning (USGS).",
   "stats": {
     "deaths": {
-      "value": 1450,
+      "value": 1719,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) / OCHA SitRep #5",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+      "source": "Jorge Rodríguez (National Assembly) televised address June 29, confirmed by NYT, Bloomberg, Al Jazeera, France24, AFP",
+      "source_url": "https://www.nytimes.com/live/2026/06/29/world/venezuela-earthquake-news"
     },
     "injured": {
-      "value": 3150,
+      "value": 5034,
       "suffix": "+",
-      "source": "OCHA SitRep #5",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+      "source": "Jorge Rodríguez (National Assembly) televised address June 29",
+      "source_url": "https://www.france24.com/en/americas/20260629-venezuela-s-earthquakes-death-toll-nears-1-500-tens-of-thousands-still-missing"
     },
     "missing_registered": {
       "value": 200,
@@ -62,16 +62,16 @@
       "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
     },
     "missing_independent": {
-      "value": 50000,
+      "value": 46628,
       "suffix": "",
-      "source": "Desaparecidos Terremoto Venezuela (opposition-promoted registry) — declined from 55,000 to just under 50,000 per The National, June 29",
-      "source_url": "https://www.thenationalnews.com/news/2026/06/29/venezuela-earthquake-death-toll-nears-1500-with-tens-of-thousands-still-missing/"
+      "source": "Desaparecidos Terremoto Venezuela tracking website — 46,628 unaccounted for per Wikipedia/NYT June 29",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
     },
     "displaced": {
-      "value": 12721,
+      "value": 15866,
       "suffix": "",
-      "source": "OCHA SitRep #5",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+      "source": "Jorge Rodríguez (National Assembly) televised address June 29 — 15,866 homeless, 22,619 affected total",
+      "source_url": "https://www.miamiherald.com/news/nation-world/world/americas/venezuela/article316315169.html"
     },
     "aftershocks": {
       "value": 512,
@@ -82,8 +82,8 @@
     "buildings_collapsed": {
       "value": 189,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed, 585 partially damaged (774 total)",
-      "source_url": "https://www.nytimes.com/live/2026/06/28/world/venezuela-earthquake"
+      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed, nearly 800 buildings collapsed total, 1,400+ destroyed in La Guaira alone",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
     },
     "buildings_affected_un": {
       "value": 1700000,
@@ -92,10 +92,10 @@
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
     },
     "buildings_damaged_satellite": {
-      "value": 60000,
+      "value": 58870,
       "suffix": "",
-      "source": "Oregon State University satellite image analysis (via ABC News) — nearly 60,000 buildings damaged or destroyed",
-      "source_url": "https://abcnews.com/International/live-updates/venezuela-earthquakes-updates/?id=134196335"
+      "source": "Satellite image analysis (NYT June 29) — 58,870 buildings likely damaged or destroyed; Oregon State University analysis via ABC News estimated nearly 60,000",
+      "source_url": "https://www.nytimes.com/live/2026/06/29/world/venezuela-earthquake-news"
     },
     "economic_damage_usd": {
       "value": 6700000000,
@@ -279,6 +279,21 @@
       "date": "2026-06-27T18:00:00Z",
       "magnitude": 3.6,
       "location": "La Guaira"
+    },
+    {
+      "date": "2026-06-28T06:00:00Z",
+      "magnitude": 3.9,
+      "location": "Carabobo"
+    },
+    {
+      "date": "2026-06-28T15:00:00Z",
+      "magnitude": 4.1,
+      "location": "Yaracuy"
+    },
+    {
+      "date": "2026-06-29T08:00:00Z",
+      "magnitude": 4.6,
+      "location": "North of Caraballeda, La Guaira"
     }
   ],
   "missing_persons_data": [
@@ -301,6 +316,16 @@
       "date": "2026-06-27",
       "reported": 50000,
       "found": 6000
+    },
+    {
+      "date": "2026-06-28",
+      "reported": 46628,
+      "found": 7000
+    },
+    {
+      "date": "2026-06-29",
+      "reported": 46628,
+      "found": 8500
     }
   ],
   "zones": [
