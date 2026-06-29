@@ -40,8 +40,8 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T12:00:00Z",
-  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
+  "last_updated": "2026-06-29T10:00:00Z",
+  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28, confirmed by OCHA SitRep #5. Media (Guardian, National, Euronews) report toll 'nearing 1,500' as of June 29 — no new official update yet. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
       "value": 1450,
@@ -62,10 +62,10 @@
       "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
     },
     "missing_independent": {
-      "value": 68900,
+      "value": 50000,
       "suffix": "",
-      "source": "Desaparecidos Terremoto Venezuela / humanitarian tallies",
-      "source_url": "https://www.desaparecidosterremotovenezuela.com/"
+      "source": "Desaparecidos Terremoto Venezuela (opposition-promoted registry) — declined from 55,000 to just under 50,000 per The National, June 29",
+      "source_url": "https://www.thenationalnews.com/news/2026/06/29/venezuela-earthquake-death-toll-nears-1500-with-tens-of-thousands-still-missing/"
     },
     "displaced": {
       "value": 12721,
