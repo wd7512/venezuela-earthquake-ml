@@ -40,7 +40,7 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T00:06:00Z",
+  "last_updated": "2026-06-29T03:45:00Z",
   "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
@@ -78,6 +78,19 @@
       "suffix": "",
       "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed, 585 partially damaged (774 total)",
       "source_url": "https://www.nytimes.com/live/2026/06/28/world/venezuela-earthquake"
+    },
+    "buildings_affected_un": {
+      "value": 1700000,
+      "suffix": "",
+      "source": "UN ECLAC/PAHO assessment (via Bloomberg) — 1.7 million buildings affected, $6.7 billion direct damage",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
+    },
+    "economic_damage_usd": {
+      "value": 6700000000,
+      "prefix": "$",
+      "suffix": "",
+      "source": "UN ECLAC/PAHO assessment (via Bloomberg) — $6.7 billion direct losses",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
     },
     "hospitals_damaged": {
       "value": 13,
