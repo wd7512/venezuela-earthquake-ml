@@ -40,14 +40,14 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-28T17:00:00Z",
-  "death_toll_note": "Government figure (920+) via National Assembly. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
+  "last_updated": "2026-06-29T00:06:00Z",
+  "death_toll_note": "Government figure (1,450) via National Assembly President Jorge Rodríguez, June 28. Miyamoto International independent rapid assessment gave ~235 as of June 26. Methodologies differ — figures are not directly comparable.",
   "stats": {
     "deaths": {
-      "value": 1430,
+      "value": 1450,
       "suffix": "",
-      "source": "Jorge Rodríguez / OCHA SitRep #4",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-4-27-june-2026"
+      "source": "Jorge Rodríguez (National Assembly) / OCHA SitRep #4",
+      "source_url": "https://www.nytimes.com/live/2026/06/28/world/venezuela-earthquake"
     },
     "injured": {
       "value": 3238,
@@ -74,10 +74,10 @@
       "source_url": "https://earthquake.usgs.gov/earthquakes/map/"
     },
     "buildings_collapsed": {
-      "value": 60000,
+      "value": 189,
       "suffix": "",
-      "source": "Satellite damage analysis (ABC/AP / Microsoft AI for Good)",
-      "source_url": "https://abcnews.com/International/live-updates/venezuela-earthquakes-updates/"
+      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed, 585 partially damaged (774 total)",
+      "source_url": "https://www.nytimes.com/live/2026/06/28/world/venezuela-earthquake"
     },
     "hospitals_damaged": {
       "value": 13,
@@ -111,16 +111,16 @@
       "source_url": "https://www.state.gov/venezuela-earthquake-response/"
     },
     "aftershock_prob_mw6": {
-      "value": 43,
+      "value": 7,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast",
-      "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast"
+      "source": "USGS Aftershock Forecast (updated June 28)",
+      "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     },
     "aftershock_prob_mw7": {
-      "value": 2,
+      "value": 1,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast",
-      "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/forecast"
+      "source": "USGS Aftershock Forecast (updated June 28)",
+      "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     }
   },
   "aftershocks_data": [
