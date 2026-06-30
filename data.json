@@ -40,8 +40,8 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-30T04:46:00Z",
-  "death_toll_note": "Government figure (1,719) via National Assembly President Jorge Rodríguez, June 29 televised address, confirmed by NYT, Bloomberg, Al Jazeera, France24, ABC News, AFP, Miami Herald, CNN. Rodríguez also reported 5,034 injured, 15,866 displaced, 22,619 affected, 855 buildings damaged (189 collapsed), 609 aftershocks. USGS PAGER forecast: 44% chance final death toll exceeds 10,000; 30% chance exceeds 100,000. Desaparecidos THV reports 46,628 missing. NYT/NASA satellite analysis estimates 58,870 buildings likely damaged/destroyed. 4.6 magnitude aftershock struck north of Caraballeda on June 29 morning (USGS).",
+  "last_updated": "2026-06-30T05:59:00Z",
+  "death_toll_note": "Government figure (1,719) via National Assembly President Jorge Rodríguez, June 29 televised address, confirmed by NYT, Bloomberg, Al Jazeera, France24, ABC News, AFP, Miami Herald, CNN. Rodríguez also reported 5,034 injured, 15,866 displaced, 22,619 affected, 855 buildings damaged (189 collapsed), 609 aftershocks. OCHA SitRep #5 (June 28) reports 1,450 dead, 3,150 injured, 12,721 displaced, 512+ aftershocks, 2,501 infrastructures affected (incl. 38 hospitals, 774 buildings). USGS PAGER forecast: 44% chance final death toll exceeds 10,000; 30% chance exceeds 100,000. Desaparecidos THV reports 46,628 missing. NYT/NASA satellite analysis estimates 58,870 buildings likely damaged/destroyed. USGS 1-week aftershock forecast: M6+ 5.5%, M7+ 0.63%.",
   "stats": {
     "deaths": {
       "value": 1719,
@@ -148,15 +148,15 @@
       "source_url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/update-on-the-trump-administrations-robust-and-rapid-delivery-of-life-saving-u-s-assistance-to-venezuela/"
     },
     "aftershock_prob_mw6": {
-      "value": 5.76,
+      "value": 5.5,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (updated June 29)",
+      "source": "USGS Aftershock Forecast (1-week window, model run June 27)",
       "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     },
     "aftershock_prob_mw7": {
-      "value": 0.52,
+      "value": 0.63,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (updated June 29)",
+      "source": "USGS Aftershock Forecast (1-week window, model run June 27)",
       "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     }
   },
@@ -830,10 +830,10 @@
       "description": "Official UN tracking — situation reports, needs assessments, cluster updates"
     },
     {
-      "name": "OCHA Situation Report #3",
-      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-3-26-june-2026-time-300-pm",
+      "name": "OCHA Situation Report #5",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm",
       "type": "situation_report",
-      "description": "302+ aftershocks, 100+ buildings collapsed in La Guaira, updated impact assessment"
+      "description": "1,450 dead, 3,150 injured, 12,721 displaced, 512+ aftershocks, 2,501 infrastructures affected"
     },
     {
       "name": "PAHO/WHO",
