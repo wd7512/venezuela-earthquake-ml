@@ -40,8 +40,8 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-06-29T20:49:00Z",
-  "death_toll_note": "Government figure (1,719) via National Assembly President Jorge Rodríguez, June 29 televised address, confirmed by NYT, Bloomberg, Al Jazeera, France24, ABC News, AFP, Miami Herald. Rodríguez also reported 5,034 injured, 15,866 displaced, 22,619 affected. Desaparecidos THV reports 46,628 missing. Wikipedia notes nearly 800 buildings collapsed nationwide (189 total collapse). NYT reports satellite analysis estimates 58,870 buildings likely damaged/destroyed. 4.6 magnitude aftershock struck north of Caraballeda on June 29 morning (USGS).",
+  "last_updated": "2026-06-30T04:46:00Z",
+  "death_toll_note": "Government figure (1,719) via National Assembly President Jorge Rodríguez, June 29 televised address, confirmed by NYT, Bloomberg, Al Jazeera, France24, ABC News, AFP, Miami Herald, CNN. Rodríguez also reported 5,034 injured, 15,866 displaced, 22,619 affected, 855 buildings damaged (189 collapsed), 609 aftershocks. USGS PAGER forecast: 44% chance final death toll exceeds 10,000; 30% chance exceeds 100,000. Desaparecidos THV reports 46,628 missing. NYT/NASA satellite analysis estimates 58,870 buildings likely damaged/destroyed. 4.6 magnitude aftershock struck north of Caraballeda on June 29 morning (USGS).",
   "stats": {
     "deaths": {
       "value": 1719,
@@ -74,16 +74,22 @@
       "source_url": "https://www.miamiherald.com/news/nation-world/world/americas/venezuela/article316315169.html"
     },
     "aftershocks": {
-      "value": 512,
+      "value": 609,
       "suffix": "+",
-      "source": "OCHA SitRep #5",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-5-28-june-2026-time-500-pm"
+      "source": "Jorge Rodríguez (National Assembly) televised address June 29 — 609 aftershocks",
+      "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
     },
     "buildings_collapsed": {
       "value": 189,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed, nearly 800 buildings collapsed total, 1,400+ destroyed in La Guaira alone",
-      "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
+      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed out of 855 damaged",
+      "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
+    },
+    "buildings_damaged_total": {
+      "value": 855,
+      "suffix": "",
+      "source": "Jorge Rodríguez (National Assembly) televised address June 29 — 855 buildings damaged, 189 collapsed",
+      "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
     },
     "buildings_affected_un": {
       "value": 1700000,
