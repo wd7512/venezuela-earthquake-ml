@@ -40,20 +40,20 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-03T08:20:00Z",
-  "death_toll_note": "Government figure (2,595) via acting President Delcy Rodríguez press conference July 2, confirmed by ABC News, CNN, CGTN, CNBC. Cumulative official toll progression: 1,719 (June 29, Jorge Rodríguez) → 1,943 (June 30) → 2,295 (July 1, Rodríguez) → 2,595 (July 2, Delcy Rodríguez). Injured: 12,500+ (ABC: 12,400; Wikipedia: >12,500). OCHA SitRep #7 (June 30): 1,943 dead, 10,571 injured, 689 aftershocks, 15,866 affected, 6,461 rescued. OCHA SitRep #8 (July 1): 2,295 dead, 11,267 injured, 782 aftershocks, 26,403 affected (12,841 displaced), ~13,000 discharged from health facilities. Desaparecidos THV tracking site: ~38,500 unaccounted for as of July 2 (down from 46,628 as people located). UN OCHA: 50,000+ remain missing per Tom Fletcher. Wikipedia: 15,800 lost homes, 28,300 homes uninhabitable. ABC (July 2) reports 12,400 injured; 58,870 buildings damaged/destroyed per NASA/Guardian. USGS OAF (July 1): 25% chance M6+ in next year; lower side of typical sequence.",
+  "last_updated": "2026-07-04T09:03:30Z",
+  "death_toll_note": "Government figure (2,645) via Communication & Information Ministry July 3, confirmed by OCHA SitRep #9 (July 2, 9pm: 2,595 dead, 12,400 injured, 862 aftershocks), SitRep #10 (July 3, 7pm: 2,645 dead, 12,666 injured, 890 aftershocks, 15,050 homeless). Cumulative official toll progression: 1,719 (June 29) → 1,943 (June 30) → 2,295 (July 1) → 2,595 (July 2) → 2,645 (July 3, Communication Ministry via Reuters/AP/AA). Injured: 12,666 (official July 3). Rescued: 6,462. Families assisted: 86,117. Buildings affected: 885, 189 collapsed. Camps: 59 transitional. Desaparecidos THV tracking site: ~38,500 unaccounted for as of July 2. UN OCHA: >50,000 missing per Tom Fletcher. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 3, 15:26 UTC): 1-week M6+ prob 2.67%, M7+ 0.27%; 1-year M6+ 18.86%, M7+ 2.00%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure.",
   "stats": {
     "deaths": {
-      "value": 2595,
+      "value": 2645,
       "suffix": "",
-      "source": "Delcy Rodríguez (acting President) press conference July 2, confirmed by ABC News, CNN, CGTN, CNBC",
-      "source_url": "https://abcnews.com/International/venezuela-earthquakes-latest-50000-unaccounted-death-toll-climbs/story?id=134386173"
+      "source": "Venezuela Communication & Information Ministry via OCHA SitRep #10 (July 3, 7pm); confirmed by Reuters, AP, AA.com.tr",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
     },
     "injured": {
-      "value": 12500,
-      "suffix": "+",
-      "source": "Delcy Rodríguez (acting President) press conference July 2 — reported 12,400 by ABC News, >12,500 per Wikipedia",
-      "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
+      "value": 12666,
+      "suffix": "",
+      "source": "Venezuela Communication & Information Ministry via OCHA SitRep #10 (July 3, 7pm)",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
     },
     "missing_registered": {
       "value": 200,
@@ -68,10 +68,10 @@
       "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
     },
     "displaced": {
-      "value": 12841,
+      "value": 15050,
       "suffix": "",
-      "source": "OCHA SitRep #8 (July 1) — 12,841 displaced, 26,403 affected total. Government: 15,866 homeless per Rodríguez June 29",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
+      "source": "OCHA SitRep #10 (July 3, 7pm) — ~15,050 people lost their homes, 59 transitional camps established; Jorge Rodríguez via DW",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
     },
     "affected_total": {
       "value": 26403,
@@ -80,10 +80,10 @@
       "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
     },
     "aftershocks": {
-      "value": 782,
-      "suffix": "+",
-      "source": "OCHA SitRep #8 (July 1) — 782 aftershocks reported; also per Wikipedia",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
+      "value": 890,
+      "suffix": "",
+      "source": "OCHA SitRep #10 (July 3, 7pm) — 890 aftershocks; government statement via Anadolu Agency/AA.com.tr",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
     },
     "buildings_collapsed": {
       "value": 189,
@@ -92,10 +92,10 @@
       "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
     },
     "buildings_damaged_total": {
-      "value": 855,
+      "value": 885,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) televised address June 29 — 855 buildings damaged, 189 collapsed",
-      "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
+      "source": "Jorge Rodríguez (National Assembly) July 3 — 885 buildings affected, 189 completely collapsed; also per OCHA SitRep #10 and Anadolu Agency",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
     },
     "buildings_affected_un": {
       "value": 1700000,
@@ -110,11 +110,11 @@
       "source_url": "https://www.nytimes.com/live/2026/06/29/world/venezuela-earthquake-news"
     },
     "economic_damage_usd": {
-      "value": 6700000000,
+      "value": 37000000000,
       "prefix": "$",
       "suffix": "",
-      "source": "UN ECLAC/PAHO assessment (via Bloomberg) — $6.7 billion direct losses",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-06-26/venezuela-quakes-affected-1-7-million-buildings-causing-6-7-billions-in-losses"
+      "source": "New UN-backed assessment (via Miami Herald/AP/Reuters July 3) — $37 billion direct physical damage; supersedes earlier $6.7B ECLAC figure",
+      "source_url": "https://www.miamiherald.com/news/nation-world/world/americas/venezuela/article316376983.html"
     },
     "hospitals_damaged": {
       "value": 38,
@@ -154,16 +154,16 @@
       "source_url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/06/update-on-the-trump-administrations-robust-and-rapid-delivery-of-life-saving-u-s-assistance-to-venezuela/"
     },
     "aftershock_prob_mw6": {
-      "value": 5.5,
+      "value": 2.67,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (1-week window, model run June 27); USGS OAF update July 1: 25% chance M6+ in next year",
-      "source_url": "https://earthquakeinsights.substack.com/p/aftershocks-and-satellite-imaging"
+      "source": "USGS Aftershock Forecast (1-week window, model run July 3, 15:26 UTC). 1-year: M6+ 18.86%, M7+ 2.00%. Probability declining from previous forecasts.",
+      "source_url": "https://earthquake.usgs.gov/product/oaf/us6000t7zp/us/1783092666385/forecast.json"
     },
     "aftershock_prob_mw7": {
-      "value": 0.63,
+      "value": 0.27,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (1-week window, model run June 27); USGS OAF update July 1: unlikely but possible M7+",
-      "source_url": "https://earthquakeinsights.substack.com/p/aftershocks-and-satellite-imaging"
+      "source": "USGS Aftershock Forecast (1-week window, model run July 3, 15:26 UTC). 1-year M7+ prob: 2.00%.",
+      "source_url": "https://earthquake.usgs.gov/product/oaf/us6000t7zp/us/1783092666385/forecast.json"
     }
   },
   "aftershocks_data": [
@@ -353,6 +353,11 @@
       "date": "2026-07-02",
       "reported": 38500,
       "found": 12500
+    },
+    {
+      "date": "2026-07-03",
+      "reported": 38500,
+      "found": 13500
     }
   ],
   "zones": [
@@ -855,6 +860,18 @@
       "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm",
       "type": "situation_report",
       "description": "2,295 dead, 11,267 injured, 782 aftershocks, 26,403 affected (12,841 displaced), ~13,000 discharged"
+    },
+    {
+      "name": "OCHA Situation Report #9",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-9-02july-2026-time-0900-pm",
+      "type": "situation_report",
+      "description": "2,595 dead, 12,400 injured, 862 aftershocks, 26,403+ affected, 6,462 rescued"
+    },
+    {
+      "name": "OCHA Situation Report #10",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm",
+      "type": "situation_report",
+      "description": "2,645 dead, 12,666 injured, 890 aftershocks, ~15,050 homeless, 6,462 rescued, 59 transitional camps"
     },
     {
       "name": "Miyamoto — July 1 Update",
