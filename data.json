@@ -40,20 +40,20 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-04T09:03:30Z",
-  "death_toll_note": "Government figure (2,645) via Communication & Information Ministry July 3, confirmed by OCHA SitRep #9 (July 2, 9pm: 2,595 dead, 12,400 injured, 862 aftershocks), SitRep #10 (July 3, 7pm: 2,645 dead, 12,666 injured, 890 aftershocks, 15,050 homeless). Cumulative official toll progression: 1,719 (June 29) → 1,943 (June 30) → 2,295 (July 1) → 2,595 (July 2) → 2,645 (July 3, Communication Ministry via Reuters/AP/AA). Injured: 12,666 (official July 3). Rescued: 6,462. Families assisted: 86,117. Buildings affected: 885, 189 collapsed. Camps: 59 transitional. Desaparecidos THV tracking site: ~38,500 unaccounted for as of July 2. UN OCHA: >50,000 missing per Tom Fletcher. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 3, 15:26 UTC): 1-week M6+ prob 2.67%, M7+ 0.27%; 1-year M6+ 18.86%, M7+ 2.00%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure.",
+  "last_updated": "2026-07-06T07:34:26Z",
+  "death_toll_note": "Government figure (3,342) via Information Ministry (Sunday July 5/6 update), confirmed by BNO News, Guardian. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6). Injured: 16,740 (official July 5/6). Rescued: 6,462. Families assisted: 86,794. Homeless: 17,345. Buildings affected: 856, 190 collapsed. Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 3, 15:26 UTC): 1-week M6+ prob 2.67%, M7+ 0.27%; 1-year M6+ 18.86%, M7+ 2.00%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure.",
   "stats": {
     "deaths": {
-      "value": 2645,
+      "value": 3342,
       "suffix": "",
-      "source": "Venezuela Communication & Information Ministry via OCHA SitRep #10 (July 3, 7pm); confirmed by Reuters, AP, AA.com.tr",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
+      "source": "Venezuela Information Ministry (Sunday July 5/6 update) via BNO News, Guardian; cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6)",
+      "source_url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/"
     },
     "injured": {
-      "value": 12666,
+      "value": 16740,
       "suffix": "",
-      "source": "Venezuela Communication & Information Ministry via OCHA SitRep #10 (July 3, 7pm)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
+      "source": "Venezuela Information Ministry official update (Sunday July 5/6) via BNO News",
+      "source_url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/"
     },
     "missing_registered": {
       "value": 200,
@@ -62,16 +62,16 @@
       "source_url": "https://reliefweb.int/disaster/eq-2026-000093-ven"
     },
     "missing_independent": {
-      "value": 38500,
+      "value": 31000,
       "suffix": "",
-      "source": "Desaparecidos Terremoto Venezuela tracking website — ~38,500 unaccounted for as of July 2 per Wikipedia (decrease from 46,628 as people located)",
+      "source": "Desaparecidos Terremoto Venezuela tracking website - ~31,000 reported missing as of July 5 per Wikipedia (decrease from 38,500 as people located)",
       "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
     },
     "displaced": {
-      "value": 15050,
+      "value": 17345,
       "suffix": "",
-      "source": "OCHA SitRep #10 (July 3, 7pm) — ~15,050 people lost their homes, 59 transitional camps established; Jorge Rodríguez via DW",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
+      "source": "Venezuelan government via BNO News (July 5/6) - 17,345 people without housing, up from 16,309; 86,794 families assisted",
+      "source_url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/"
     },
     "affected_total": {
       "value": 26403,
@@ -80,10 +80,10 @@
       "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
     },
     "aftershocks": {
-      "value": 890,
+      "value": 995,
       "suffix": "",
-      "source": "OCHA SitRep #10 (July 3, 7pm) — 890 aftershocks; government statement via Anadolu Agency/AA.com.tr",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-10-03-july-2026-time-0700-pm"
+      "source": "Venezuelan government via BNO News (July 5/6) - 995 aftershocks reported",
+      "source_url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/"
     },
     "buildings_collapsed": {
       "value": 189,
@@ -358,6 +358,11 @@
       "date": "2026-07-03",
       "reported": 38500,
       "found": 13500
+    },
+    {
+      "date": "2026-07-05",
+      "reported": 31000,
+      "found": 15500
     }
   ],
   "zones": [
@@ -998,6 +1003,18 @@
       "url": "https://www.euronews.com/2026/06/27/venezuela-satellite-images-reveal-scale-of-disaster",
       "type": "news",
       "description": "Curated set of before/after satellite images showing La Guaira destruction"
+    },
+    {
+      "name": "OCHA Situation Report #11",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-11-04-july-2026-time-0800-pm",
+      "type": "situation_report",
+      "description": "2,954 dead, 16,592 injured, 942+ aftershocks, 16,309 homeless, 6,462 rescued"
+    },
+    {
+      "name": "BNO News - Venezuela earthquake death toll rises to 3,342",
+      "url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/",
+      "type": "news",
+      "description": "Venezuelan government update: 3,342 dead, 16,740 injured, 995 aftershocks, 17,345 homeless (July 5/6)"
     }
   ]
 }
