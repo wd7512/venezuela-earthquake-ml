@@ -40,14 +40,14 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-07T09:03:00Z",
-  "death_toll_note": "Government figure (3,535) via Jorge Rodriguez/National Assembly (Monday July 7), confirmed by OCHA SitRep #13 (July 6), Al Jazeera, NBC News, Reuters. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7). Injured: 16,740 (official). Rescued: 6,462. Homeless: 17,854. Aftershocks: 1,048. Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 6, 16:45 UTC): 1-week M6+ prob 2%, M7+ <1%; 1-year M6+ 17%, M7+ 2%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure.",
+  "last_updated": "2026-07-08T15:30:00Z",
+  "death_toll_note": "Government figure (3,685) via Jorge Rodriguez/National Assembly (Wednesday July 8), confirmed by OCHA SitRep #14 (July 7/8), TASS, Scripps News. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8). Injured: 16,740 (unchanged). Rescued: 6,462. Homeless: 17,907 (up from 17,854). Aftershocks: 1,076 (up from 1,048). Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 7, 16:00 UTC): 1-week M6+ prob 2%, M7+ <1% (1 in 400); 1-year M6+ 16%, M7+ 2%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. Tom Fletcher (UN humanitarian chief) began official visit to Venezuela per SitRep #14.",
   "stats": {
     "deaths": {
-      "value": 3535,
+      "value": 3685,
       "suffix": "",
-      "source": "OCHA SitRep #13 (July 6) / Jorge Rodriguez (National Assembly, July 7); cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-13-06-july-2026-time-0800-pm"
+      "source": "OCHA SitRep #14 (July 7/8) / Jorge Rodriguez (National Assembly, July 8); cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8)",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm"
     },
     "injured": {
       "value": 16740,
@@ -68,10 +68,10 @@
       "source_url": "https://en.wikipedia.org/wiki/2026_Venezuela_earthquakes"
     },
     "displaced": {
-      "value": 17854,
+      "value": 17907,
       "suffix": "",
-      "source": "OCHA SitRep #13 (July 6) / Jorge Rodriguez (National Assembly, July 7) - 17,854 people without housing, up from 17,345",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-13-06-july-2026-time-0800-pm"
+      "source": "OCHA SitRep #14 (July 7/8) / Jorge Rodriguez (National Assembly, July 8) - 17,907 people without housing, up from 17,854",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm"
     },
     "affected_total": {
       "value": 26403,
@@ -80,16 +80,16 @@
       "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
     },
     "aftershocks": {
-      "value": 1048,
+      "value": 1076,
       "suffix": "",
-      "source": "OCHA SitRep #13 (July 6) - 1,048 aftershocks reported",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-13-06-july-2026-time-0800-pm"
+      "source": "OCHA SitRep #14 (July 7/8) - 1,076 aftershocks reported, up from 1,048",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm"
     },
     "buildings_collapsed": {
-      "value": 189,
+      "value": 190,
       "suffix": "",
-      "source": "Jorge Rodríguez (National Assembly) — 189 completely collapsed out of 855 damaged",
-      "source_url": "https://edition.cnn.com/2026/06/29/world/live-news/venezuela-earthquake-hnk"
+      "source": "Jorge Rodríguez (National Assembly, July 8) — 190 completely destroyed; 856 sustained significant damage per TASS",
+      "source_url": "https://tass.com/emergencies/2157179"
     },
     "buildings_damaged_total": {
       "value": 885,
@@ -156,13 +156,13 @@
     "aftershock_prob_mw6": {
       "value": 2.0,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (1-week window, model run July 6, 16:45 UTC). 1-year M6+ 17%. Probability declining from previous forecasts.",
+      "source": "USGS Aftershock Forecast (1-week window, model run July 7, 16:00 UTC). 1-year M6+ 16%. Probability declining from previous forecasts.",
       "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     },
     "aftershock_prob_mw7": {
-      "value": 0.20,
+      "value": 0.25,
       "suffix": "%",
-      "source": "USGS Aftershock Forecast (1-week window, model run July 6, 16:45 UTC). 1-year M7+ prob: 2%.",
+      "source": "USGS Aftershock Forecast (1-week window, model run July 7, 16:00 UTC). 1-year M7+ prob: 2%. 1-week chance 1 in 400 (~0.25%).",
       "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp/oaf/overview"
     }
   },
@@ -363,6 +363,16 @@
       "date": "2026-07-05",
       "reported": 31000,
       "found": 15500
+    },
+    {
+      "date": "2026-07-07",
+      "reported": 18100,
+      "found": 26098
+    },
+    {
+      "date": "2026-07-08",
+      "reported": 18145,
+      "found": 26098
     }
   ],
   "zones": [
@@ -1015,6 +1025,12 @@
       "url": "https://bnonews.com/index.php/2026/07/venezuela-earthquake-death-toll-rises-to-3342/",
       "type": "news",
       "description": "Venezuelan government update: 3,342 dead, 16,740 injured, 995 aftershocks, 17,345 homeless (July 5/6)"
+    },
+    {
+      "name": "OCHA Situation Report #14",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm",
+      "type": "situation_report",
+      "description": "3,685 dead, 16,740 injured, 1,076 aftershocks, 17,907 homeless, 6,462 rescued — Tom Fletcher begins official visit"
     }
   ]
 }
