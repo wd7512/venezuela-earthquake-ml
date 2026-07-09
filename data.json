@@ -40,14 +40,14 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-08T15:30:00Z",
-  "death_toll_note": "Government figure (3,685) via Jorge Rodriguez/National Assembly (Wednesday July 8), confirmed by OCHA SitRep #14 (July 7/8), TASS, Scripps News. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8). Injured: 16,740 (unchanged). Rescued: 6,462. Homeless: 17,907 (up from 17,854). Aftershocks: 1,076 (up from 1,048). Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 7, 16:00 UTC): 1-week M6+ prob 2%, M7+ <1% (1 in 400); 1-year M6+ 16%, M7+ 2%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. Tom Fletcher (UN humanitarian chief) began official visit to Venezuela per SitRep #14.",
+  "last_updated": "2026-07-09T09:04:00Z",
+  "death_toll_note": "Government figure (3,811) via Jorge Rodriguez/National Assembly (Wednesday July 9), confirmed by Reuters, TASS. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9). Injured: 16,740 (unchanged). Rescued: 6,462. Homeless: 17,907 (unchanged). Aftershocks: >1,000. Hospitalized/treated: 27,398. Families assisted: 86,794. Food distributed: 9,603 tons. Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 15,800 lost homes, 28,300 uninhabitable. USGS OAF (July 7, 16:00 UTC): 1-week M6+ prob 2%, M7+ <1% (1 in 400); 1-year M6+ 16%, M7+ 2%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. Tom Fletcher (UN humanitarian chief) visited Venezuela, called for coordinated recovery plan. Delcy Rodriguez renewed calls for release of gold held by Bank of England.",
   "stats": {
     "deaths": {
-      "value": 3685,
+      "value": 3811,
       "suffix": "",
-      "source": "OCHA SitRep #14 (July 7/8) / Jorge Rodriguez (National Assembly, July 8); cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm"
+      "source": "OCHA SitRep #14 (July 7/8) / Jorge Rodriguez (National Assembly, July 9); cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9)",
+      "source_url": "https://www.reuters.com/world/americas/death-toll-venezuela-quakes-rises-3811-2026-07-08/"
     },
     "injured": {
       "value": 16740,
