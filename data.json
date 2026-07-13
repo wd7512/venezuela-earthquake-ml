@@ -40,14 +40,16 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-12T09:00:00Z",
-  "death_toll_note": "Government figure (4,333) via Jorge Rodriguez/National Assembly (Saturday July 11), confirmed by OCHA SitRep #18 and Anadolu Agency. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late/SitRep #18). Injured: 16,740 (unchanged). Rescued: 6,462. Homeless: 17,907 (unchanged). Aftershocks: 1,171. Unidentified dead: 315. Hospitalized/treated: 31,193. Families assisted: 86,794. Food distributed: 9,766 tons. Water distributed: 16.6M liters. Personnel deployed: 31,837. Volunteers: 30,197. International rescue workers: 2,422. Temporary camps: 94 (housing 18,437). Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 16,300 lost homes, 28,300 uninhabitable. USGS OAF (July 9, 16:00 UTC): 1-week M6+ prob 1%, M7+ <1% (1 in 700); 1-month M6+ 4%, M7+ <1% (1 in 200); 1-year M6+ 15%, M7+ 1%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. UN OCHA launched US$298 million additional appeal (SitRep #18, July 11, up from $96M in SitRep #15). Tom Fletcher (UN humanitarian chief) visited Venezuela, called for coordinated recovery plan and announced $298M HRP addendum for 1.3M people over 6 months. Delcy Rodriguez renewed calls for release of gold held by Bank of England.",
+  "last_updated": "2026-07-13T09:00:00Z",
+  "death_toll_note": [
+    "Government figure (4,490) via Jorge Rodriguez/National Assembly (Saturday July 12), confirmed by OCHA SitRep #19 and Anadolu Agency. Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late/SitRep #18) -> 4,490 (July 12/SitRep #19). Injured: 16,740 (unchanged). Rescued: 6,462. Homeless: 17,907 (unchanged). Aftershocks: 1,222 (up from 1,171). Unidentified dead: 315. Hospitalized/treated: 32,401. Families assisted: 120,794. Food distributed: 9,995 tons. Water distributed: 18.5M liters. Personnel deployed: 31,837. Volunteers: 30,535. International rescue workers: 2,422. Temporary camps: 108 (housing 19,583). Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5 (decrease from 38,500 as people located). Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 16,300 lost homes, 28,300 uninhabitable. USGS OAF (July 9, 16:00 UTC): 1-week M6+ prob 1%, M7+ <1% (1 in 700); 1-month M6+ 4%, M7+ <1% (1 in 200); 1-year M6+ 15%, M7+ 1%. New UN-backed assessment: 7 billion direct physical damage (Miami Herald/AP July 3), superseding earlier .7B ECLAC figure. UN OCHA launched US98 million additional appeal (SitRep #19, July 12, confirmed via HRP Addendum). Tom Fletcher (UN humanitarian chief) concluded Venezuela visit, called for coordinated recovery plan and announced 98M HRP addendum for 1.3M people over 6 months. Total HRP funding requirements rise from 32M to 30M. Delcy Rodriguez renewed calls for release of gold held by Bank of England."
+  ],
   "stats": {
     "deaths": {
-      "value": 4333,
+      "value": 4490,
       "suffix": "",
-      "source": "OCHA SitRep #18 (July 11, 9pm) + Jorge Rodriguez (National Assembly, July 11) via Anadolu Agency; cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-18-11-july-2026-time-0900-pm"
+      "source": "OCHA SitRep #19 (July 12, 9pm) + Jorge Rodriguez (National Assembly, July 12) via Anadolu Agency; cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late) -> 4,490 (July 12)",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-19-12-july-2026-time-0900-pm"
     },
     "injured": {
       "value": 16740,
@@ -80,10 +82,10 @@
       "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
     },
     "aftershocks": {
-      "value": 1171,
+      "value": 1222,
       "suffix": "",
-      "source": "Jorge Rodriguez (National Assembly, July 11) via Anadolu Agency — 1,171 aftershocks reported, up from 1,142",
-      "source_url": "https://www.aa.com.tr/en/americas/death-toll-from-venezuela-twin-earthquakes-surpasses-4-000/3994748"
+      "source": "OCHA SitRep #19 (July 12) — 1,222 aftershocks reported, up from 1,171",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-19-12-july-2026-time-0900-pm"
     },
     "buildings_collapsed": {
       "value": 190,
