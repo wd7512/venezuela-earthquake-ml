@@ -40,16 +40,16 @@
       "description": "Rapid-response funding for UN agencies in crises"
     }
   ],
-  "last_updated": "2026-07-16T09:04:00Z",
+  "last_updated": "2026-07-17T05:30:00Z",
   "death_toll_note": [
-    "Government figure (4,829) via OCHA SitRep #22 (July 15, 9pm) / BNO News (July 15). Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late/SitRep #18) -> 4,490 (July 12/SitRep #19) -> 4,561 (July 13/SitRep #20) -> 4,734 (July 14/SitRep #21) -> 4,829 (July 15/SitRep #22). Injured: 16,740 (unchanged). Rescued: 6,462 (unchanged). Patients treated: 34,872. Families assisted: 128,324. Aftershocks: 1,284 (up from 1,275 SitRep #21). CORE/Wayuu Taya rapid needs assessment (July 14): housing damage at 20 of 24 sites across 7 states, highest-priority in La Guaira and Distrito Capital. Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5. Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 16,300 lost homes, 28,300 uninhabitable. USGS OAF (July 15, 16:00 UTC): 1-week M6+ prob 0.90%, M7+ 0.07%; 1-month M6+ 3.15%, M7+ 0.25%; 1-year M6+ 11.49%, M7+ 1.21%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. UN OCHA launched US$298 million additional appeal (SitRep #21, July 14, confirmed via HRP Addendum). Tom Fletcher (UN humanitarian chief) concluded Venezuela visit, called for coordinated recovery plan and announced $298M HRP addendum for 1.3M people over 6 months. Total HRP funding requirements rise from $632M to $930M. Delcy Rodriguez renewed calls for release of gold held by Bank of England."
+    "Government figure (4,930) via OCHA SitRep #23 (July 16, 9pm) / BNO News (July 17). Cumulative official toll progression: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4, SitRep #11) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late/SitRep #18) -> 4,490 (July 12/SitRep #19) -> 4,561 (July 13/SitRep #20) -> 4,734 (July 14/SitRep #21) -> 4,829 (July 15/SitRep #22) -> 4,930 (July 16/SitRep #23). Injured: 16,740 (unchanged). Rescued: 6,462 (unchanged). Patients treated: 35,781 (up from 34,872). Families assisted: 128,324. Aftershocks: 1,308 (up from 1,284 SitRep #22). CORE/Wayuu Taya rapid needs assessment (July 14): housing damage at 20 of 24 sites across 7 states, highest-priority in La Guaira and Distrito Capital. Desaparecidos THV tracking site: ~31,000 unaccounted for as of July 5. Venezuela Te Busca: 18,145 still missing as of July 8 (44,243 registered, 26,098 located). UN OCHA: >50,000 missing per Tom Fletcher. NYT: Two doctors at Caracas main morgue estimated true dead closer to 4,000; UN procuring 10,000 body bags. Wikipedia: 16,300 lost homes, 28,300 uninhabitable. USGS OAF (July 16, model run): 1-week M6+ prob 0.90%, M7+ 0.07%; 1-month M6+ 3.15%, M7+ 0.25%; 1-year M6+ 11.49%, M7+ 1.21%. New UN-backed assessment: $37 billion direct physical damage (Miami Herald/AP July 3), superseding earlier $6.7B ECLAC figure. UN OCHA launched US$299 million additional appeal (SitRep #23, July 16, confirmed via HRP Addendum). Tom Fletcher (UN humanitarian chief) concluded Venezuela visit, called for coordinated recovery plan and announced $299M HRP addendum for 1.3M people over 6 months. Total HRP funding requirements rise from $632M to $931M. Delcy Rodriguez renewed calls for release of gold held by Bank of England."
   ],
   "stats": {
     "deaths": {
-      "value": 4829,
+      "value": 4930,
       "suffix": "",
-      "source": "OCHA SitRep #22 (July 15, 9pm) / BNO News (July 15). Cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late) -> 4,490 (July 12) -> 4,561 (July 13) -> 4,734 (July 14) -> 4,829 (July 15)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-22-15-july-2026-time-0900-pm"
+      "source": "OCHA SitRep #23 (July 16, 9pm) / BNO News (July 17). Cumulative: 1,719 (June 29) -> 1,943 (June 30) -> 2,295 (July 1) -> 2,595 (July 2) -> 2,645 (July 3) -> 2,954 (July 4) -> 3,342 (July 5/6) -> 3,535 (July 7) -> 3,685 (July 8) -> 3,811 (July 9) -> 3,889 (July 10) -> 4,118 (July 11 early) -> 4,333 (July 11 late) -> 4,490 (July 12) -> 4,561 (July 13) -> 4,734 (July 14) -> 4,829 (July 15) -> 4,930 (July 16)",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-23-16-july-2026-time-0900-pm"
     },
     "injured": {
       "value": 16740,
@@ -82,10 +82,10 @@
       "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-no-8-01-july-2026-time-0700-pm"
     },
     "aftershocks": {
-      "value": 1284,
+      "value": 1308,
       "suffix": "",
-      "source": "OCHA SitRep #22 (July 15) — 1,284 aftershocks reported, up from 1,275 (SitRep #21)",
-      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-22-15-july-2026-time-0900-pm"
+      "source": "OCHA SitRep #23 (July 16) — 1,308 aftershocks reported, up from 1,284 (SitRep #22)",
+      "source_url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-23-16-july-2026-time-0900-pm"
     },
     "buildings_collapsed": {
       "value": 190,
@@ -1033,6 +1033,12 @@
       "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-14-07-july-2026-time-0900-pm",
       "type": "situation_report",
       "description": "3,685 dead, 16,740 injured, 1,076 aftershocks, 17,907 homeless, 6,462 rescued — Tom Fletcher begins official visit"
+    },
+    {
+      "name": "OCHA Situation Report #23",
+      "url": "https://reliefweb.int/report/venezuela-bolivarian-republic/earthquakes-venezuela-situation-report-23-16-july-2026-time-0900-pm",
+      "type": "situation_report",
+      "description": "4,930 dead, 16,740 injured, 1,308 aftershocks, 17,907 homeless, 6,462 rescued — US$299M additional appeal launched"
     }
   ]
 }
